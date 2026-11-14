@@ -1,0 +1,25 @@
+{
+  "dataset_sha256": "d0a4382e015099558f5e392869eeda626e8f085dfe269db36141842f4a09dbaf",
+  "split_sha256": "fe88a96ca11a03c72bbc3d47bbc80ecacd335bac0f78018e31d1f4990ba28557",
+  "labels": [
+    "acrylonitrile butadiene styrene",
+    "blank",
+    "nylon",
+    "poly (methyl methacrylate)",
+    "polycarbonate",
+    "polyester",
+    "polyethylene",
+    "polyethylene terephthalate",
+    "polyoxymethylene",
+    "polypropylene",
+    "polystyrene",
+    "polytetrafluoroethylene",
+    "polyurethane",
+    "polyvinyl chloride",
+    "silicone"
+  ],
+  "test_evaluated": false,
+  "runtime_seconds": 11.507927298545837,
+  "selected_C": 0.1,
+  "selection_metric": "validation macro_f1_present（13个有支持类别）"
+}

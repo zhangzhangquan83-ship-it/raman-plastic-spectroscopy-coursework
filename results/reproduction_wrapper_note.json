@@ -1,0 +1,7 @@
+{
+  "scope": "仅交付中的从零复现记录入口与分析审计修订，不改变训练配置、模型实现、数据、划分或原始预测。",
+  "first_stage_wrapper": "run_frozen_experiment.py增加新目录所需的准备/预检步骤，并把历史初始包SHA与复现时实际源码/数据SHA分开记录。原始results/cloud_execution.json未修改。",
+  "extension_wrapper": "从零扩展复现使用run_cloud_study.py生成审计所需回执；直接run_study.py仅产生模型数值产物。",
+  "audit_revision": "独立ECE重算保留float32概率的阈值分箱语义，均值计算使用float64；指标先逐项验证有限值。实际审计源码SHA另记于independent_audit.json。",
+  "presentation_revision": "配对消融表明确标为变体减参照的差值；HTML查阅不依赖未安装的Notebook前端。"
+}

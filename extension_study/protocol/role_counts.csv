@@ -1,0 +1,10 @@
+﻿fold_id,role,maps,pixels,classes_present,missing_classes
+1,inner_train,13,10859,12,
+1,inner_val,5,5545,12,
+1,outer_eval,10,9137,12,
+2,inner_train,14,11410,12,
+2,inner_val,5,5386,12,
+2,outer_eval,9,8745,12,
+3,inner_train,14,13458,12,
+3,inner_val,5,4424,12,
+3,outer_eval,9,7659,12,

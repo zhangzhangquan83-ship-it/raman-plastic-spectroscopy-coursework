@@ -1,0 +1,80 @@
+{
+  "status": "真实实验、独立审计与Notebook交付完成；成员信息待真实填写",
+  "generated_at": "2026-11-13T22:28:27.655319+08:00",
+  "gpu_training_executed": true,
+  "formal_test_evaluated": true,
+  "first_stage": {
+    "gpu_training_completed": true,
+    "formal_test_evaluated": true,
+    "task_classes": 15,
+    "test_maps": 6,
+    "test_pixels": 6399,
+    "test_results_frozen": true
+  },
+  "extension_stage": {
+    "gpu_training_completed": true,
+    "task_classes": 12,
+    "development_maps": 28,
+    "development_pixels": 25541,
+    "outer_folds": 3,
+    "original_test_reused": false,
+    "neural_runs": 75,
+    "baseline_runs": 9,
+    "epochs": 3769,
+    "neural_seconds": 1735.2812968418002
+  },
+  "audit": {
+    "status": "passed",
+    "verified_runs": 84,
+    "original_frozen_inputs_unchanged": true,
+    "plan_sha256": "864cf5c8efe54d8ee885b9cc848f9f9ac7cd1eb2c30b9bdb27970e5bc1a18004",
+    "protocol_sha256": "f5f818e287bc0033afcc47f2729c27ba8194474be2430d3b9612d94b420259a6"
+  },
+  "notebook": {
+    "code_cells_executed": 25,
+    "embedded_images": 15,
+    "errors": 0,
+    "kernel_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "training_executed_in_notebook": false,
+    "first_test_metrics_recomputed_from_saved_predictions": true,
+    "extension_checkpoint_cpu_probe_spectra": 16
+  },
+  "html_export_completed": true,
+  "figure_review": "Notebook实际嵌入的15幅图已逐张目视检查，文字、坐标、图例及数据范围可读；未发现裁切或重叠。",
+  "full_html_browser_review": "未由本脚本执行",
+  "remaining_user_work": [
+    "填写真实姓名、学号及成员贡献",
+    "成员复核并练习10分钟展示与5分钟答问",
+    "按教师要求提交"
+  ],
+  "cost": {
+    "recharged_yuan": 50,
+    "actual_billed_yuan": null,
+    "note": "实际费用以平台账单为准；不把run耗时合计当成开机计费时长"
+  },
+  "visual_qa": {
+    "all_15_main_figures_inspected": true,
+    "root_inspected_figure_numbers": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "independent_reviewer_inspected_figure_numbers": [
+      1,
+      2,
+      3,
+      4,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "summary_8_pdf_automated_checks": "通过字形和碰撞审计，保留已解释WARN",
+    "full_html_browser_review": "未验证；没有绕过本地文件浏览器访问限制",
+    "markdown_only_correction": "更正protocol相对路径；所有计算单元、数值与嵌入图输出保持不变"
+  }
+}

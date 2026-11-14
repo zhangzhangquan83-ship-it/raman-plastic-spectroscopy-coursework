@@ -1,0 +1,308 @@
+[
+  {
+    "map_id": "Map_Env_POM_PP_PE",
+    "file_id": 969500,
+    "original_name": "Assig_Env_POM_PP_PE.csv",
+    "stored_name": "Assig_Env_POM_PP_PE.tab",
+    "bytes": 24840542,
+    "md5": "457ad86d3ea380bf2b20786957364f73",
+    "url": "https://borealisdata.ca/api/access/datafile/969500?format=original"
+  },
+  {
+    "map_id": "Map_Env_PP_PE_1",
+    "file_id": 969503,
+    "original_name": "Assig_Env_PP_PE_1.csv",
+    "stored_name": "Assig_Env_PP_PE_1.tab",
+    "bytes": 26619172,
+    "md5": "0100b4f0905837e14e66a1e8c8634aed",
+    "url": "https://borealisdata.ca/api/access/datafile/969503?format=original"
+  },
+  {
+    "map_id": "Map_Env_PP_PE_2",
+    "file_id": 969481,
+    "original_name": "Assig_Env_PP_PE_2.csv",
+    "stored_name": "Assig_Env_PP_PE_2.tab",
+    "bytes": 16636911,
+    "md5": "c60d955986804cd8f3a92c5e29f77c1a",
+    "url": "https://borealisdata.ca/api/access/datafile/969481?format=original"
+  },
+  {
+    "map_id": "Map_Env_PP_PTFE",
+    "file_id": 969510,
+    "original_name": "Assig_Env_PP_PTFE.csv",
+    "stored_name": "Assig_Env_PP_PTFE.tab",
+    "bytes": 40187392,
+    "md5": "4c0b428ee99d0ad261c4c1195de3f929",
+    "url": "https://borealisdata.ca/api/access/datafile/969510?format=original"
+  },
+  {
+    "map_id": "Map_PS_PE_PEs_1",
+    "file_id": 969518,
+    "original_name": "Assig_Map_PS_PE_PEs_1.csv",
+    "stored_name": "Assig_Map_PS_PE_PEs_1.tab",
+    "bytes": 14698426,
+    "md5": "f372bd6ec804eec9696ef120626ddfb7",
+    "url": "https://borealisdata.ca/api/access/datafile/969518?format=original"
+  },
+  {
+    "map_id": "Map_Nylon",
+    "file_id": 969523,
+    "original_name": "Assig_Nylon.csv",
+    "stored_name": "Assig_Nylon.tab",
+    "bytes": 5863760,
+    "md5": "afb6dd78507aff8103a02b227762887c",
+    "url": "https://borealisdata.ca/api/access/datafile/969523?format=original"
+  },
+  {
+    "map_id": "Map_Nylon_ABS_PMMA",
+    "file_id": 969483,
+    "original_name": "Assig_Nylon_ABS_PMMA.csv",
+    "stored_name": "Assig_Nylon_ABS_PMMA.tab",
+    "bytes": 14548176,
+    "md5": "09f29eaa80f8b22cc274bd529d548239",
+    "url": "https://borealisdata.ca/api/access/datafile/969483?format=original"
+  },
+  {
+    "map_id": "Map_Nylon_PEs_PS",
+    "file_id": 969513,
+    "original_name": "Assig_Nylon_PEs_PS.csv",
+    "stored_name": "Assig_Nylon_PEs_PS.tab",
+    "bytes": 12970180,
+    "md5": "ebccc8479edf0a1f3ef8c40a3f2e11ff",
+    "url": "https://borealisdata.ca/api/access/datafile/969513?format=original"
+  },
+  {
+    "map_id": "Map_Nylon_POM",
+    "file_id": 969525,
+    "original_name": "Assig_Nylon_POM.csv",
+    "stored_name": "Assig_Nylon_POM.tab",
+    "bytes": 8725924,
+    "md5": "b9a4782a500957393d976820fa6f4381",
+    "url": "https://borealisdata.ca/api/access/datafile/969525?format=original"
+  },
+  {
+    "map_id": "Map_Nylon_PTFE_POM",
+    "file_id": 969491,
+    "original_name": "Assig_Nylon_PTFE_POM.csv",
+    "stored_name": "Assig_Nylon_PTFE_POM.tab",
+    "bytes": 38176773,
+    "md5": "8655f68a7c3e92824c4108f309a55156",
+    "url": "https://borealisdata.ca/api/access/datafile/969491?format=original"
+  },
+  {
+    "map_id": "Map_PC_1",
+    "file_id": 969473,
+    "original_name": "Assig_PC_1.csv",
+    "stored_name": "Assig_PC_1.tab",
+    "bytes": 5568827,
+    "md5": "e88aa4240a6349f321b8f524f41c5208",
+    "url": "https://borealisdata.ca/api/access/datafile/969473?format=original"
+  },
+  {
+    "map_id": "Map_PC_2",
+    "file_id": 969527,
+    "original_name": "Assig_PC_2.csv",
+    "stored_name": "Assig_PC_2.tab",
+    "bytes": 21166114,
+    "md5": "7d05ecdc542b30f02589b563939f349a",
+    "url": "https://borealisdata.ca/api/access/datafile/969527?format=original"
+  },
+  {
+    "map_id": "Map_PE",
+    "file_id": 969519,
+    "original_name": "Assig_PE.csv",
+    "stored_name": "Assig_PE.tab",
+    "bytes": 14824363,
+    "md5": "bc2edd0bde62e9aedcdcefe426f15d7b",
+    "url": "https://borealisdata.ca/api/access/datafile/969519?format=original"
+  },
+  {
+    "map_id": "Map_PET",
+    "file_id": 969485,
+    "original_name": "Assig_PET.csv",
+    "stored_name": "Assig_PET.tab",
+    "bytes": 8303386,
+    "md5": "3d2bdd0ba3b295c6bb76866416af60d0",
+    "url": "https://borealisdata.ca/api/access/datafile/969485?format=original"
+  },
+  {
+    "map_id": "Map_PMMA_PC",
+    "file_id": 969489,
+    "original_name": "Assig_PMMA_PC.csv",
+    "stored_name": "Assig_PMMA_PC.tab",
+    "bytes": 13227803,
+    "md5": "64d9ac1e4655b1e91cb75988cb1952b1",
+    "url": "https://borealisdata.ca/api/access/datafile/969489?format=original"
+  },
+  {
+    "map_id": "Map_PMMA_PET",
+    "file_id": 969472,
+    "original_name": "Assig_PMMA_PET.csv",
+    "stored_name": "Assig_PMMA_PET.tab",
+    "bytes": 10990946,
+    "md5": "583a632eb62308fa9667c9d83cfd9bb3",
+    "url": "https://borealisdata.ca/api/access/datafile/969472?format=original"
+  },
+  {
+    "map_id": "Map_PMMA_PET_PE_ABS",
+    "file_id": 969535,
+    "original_name": "Assig_PMMA_PET_PE_ABS.csv",
+    "stored_name": "Assig_PMMA_PET_PE_ABS.tab",
+    "bytes": 11610579,
+    "md5": "3b81f317fa81876bc751a3f23c892044",
+    "url": "https://borealisdata.ca/api/access/datafile/969535?format=original"
+  },
+  {
+    "map_id": "Map_PMMA_PTFE_PE",
+    "file_id": 969495,
+    "original_name": "Assig_PMMA_PTFE_PE.csv",
+    "stored_name": "Assig_PMMA_PTFE_PE.tab",
+    "bytes": 28375750,
+    "md5": "d25be8efb26dfb4a75ab28a99ab84da3",
+    "url": "https://borealisdata.ca/api/access/datafile/969495?format=original"
+  },
+  {
+    "map_id": "Map_POM",
+    "file_id": 969520,
+    "original_name": "Assig_POM.csv",
+    "stored_name": "Assig_POM.tab",
+    "bytes": 11230441,
+    "md5": "760a3270fcffad16e2212101fab10090",
+    "url": "https://borealisdata.ca/api/access/datafile/969520?format=original"
+  },
+  {
+    "map_id": "Map_POM_ABS",
+    "file_id": 969516,
+    "original_name": "Assig_POM_ABS.csv",
+    "stored_name": "Assig_POM_ABS.tab",
+    "bytes": 8566556,
+    "md5": "3906438af7333fef378dd225626a9003",
+    "url": "https://borealisdata.ca/api/access/datafile/969516?format=original"
+  },
+  {
+    "map_id": "Map_PP",
+    "file_id": 969496,
+    "original_name": "Assig_PP.csv",
+    "stored_name": "Assig_PP.tab",
+    "bytes": 11092405,
+    "md5": "71f0b77723cdd83dfe5b771afa1e0ef9",
+    "url": "https://borealisdata.ca/api/access/datafile/969496?format=original"
+  },
+  {
+    "map_id": "Map_PS",
+    "file_id": 969492,
+    "original_name": "Assig_PS.csv",
+    "stored_name": "Assig_PS.tab",
+    "bytes": 11890580,
+    "md5": "15333ea9102c1c34fa3fd50d371ccb18",
+    "url": "https://borealisdata.ca/api/access/datafile/969492?format=original"
+  },
+  {
+    "map_id": "Map_PS_ABS",
+    "file_id": 969502,
+    "original_name": "Assig_PS_ABS.csv",
+    "stored_name": "Assig_PS_ABS.tab",
+    "bytes": 8133615,
+    "md5": "ae5869c967b6f5737a0d6fad462a97e8",
+    "url": "https://borealisdata.ca/api/access/datafile/969502?format=original"
+  },
+  {
+    "map_id": "Map_PS_PE_PEs_2",
+    "file_id": 969522,
+    "original_name": "Assig_PS_PE_PEs_2.csv",
+    "stored_name": "Assig_PS_PE_PEs_2.tab",
+    "bytes": 15795765,
+    "md5": "752cac0ad8efc7e2d31e2eec8e8660e6",
+    "url": "https://borealisdata.ca/api/access/datafile/969522?format=original"
+  },
+  {
+    "map_id": "Map_PS_PTFE_POM_PMMA",
+    "file_id": 969480,
+    "original_name": "Assig_PS_PTFE_POM_PMMA.csv",
+    "stored_name": "Assig_PS_PTFE_POM_PMMA.tab",
+    "bytes": 25886951,
+    "md5": "e56ea675c255d7ccd60a91fa3062cf24",
+    "url": "https://borealisdata.ca/api/access/datafile/969480?format=original"
+  },
+  {
+    "map_id": "Map_PTFE",
+    "file_id": 969504,
+    "original_name": "Assig_PTFE.csv",
+    "stored_name": "Assig_PTFE.tab",
+    "bytes": 7921016,
+    "md5": "407d58d2f2482ae8377a33c6fc63b6d9",
+    "url": "https://borealisdata.ca/api/access/datafile/969504?format=original"
+  },
+  {
+    "map_id": "Map_PU",
+    "file_id": 969534,
+    "original_name": "Assig_PU.csv",
+    "stored_name": "Assig_PU.tab",
+    "bytes": 10903745,
+    "md5": "e1ee57bd86a15656b3bb5762bb429249",
+    "url": "https://borealisdata.ca/api/access/datafile/969534?format=original"
+  },
+  {
+    "map_id": "Map_PVC_1",
+    "file_id": 969479,
+    "original_name": "Assig_PVC_1.csv",
+    "stored_name": "Assig_PVC_1.tab",
+    "bytes": 10499155,
+    "md5": "7ff6d4c7f862f694351ef43efa6ea295",
+    "url": "https://borealisdata.ca/api/access/datafile/969479?format=original"
+  },
+  {
+    "map_id": "Map_PVC_2",
+    "file_id": 969538,
+    "original_name": "Assig_PVC_2.csv",
+    "stored_name": "Assig_PVC_2.tab",
+    "bytes": 9459168,
+    "md5": "3b46c819d7b955b911e240434d17942f",
+    "url": "https://borealisdata.ca/api/access/datafile/969538?format=original"
+  },
+  {
+    "map_id": "Map_PVC_ABS_PEs",
+    "file_id": 969494,
+    "original_name": "Assig_PVC_ABS_PEs.csv",
+    "stored_name": "Assig_PVC_ABS_PEs.tab",
+    "bytes": 12005797,
+    "md5": "e40442070d4dbee658add07db3a5d75c",
+    "url": "https://borealisdata.ca/api/access/datafile/969494?format=original"
+  },
+  {
+    "map_id": "Map_PVC_PET",
+    "file_id": 969493,
+    "original_name": "Assig_PVC_PET.csv",
+    "stored_name": "Assig_PVC_PET.tab",
+    "bytes": 18254502,
+    "md5": "abe6e310c5d28c8de95d9051e96b9e6b",
+    "url": "https://borealisdata.ca/api/access/datafile/969493?format=original"
+  },
+  {
+    "map_id": "Map_PVC_PU_POM",
+    "file_id": 969488,
+    "original_name": "Assig_PVC-PU-POM.csv",
+    "stored_name": "Assig_PVC_PU_POM.tab",
+    "bytes": 12239422,
+    "md5": "1e50552adb6fc1451106881e9ba0b713",
+    "url": "https://borealisdata.ca/api/access/datafile/969488?format=original"
+  },
+  {
+    "map_id": "Map_Silicone",
+    "file_id": 969498,
+    "original_name": "Assig_Silicone.csv",
+    "stored_name": "Assig_Silicone.tab",
+    "bytes": 9485225,
+    "md5": "703413ed9753b7db45d836271cd7084f",
+    "url": "https://borealisdata.ca/api/access/datafile/969498?format=original"
+  },
+  {
+    "map_id": "Map_Silicone_ABS",
+    "file_id": 969477,
+    "original_name": "Assig_Silicone_ABS.csv",
+    "stored_name": "Assig_Silicone_ABS.tab",
+    "bytes": 35894913,
+    "md5": "1c1bc726be57b465eebcf92c482b1f51",
+    "url": "https://borealisdata.ca/api/access/datafile/969477?format=original"
+  }
+]

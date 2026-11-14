@@ -1,0 +1,28 @@
+{
+  "dataset_sha256": "d0a4382e015099558f5e392869eeda626e8f085dfe269db36141842f4a09dbaf",
+  "split_sha256": "fe88a96ca11a03c72bbc3d47bbc80ecacd335bac0f78018e31d1f4990ba28557",
+  "model_sha256": {
+    "cosine_centroid": "c5f93ac56c7dd6d447abfae044b6df82ea3ee2ab6f01e539d1d6830beefd3dcb",
+    "pca64_linear_svm": "a2c695aed6f8c8832b74026873709360e358a5e5b80d07bb03a9207225e9a636",
+    "cnn_aug_seed42": "ea960b841373c86e96fd95e7a8b848c5ca3a73cef8ff096ab109a0c8b17a719f",
+    "cnn_aug_seed43": "6cafe7dd7832db39805be4b739323d6603e375b292dbe3b8ce2e3cab56c05c6d",
+    "cnn_aug_seed44": "851b27df44c6fe31d2002754ab61a36c7e2b4eea40f9a50a3c39bb72a0359be5",
+    "cnn_noaug_seed42": "9dd00b4fe313abbe35cedfd1649327bce579771883ebb806414410c28a81110d"
+  },
+  "test_maps": [
+    "Map_Env_PP_PTFE",
+    "Map_Nylon_PEs_PS",
+    "Map_PC_2",
+    "Map_PMMA_PET_PE_ABS",
+    "Map_PVC_PU_POM",
+    "Map_Silicone"
+  ],
+  "runtime_seconds": 1.3524789586663246,
+  "independent_test_units": "6个采集map；物理样品是否独立未知",
+  "metric_definitions": {
+    "macro_f1_present": "测试所有15类有真值，故为15类macro-F1",
+    "map_mean_accuracy": "6张图各自准确率的算术均值",
+    "map_equal_weight_macro_f1": "像素权重=该图像素数的倒数，构造图等权混淆后计算macro-F1"
+  },
+  "note": "所有训练完成且参数锁定后统一评价。不能据此调参，再次结果应视为同一测试集的重复使用。"
+}

@@ -1,0 +1,94 @@
+{
+  "review_type": "read_only_runner_and_plan_pre_execution_review",
+  "passed_without_remaining_blocking_issue": true,
+  "no_source_or_protocol_modified_by_reviewer": true,
+  "plan_sha256": "864cf5c8efe54d8ee885b9cc848f9f9ac7cd1eb2c30b9bdb27970e5bc1a18004",
+  "source_sha256_at_review": {
+    "run_study.py": "dbbf3f8f8867018417d9985cd65bfe14ace5dc72bbd6f5b52c8c16e6f2091099",
+    "build_plan.py": "b69f548f95cb32e95a6a5278f1886a97070fd8aed2578de1c1bd5d84acd711ca",
+    "study_models.py": "57a7f1fd6d475a08dfa375be7097eefdf32c9f2c666728e3d16b34fa9fa36923"
+  },
+  "protocol_sha256": "f5f818e287bc0033afcc47f2729c27ba8194474be2430d3b9612d94b420259a6",
+  "neural_runs": 75,
+  "baseline_evaluations": 9,
+  "families": {
+    "architecture": 27,
+    "noaug": 9,
+    "unweighted": 9,
+    "preprocessing": 12,
+    "learning_curve": 18
+  },
+  "engineering_revisions_before_formal_extension_training": [
+    {
+      "issue": "only-run未知ID或仅完成子集会误写整个研究completed",
+      "resolution": "未知ID显式报错；全计划磁盘完成数不足时标subset_completed，并记录completed_total/expected_total。"
+    },
+    {
+      "issue": "baseline断点跳过曾只检查plan hash",
+      "resolution": "复用finished结果同时检查data/protocol/plan三hash及文件完整性。"
+    },
+    {
+      "issue": "数据入口没有直接核prepare审计摘要",
+      "resolution": "StudyData核study_dataset_sha256和protocol_sha256与审计一致。"
+    },
+    {
+      "issue": "神经checkpoint只检查部分版本信息",
+      "resolution": "读回同时检查data、protocol、plan hash及标签顺序。"
+    },
+    {
+      "issue": "固定绝对增强噪声对SNV和L2表示产生不等相对扰动",
+      "resolution": "四个预处理变体统一augment=False，匹配既定noaug默认CNN seed101同fold参照；正式训练前修订。"
+    }
+  ],
+  "interfaces": {
+    "input_shape": [
+      4,
+      1,
+      1024
+    ],
+    "output_shape": [
+      4,
+      12
+    ],
+    "models_synthetic_forward_backward_finite": {
+      "cnn": 320076,
+      "mlp": 660748,
+      "resnet": 1227372
+    },
+    "data_rows": 25541,
+    "global_original_index_mapping": "主NPZ全局行号映射到研究NPZ局部行号，角色按冻结索引提取。",
+    "learning_curve_default_reuse": "maps100核心CNN复用；maps60/maps80同fold、同seed、同内验证和外评价。",
+    "safe_weights_only_checkpoint": true,
+    "calibration_perfect_probability_boundary_test": "ECE/NLL/Brier为0，已在合成概率上核验。"
+  },
+  "leakage_review": {
+    "original_six_test_maps_absent_from_study_npz": true,
+    "all_models_fit_only_inner_train": true,
+    "pca_scaler_fit_only_inner_train": true,
+    "svm_C_selected_only_inner_val": true,
+    "neural_epoch_selected_only_inner_val": true,
+    "no_outer_train_refit": true,
+    "outer_eval_after_epoch_or_C_selection": true,
+    "outer_noise_robustness_does_not_select_models": true,
+    "outer_noise_draws_matched_across_architectures_and_training_seeds": true
+  },
+  "metric_review": {
+    "classes": 12,
+    "macro_f1": "外折均覆盖12类，按真实存在类平均等于12类宏平均F1。",
+    "map_mean_accuracy": "逐map准确率算术均值。",
+    "map_equal_weight_macro_f1": "像素权重为该map像素数倒数，混淆矩阵图等权后计算。",
+    "ece": "10个等宽置信度箱，按像素数加权绝对准确率-置信度差。",
+    "nll": "正确类概率截断到[1e-8,1]后负log均值。",
+    "brier": "各类平方误差求和后样本均值，非再除类别数；最大值理论为2。"
+  },
+  "scope_limits": [
+    "追加开发研究的12类共同任务不能与原6图15类测试F1直接比较。",
+    "原六图不用于任何新增模型选择或评价；第一轮结果保持原样。",
+    "不同map是否共享物理标本未知，像素数不等于独立样品数。",
+    "先平均同一外折的三个训练种子，再报告三个外折均值和折间标准差；不能把9次当9套独立测试。",
+    "预处理变体只有seed101，不能把其单种子差异当成已充分量化随机性的优势。",
+    "resume为跳过已完成run，不是恢复中断epoch/优化器状态；中断run会从头重训。",
+    "4小时限制在开始下一个run前检查，是过程软上限，单个run期间不强制终止。",
+    "仅合成CPU数据做了三架构前向反向检查；本审查未执行任何研究模型训练、GPU验证或真实外折预测。"
+  ]
+}

@@ -1,0 +1,604 @@
+{
+  "schema_version": 1,
+  "source_dataset_sha256": "d0a4382e015099558f5e392869eeda626e8f085dfe269db36141842f4a09dbaf",
+  "protocol_sha256": "f5f818e287bc0033afcc47f2729c27ba8194474be2430d3b9612d94b420259a6",
+  "source_manifest_sha256": "9fa92d8e7e75daaebfd4d53db462a359490f63e32887f24c171ee59f3ec5ddb8",
+  "study_dataset_sha256": "f760aea38fc98a71629c18fd4157dd023b4f0782f7f5cc9602d31f642a109851",
+  "map_count": 28,
+  "pixels": 25541,
+  "class_count": 12,
+  "features": 1024,
+  "dtype": "float32",
+  "labels": [
+    "acrylonitrile butadiene styrene",
+    "blank",
+    "nylon",
+    "poly (methyl methacrylate)",
+    "polyester",
+    "polyethylene",
+    "polyethylene terephthalate",
+    "polyoxymethylene",
+    "polypropylene",
+    "polystyrene",
+    "polytetrafluoroethylene",
+    "polyvinyl chloride"
+  ],
+  "eligibility_rule": "仅原28开发map中出现于至少3个map的标签；类别资格不参考原测试图或任何模型表现。",
+  "excluded_classes": [
+    {
+      "development_map_coverage": 2,
+      "development_pixels": 360,
+      "label": "polycarbonate",
+      "reason": "开发map覆盖少于3，无法支持每个外评价折都有真值的三折按图研究。"
+    },
+    {
+      "development_map_coverage": 1,
+      "development_pixels": 269,
+      "label": "polyurethane",
+      "reason": "开发map覆盖少于3，无法支持每个外评价折都有真值的三折按图研究。"
+    },
+    {
+      "development_map_coverage": 1,
+      "development_pixels": 550,
+      "label": "silicone",
+      "reason": "开发map覆盖少于3，无法支持每个外评价折都有真值的三折按图研究。"
+    }
+  ],
+  "development_maps": [
+    "Map_Env_POM_PP_PE",
+    "Map_Env_PP_PE_1",
+    "Map_Env_PP_PE_2",
+    "Map_Nylon",
+    "Map_Nylon_ABS_PMMA",
+    "Map_Nylon_POM",
+    "Map_Nylon_PTFE_POM",
+    "Map_PC_1",
+    "Map_PE",
+    "Map_PET",
+    "Map_PMMA_PC",
+    "Map_PMMA_PET",
+    "Map_PMMA_PTFE_PE",
+    "Map_POM",
+    "Map_POM_ABS",
+    "Map_PP",
+    "Map_PS",
+    "Map_PS_ABS",
+    "Map_PS_PE_PEs_1",
+    "Map_PS_PE_PEs_2",
+    "Map_PS_PTFE_POM_PMMA",
+    "Map_PTFE",
+    "Map_PU",
+    "Map_PVC_1",
+    "Map_PVC_2",
+    "Map_PVC_ABS_PEs",
+    "Map_PVC_PET",
+    "Map_Silicone_ABS"
+  ],
+  "original_test_maps_excluded": [
+    "Map_Env_PP_PTFE",
+    "Map_Nylon_PEs_PS",
+    "Map_PC_2",
+    "Map_PMMA_PET_PE_ABS",
+    "Map_PVC_PU_POM",
+    "Map_Silicone"
+  ],
+  "original_test_raw_files_opened_or_downloaded": [],
+  "original_test_rows_in_output": 0,
+  "source_feature_read_policy": "主NPZ仅对选择的开发行读取NPY数值；其余行字节跳过。源文件整体字节仅用于SHA256校验。",
+  "normalization_fitted_across_spectra": false,
+  "variants": {
+    "X_default": "精确复用冻结主NPZ开发行：SG(11,3)→端点线性基线→逐谱SNV",
+    "X_no_sg": "插值→端点线性基线→逐谱SNV，关闭SG",
+    "X_no_baseline": "插值→SG(11,3)→逐谱SNV，不扣除端点线性基线",
+    "X_l2": "插值→SG(11,3)→端点线性基线→逐谱L2，不减均值",
+    "X_quadratic": "插值→SG(11,3)→全频轴二阶最小二乘基线→逐谱SNV"
+  },
+  "variant_ranges": {
+    "X_default": {
+      "minimum": -4.60581111907959,
+      "maximum": 14.852551460266113
+    },
+    "X_no_sg": {
+      "minimum": -4.867069244384766,
+      "maximum": 29.43366241455078
+    },
+    "X_no_baseline": {
+      "minimum": -4.852969169616699,
+      "maximum": 14.631487846374512
+    },
+    "X_l2": {
+      "minimum": -0.12346155941486359,
+      "maximum": 0.4611223340034485
+    },
+    "X_quadratic": {
+      "minimum": -6.628664493560791,
+      "maximum": 14.856863021850586
+    }
+  },
+  "common_axis_cm_inverse": [
+    710.1758,
+    1827.0
+  ],
+  "per_map": [
+    {
+      "map_id": "Map_Env_POM_PP_PE",
+      "pixels": 2052,
+      "raw_file_md5": "457ad86d3ea380bf2b20786957364f73",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 967,
+        "polyoxymethylene": 431,
+        "polypropylene": 363,
+        "polyethylene": 291
+      }
+    },
+    {
+      "map_id": "Map_Env_PP_PE_1",
+      "pixels": 1484,
+      "raw_file_md5": "0100b4f0905837e14e66a1e8c8634aed",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 745,
+        "polypropylene": 416,
+        "polyethylene": 323
+      }
+    },
+    {
+      "map_id": "Map_Env_PP_PE_2",
+      "pixels": 960,
+      "raw_file_md5": "c60d955986804cd8f3a92c5e29f77c1a",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 520,
+        "polypropylene": 236,
+        "polyethylene": 204
+      }
+    },
+    {
+      "map_id": "Map_Nylon",
+      "pixels": 484,
+      "raw_file_md5": "afb6dd78507aff8103a02b227762887c",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "nylon": 279,
+        "blank": 205
+      }
+    },
+    {
+      "map_id": "Map_Nylon_ABS_PMMA",
+      "pixels": 840,
+      "raw_file_md5": "09f29eaa80f8b22cc274bd529d548239",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 546,
+        "nylon": 142,
+        "acrylonitrile butadiene styrene": 84,
+        "poly (methyl methacrylate)": 68
+      }
+    },
+    {
+      "map_id": "Map_Nylon_POM",
+      "pixels": 644,
+      "raw_file_md5": "b9a4782a500957393d976820fa6f4381",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 369,
+        "polyoxymethylene": 138,
+        "nylon": 137
+      }
+    },
+    {
+      "map_id": "Map_Nylon_PTFE_POM",
+      "pixels": 2090,
+      "raw_file_md5": "8655f68a7c3e92824c4108f309a55156",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 739,
+        "polyoxymethylene": 552,
+        "polytetrafluoroethylene": 416,
+        "nylon": 383
+      }
+    },
+    {
+      "map_id": "Map_PC_1",
+      "pixels": 276,
+      "raw_file_md5": "e88aa4240a6349f321b8f524f41c5208",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 276
+      }
+    },
+    {
+      "map_id": "Map_PE",
+      "pixels": 899,
+      "raw_file_md5": "bc2edd0bde62e9aedcdcefe426f15d7b",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 581,
+        "polyethylene": 318
+      }
+    },
+    {
+      "map_id": "Map_PET",
+      "pixels": 532,
+      "raw_file_md5": "3d2bdd0ba3b295c6bb76866416af60d0",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 348,
+        "polyethylene terephthalate": 184
+      }
+    },
+    {
+      "map_id": "Map_PMMA_PC",
+      "pixels": 808,
+      "raw_file_md5": "64d9ac1e4655b1e91cb75988cb1952b1",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 601,
+        "poly (methyl methacrylate)": 207
+      }
+    },
+    {
+      "map_id": "Map_PMMA_PET",
+      "pixels": 672,
+      "raw_file_md5": "583a632eb62308fa9667c9d83cfd9bb3",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 355,
+        "polyethylene terephthalate": 197,
+        "poly (methyl methacrylate)": 120
+      }
+    },
+    {
+      "map_id": "Map_PMMA_PTFE_PE",
+      "pixels": 1560,
+      "raw_file_md5": "d25be8efb26dfb4a75ab28a99ab84da3",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 961,
+        "poly (methyl methacrylate)": 264,
+        "polyethylene": 177,
+        "polytetrafluoroethylene": 158
+      }
+    },
+    {
+      "map_id": "Map_POM",
+      "pixels": 648,
+      "raw_file_md5": "760a3270fcffad16e2212101fab10090",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 385,
+        "polyoxymethylene": 263
+      }
+    },
+    {
+      "map_id": "Map_POM_ABS",
+      "pixels": 483,
+      "raw_file_md5": "3906438af7333fef378dd225626a9003",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 280,
+        "acrylonitrile butadiene styrene": 103,
+        "polyoxymethylene": 100
+      }
+    },
+    {
+      "map_id": "Map_PP",
+      "pixels": 620,
+      "raw_file_md5": "71f0b77723cdd83dfe5b771afa1e0ef9",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "polypropylene": 328,
+        "blank": 292
+      }
+    },
+    {
+      "map_id": "Map_PS",
+      "pixels": 672,
+      "raw_file_md5": "15333ea9102c1c34fa3fd50d371ccb18",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 374,
+        "polystyrene": 298
+      }
+    },
+    {
+      "map_id": "Map_PS_ABS",
+      "pixels": 672,
+      "raw_file_md5": "ae5869c967b6f5737a0d6fad462a97e8",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 277,
+        "acrylonitrile butadiene styrene": 225,
+        "polystyrene": 170
+      }
+    },
+    {
+      "map_id": "Map_PS_PE_PEs_1",
+      "pixels": 896,
+      "raw_file_md5": "f372bd6ec804eec9696ef120626ddfb7",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 578,
+        "polyester": 123,
+        "polystyrene": 108,
+        "polyethylene": 87
+      }
+    },
+    {
+      "map_id": "Map_PS_PE_PEs_2",
+      "pixels": 918,
+      "raw_file_md5": "752cac0ad8efc7e2d31e2eec8e8660e6",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 365,
+        "polyethylene": 204,
+        "polystyrene": 194,
+        "polyester": 155
+      }
+    },
+    {
+      "map_id": "Map_PS_PTFE_POM_PMMA",
+      "pixels": 1456,
+      "raw_file_md5": "e56ea675c255d7ccd60a91fa3062cf24",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 507,
+        "polytetrafluoroethylene": 263,
+        "polystyrene": 259,
+        "poly (methyl methacrylate)": 233,
+        "polyoxymethylene": 194
+      }
+    },
+    {
+      "map_id": "Map_PTFE",
+      "pixels": 462,
+      "raw_file_md5": "407d58d2f2482ae8377a33c6fc63b6d9",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 243,
+        "polytetrafluoroethylene": 219
+      }
+    },
+    {
+      "map_id": "Map_PU",
+      "pixels": 355,
+      "raw_file_md5": "e1ee57bd86a15656b3bb5762bb429249",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 355
+      }
+    },
+    {
+      "map_id": "Map_PVC_1",
+      "pixels": 621,
+      "raw_file_md5": "7ff6d4c7f862f694351ef43efa6ea295",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "polyvinyl chloride": 315,
+        "blank": 306
+      }
+    },
+    {
+      "map_id": "Map_PVC_2",
+      "pixels": 572,
+      "raw_file_md5": "3b46c819d7b955b911e240434d17942f",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "polyvinyl chloride": 322,
+        "blank": 250
+      }
+    },
+    {
+      "map_id": "Map_PVC_ABS_PEs",
+      "pixels": 992,
+      "raw_file_md5": "e40442070d4dbee658add07db3a5d75c",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 552,
+        "polyvinyl chloride": 206,
+        "polyester": 127,
+        "acrylonitrile butadiene styrene": 107
+      }
+    },
+    {
+      "map_id": "Map_PVC_PET",
+      "pixels": 1295,
+      "raw_file_md5": "abe6e310c5d28c8de95d9051e96b9e6b",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 743,
+        "polyvinyl chloride": 336,
+        "polyethylene terephthalate": 216
+      }
+    },
+    {
+      "map_id": "Map_Silicone_ABS",
+      "pixels": 1578,
+      "raw_file_md5": "1c1bc726be57b465eebcf92c482b1f51",
+      "default_recalculation_max_abs_difference": 0.0,
+      "labels": {
+        "blank": 846,
+        "acrylonitrile butadiene styrene": 732
+      }
+    }
+  ],
+  "downloads": [
+    {
+      "map_id": "Map_Env_POM_PP_PE",
+      "file_id": 969500,
+      "status": "verified",
+      "md5": "457ad86d3ea380bf2b20786957364f73"
+    },
+    {
+      "map_id": "Map_Env_PP_PE_1",
+      "file_id": 969503,
+      "status": "verified",
+      "md5": "0100b4f0905837e14e66a1e8c8634aed"
+    },
+    {
+      "map_id": "Map_Env_PP_PE_2",
+      "file_id": 969481,
+      "status": "verified",
+      "md5": "c60d955986804cd8f3a92c5e29f77c1a"
+    },
+    {
+      "map_id": "Map_PS_PE_PEs_1",
+      "file_id": 969518,
+      "status": "verified",
+      "md5": "f372bd6ec804eec9696ef120626ddfb7"
+    },
+    {
+      "map_id": "Map_Nylon",
+      "file_id": 969523,
+      "status": "verified",
+      "md5": "afb6dd78507aff8103a02b227762887c"
+    },
+    {
+      "map_id": "Map_Nylon_ABS_PMMA",
+      "file_id": 969483,
+      "status": "verified",
+      "md5": "09f29eaa80f8b22cc274bd529d548239"
+    },
+    {
+      "map_id": "Map_Nylon_POM",
+      "file_id": 969525,
+      "status": "verified",
+      "md5": "b9a4782a500957393d976820fa6f4381"
+    },
+    {
+      "map_id": "Map_Nylon_PTFE_POM",
+      "file_id": 969491,
+      "status": "verified",
+      "md5": "8655f68a7c3e92824c4108f309a55156"
+    },
+    {
+      "map_id": "Map_PC_1",
+      "file_id": 969473,
+      "status": "verified",
+      "md5": "e88aa4240a6349f321b8f524f41c5208"
+    },
+    {
+      "map_id": "Map_PE",
+      "file_id": 969519,
+      "status": "verified",
+      "md5": "bc2edd0bde62e9aedcdcefe426f15d7b"
+    },
+    {
+      "map_id": "Map_PET",
+      "file_id": 969485,
+      "status": "verified",
+      "md5": "3d2bdd0ba3b295c6bb76866416af60d0"
+    },
+    {
+      "map_id": "Map_PMMA_PC",
+      "file_id": 969489,
+      "status": "verified",
+      "md5": "64d9ac1e4655b1e91cb75988cb1952b1"
+    },
+    {
+      "map_id": "Map_PMMA_PET",
+      "file_id": 969472,
+      "status": "verified",
+      "md5": "583a632eb62308fa9667c9d83cfd9bb3"
+    },
+    {
+      "map_id": "Map_PMMA_PTFE_PE",
+      "file_id": 969495,
+      "status": "verified",
+      "md5": "d25be8efb26dfb4a75ab28a99ab84da3"
+    },
+    {
+      "map_id": "Map_POM",
+      "file_id": 969520,
+      "status": "verified",
+      "md5": "760a3270fcffad16e2212101fab10090"
+    },
+    {
+      "map_id": "Map_POM_ABS",
+      "file_id": 969516,
+      "status": "verified",
+      "md5": "3906438af7333fef378dd225626a9003"
+    },
+    {
+      "map_id": "Map_PP",
+      "file_id": 969496,
+      "status": "verified",
+      "md5": "71f0b77723cdd83dfe5b771afa1e0ef9"
+    },
+    {
+      "map_id": "Map_PS",
+      "file_id": 969492,
+      "status": "verified",
+      "md5": "15333ea9102c1c34fa3fd50d371ccb18"
+    },
+    {
+      "map_id": "Map_PS_ABS",
+      "file_id": 969502,
+      "status": "verified",
+      "md5": "ae5869c967b6f5737a0d6fad462a97e8"
+    },
+    {
+      "map_id": "Map_PS_PE_PEs_2",
+      "file_id": 969522,
+      "status": "verified",
+      "md5": "752cac0ad8efc7e2d31e2eec8e8660e6"
+    },
+    {
+      "map_id": "Map_PS_PTFE_POM_PMMA",
+      "file_id": 969480,
+      "status": "verified",
+      "md5": "e56ea675c255d7ccd60a91fa3062cf24"
+    },
+    {
+      "map_id": "Map_PTFE",
+      "file_id": 969504,
+      "status": "verified",
+      "md5": "407d58d2f2482ae8377a33c6fc63b6d9"
+    },
+    {
+      "map_id": "Map_PU",
+      "file_id": 969534,
+      "status": "verified",
+      "md5": "e1ee57bd86a15656b3bb5762bb429249"
+    },
+    {
+      "map_id": "Map_PVC_1",
+      "file_id": 969479,
+      "status": "verified",
+      "md5": "7ff6d4c7f862f694351ef43efa6ea295"
+    },
+    {
+      "map_id": "Map_PVC_2",
+      "file_id": 969538,
+      "status": "verified",
+      "md5": "3b46c819d7b955b911e240434d17942f"
+    },
+    {
+      "map_id": "Map_PVC_ABS_PEs",
+      "file_id": 969494,
+      "status": "verified",
+      "md5": "e40442070d4dbee658add07db3a5d75c"
+    },
+    {
+      "map_id": "Map_PVC_PET",
+      "file_id": 969493,
+      "status": "verified",
+      "md5": "abe6e310c5d28c8de95d9051e96b9e6b"
+    },
+    {
+      "map_id": "Map_Silicone_ABS",
+      "file_id": 969477,
+      "status": "verified",
+      "md5": "1c1bc726be57b465eebcf92c482b1f51"
+    }
+  ],
+  "original_indices_semantics": "冻结主data/processed/dataset.npz的全局行号，保持升序，不是本文件的局部行号",
+  "rows_dropped_by_this_script": 0,
+  "runtime_seconds": 33.82906730000104,
+  "limitations": [
+    "本研究只有开发图，不重用原6幅测试图来挑选新增模型。",
+    "共同类别研究为12类含背景，不能与原15类独立测试分数直接比较。",
+    "图间物理标本是否独立未知；逐谱处理不等于新增独立样品。"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "change": "map_split CSV显式使用LF行尾，保证Windows重新生成后与云端模型的split_sha256一致。",
+  "training_or_split_membership_changed": false,
+  "frozen_original_windows_sha256": "2daa3e40e9ca090045fa41c9599fc02b270b9e5c3c35a54c7b63b928da549adb",
+  "official_linux_split_sha256": "fe88a96ca11a03c72bbc3d47bbc80ecacd335bac0f78018e31d1f4990ba28557",
+  "new_split_script_sha256": "900d1d073bd8506e36e4c841c74dfc1cb0a84a8c53cb44ede954caf6992a8971"
+}

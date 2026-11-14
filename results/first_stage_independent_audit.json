@@ -1,0 +1,1492 @@
+{
+  "passed": true,
+  "method": "手工由混淆矩阵重算，无调用项目metrics或sklearn.metrics；按map_id+pixel_index验证逐行真值。",
+  "prediction_rows": 6399,
+  "truth_join_matches": 6399,
+  "unique_prediction_keys": 6399,
+  "dataset_sha256": "d0a4382e015099558f5e392869eeda626e8f085dfe269db36141842f4a09dbaf",
+  "split_sha256_actual_bytes": "fe88a96ca11a03c72bbc3d47bbc80ecacd335bac0f78018e31d1f4990ba28557",
+  "split_sha256_canonical_lf": "fe88a96ca11a03c72bbc3d47bbc80ecacd335bac0f78018e31d1f4990ba28557",
+  "windows_crlf_frozen_sha256": "2daa3e40e9ca090045fa41c9599fc02b270b9e5c3c35a54c7b63b928da549adb",
+  "split_semantics_equal_to_frozen": true,
+  "only_line_endings_explain_hash_change": true,
+  "metrics_max_abs_difference": 9.992007221626409e-16,
+  "metrics": [
+    {
+      "model": "cosine_centroid",
+      "accuracy": 0.6486951086107204,
+      "macro_f1_present": 0.44706306850279864,
+      "balanced_accuracy": 0.5301334760814419,
+      "map_mean_accuracy": 0.7226947718277428,
+      "map_equal_weight_macro_f1": 0.4941828474194784
+    },
+    {
+      "model": "pca64_linear_svm",
+      "accuracy": 0.7252695733708392,
+      "macro_f1_present": 0.5873080848100702,
+      "balanced_accuracy": 0.6773341412724234,
+      "map_mean_accuracy": 0.7883735929958785,
+      "map_equal_weight_macro_f1": 0.6215632194140784
+    },
+    {
+      "model": "cnn_aug_seed42",
+      "accuracy": 0.698234099077981,
+      "macro_f1_present": 0.553011740094165,
+      "balanced_accuracy": 0.6529305513490912,
+      "map_mean_accuracy": 0.7725381516779517,
+      "map_equal_weight_macro_f1": 0.5982112867177432
+    },
+    {
+      "model": "cnn_aug_seed43",
+      "accuracy": 0.7088607594936709,
+      "macro_f1_present": 0.5756829642744248,
+      "balanced_accuracy": 0.6671742083727261,
+      "map_mean_accuracy": 0.7759909667691693,
+      "map_equal_weight_macro_f1": 0.6090990631645855
+    },
+    {
+      "model": "cnn_aug_seed44",
+      "accuracy": 0.7077668385685263,
+      "macro_f1_present": 0.5887155213548325,
+      "balanced_accuracy": 0.6689598519501037,
+      "map_mean_accuracy": 0.774709757696747,
+      "map_equal_weight_macro_f1": 0.6147852259042571
+    },
+    {
+      "model": "cnn_noaug_seed42",
+      "accuracy": 0.7160493827160493,
+      "macro_f1_present": 0.5733306590862686,
+      "balanced_accuracy": 0.6687674678504357,
+      "map_mean_accuracy": 0.7796821683454859,
+      "map_equal_weight_macro_f1": 0.6071794341842188
+    }
+  ],
+  "seed_summary": {
+    "accuracy": {
+      "mean": 0.704953899046726,
+      "sample_std": 0.005845164622367552
+    },
+    "macro_f1_present": {
+      "mean": 0.5724700752411408,
+      "sample_std": 0.018067429010032006
+    },
+    "map_mean_accuracy": {
+      "mean": 0.7744129587146227,
+      "sample_std": 0.0017454369769136883
+    },
+    "map_equal_weight_macro_f1": {
+      "mean": 0.607365191928862,
+      "sample_std": 0.008421911726925064
+    }
+  },
+  "per_map_metrics": [
+    {
+      "model": "cosine_centroid",
+      "map_id": "Map_Env_PP_PTFE",
+      "pixels": 2280,
+      "accuracy": 0.47675438596491226,
+      "macro_f1_present": 0.47476340960057484,
+      "balanced_accuracy": 0.43552546079002136
+    },
+    {
+      "model": "cosine_centroid",
+      "map_id": "Map_Nylon_PEs_PS",
+      "pixels": 750,
+      "accuracy": 0.844,
+      "macro_f1_present": 0.9062284991378567,
+      "balanced_accuracy": 0.8395006013605188
+    },
+    {
+      "model": "cosine_centroid",
+      "map_id": "Map_PC_2",
+      "pixels": 1190,
+      "accuracy": 0.5042016806722689,
+      "macro_f1_present": 0.4893964110929853,
+      "balanced_accuracy": 0.49019607843137253
+    },
+    {
+      "model": "cosine_centroid",
+      "map_id": "Map_PMMA_PET_PE_ABS",
+      "pixels": 676,
+      "accuracy": 0.8668639053254438,
+      "macro_f1_present": 0.8561709887058848,
+      "balanced_accuracy": 0.7993692174046004
+    },
+    {
+      "model": "cosine_centroid",
+      "map_id": "Map_PVC_PU_POM",
+      "pixels": 720,
+      "accuracy": 0.675,
+      "macro_f1_present": 0.33512047877216417,
+      "balanced_accuracy": 0.31014148764148763
+    },
+    {
+      "model": "cosine_centroid",
+      "map_id": "Map_Silicone",
+      "pixels": 783,
+      "accuracy": 0.9693486590038314,
+      "macro_f1_present": 0.9734992618468384,
+      "balanced_accuracy": 0.9622641509433962
+    },
+    {
+      "model": "pca64_linear_svm",
+      "map_id": "Map_Env_PP_PTFE",
+      "pixels": 2280,
+      "accuracy": 0.6074561403508771,
+      "macro_f1_present": 0.6583353548282408,
+      "balanced_accuracy": 0.6214834938329173
+    },
+    {
+      "model": "pca64_linear_svm",
+      "map_id": "Map_Nylon_PEs_PS",
+      "pixels": 750,
+      "accuracy": 0.9613333333333334,
+      "macro_f1_present": 0.9734605244733263,
+      "balanced_accuracy": 0.9616673416220702
+    },
+    {
+      "model": "pca64_linear_svm",
+      "map_id": "Map_PC_2",
+      "pixels": 1190,
+      "accuracy": 0.5050420168067227,
+      "macro_f1_present": 0.49393384254201966,
+      "balanced_accuracy": 0.49106113033448673
+    },
+    {
+      "model": "pca64_linear_svm",
+      "map_id": "Map_PMMA_PET_PE_ABS",
+      "pixels": 676,
+      "accuracy": 0.9275147928994083,
+      "macro_f1_present": 0.9218004751522251,
+      "balanced_accuracy": 0.8994321325136282
+    },
+    {
+      "model": "pca64_linear_svm",
+      "map_id": "Map_PVC_PU_POM",
+      "pixels": 720,
+      "accuracy": 0.7416666666666667,
+      "macro_f1_present": 0.48432894449143277,
+      "balanced_accuracy": 0.47406040656040654
+    },
+    {
+      "model": "pca64_linear_svm",
+      "map_id": "Map_Silicone",
+      "pixels": 783,
+      "accuracy": 0.9872286079182631,
+      "macro_f1_present": 0.9888076513475874,
+      "balanced_accuracy": 0.9842767295597484
+    },
+    {
+      "model": "cnn_aug_seed42",
+      "map_id": "Map_Env_PP_PTFE",
+      "pixels": 2280,
+      "accuracy": 0.5407894736842105,
+      "macro_f1_present": 0.5979785505719116,
+      "balanced_accuracy": 0.5413124497356278
+    },
+    {
+      "model": "cnn_aug_seed42",
+      "map_id": "Map_Nylon_PEs_PS",
+      "pixels": 750,
+      "accuracy": 0.952,
+      "macro_f1_present": 0.9686563544134981,
+      "balanced_accuracy": 0.9516612978467167
+    },
+    {
+      "model": "cnn_aug_seed42",
+      "map_id": "Map_PC_2",
+      "pixels": 1190,
+      "accuracy": 0.5042016806722689,
+      "macro_f1_present": 0.4930156121610518,
+      "balanced_accuracy": 0.49019607843137253
+    },
+    {
+      "model": "cnn_aug_seed42",
+      "map_id": "Map_PMMA_PET_PE_ABS",
+      "pixels": 676,
+      "accuracy": 0.9201183431952663,
+      "macro_f1_present": 0.9181236875664152,
+      "balanced_accuracy": 0.8933266542538962
+    },
+    {
+      "model": "cnn_aug_seed42",
+      "map_id": "Map_PVC_PU_POM",
+      "pixels": 720,
+      "accuracy": 0.7347222222222223,
+      "macro_f1_present": 0.47361059348061646,
+      "balanced_accuracy": 0.45804689304689306
+    },
+    {
+      "model": "cnn_aug_seed42",
+      "map_id": "Map_Silicone",
+      "pixels": 783,
+      "accuracy": 0.9833971902937421,
+      "macro_f1_present": 0.9877050869816143,
+      "balanced_accuracy": 0.9800568066544938
+    },
+    {
+      "model": "cnn_aug_seed43",
+      "map_id": "Map_Env_PP_PTFE",
+      "pixels": 2280,
+      "accuracy": 0.575,
+      "macro_f1_present": 0.6359861402545639,
+      "balanced_accuracy": 0.5843486574204274
+    },
+    {
+      "model": "cnn_aug_seed43",
+      "map_id": "Map_Nylon_PEs_PS",
+      "pixels": 750,
+      "accuracy": 0.9266666666666666,
+      "macro_f1_present": 0.9567756458342791,
+      "balanced_accuracy": 0.9317104695198347
+    },
+    {
+      "model": "cnn_aug_seed43",
+      "map_id": "Map_PC_2",
+      "pixels": 1190,
+      "accuracy": 0.5050420168067227,
+      "macro_f1_present": 0.4947427278778048,
+      "balanced_accuracy": 0.49106113033448673
+    },
+    {
+      "model": "cnn_aug_seed43",
+      "map_id": "Map_PMMA_PET_PE_ABS",
+      "pixels": 676,
+      "accuracy": 0.9201183431952663,
+      "macro_f1_present": 0.9139795036894156,
+      "balanced_accuracy": 0.8961331769443819
+    },
+    {
+      "model": "cnn_aug_seed43",
+      "map_id": "Map_PVC_PU_POM",
+      "pixels": 720,
+      "accuracy": 0.7444444444444445,
+      "macro_f1_present": 0.48940597842289746,
+      "balanced_accuracy": 0.48453973203973205
+    },
+    {
+      "model": "cnn_aug_seed43",
+      "map_id": "Map_Silicone",
+      "pixels": 783,
+      "accuracy": 0.9846743295019157,
+      "macro_f1_present": 0.9885648961821949,
+      "balanced_accuracy": 0.9826232501521607
+    },
+    {
+      "model": "cnn_aug_seed44",
+      "map_id": "Map_Env_PP_PTFE",
+      "pixels": 2280,
+      "accuracy": 0.5745614035087719,
+      "macro_f1_present": 0.624893627009918,
+      "balanced_accuracy": 0.587877026444963
+    },
+    {
+      "model": "cnn_aug_seed44",
+      "map_id": "Map_Nylon_PEs_PS",
+      "pixels": 750,
+      "accuracy": 0.9213333333333333,
+      "macro_f1_present": 0.9569349759369221,
+      "balanced_accuracy": 0.9261294492621523
+    },
+    {
+      "model": "cnn_aug_seed44",
+      "map_id": "Map_PC_2",
+      "pixels": 1190,
+      "accuracy": 0.5042016806722689,
+      "macro_f1_present": 0.49382716049382713,
+      "balanced_accuracy": 0.49019607843137253
+    },
+    {
+      "model": "cnn_aug_seed44",
+      "map_id": "Map_PMMA_PET_PE_ABS",
+      "pixels": 676,
+      "accuracy": 0.9215976331360947,
+      "macro_f1_present": 0.9181574481037756,
+      "balanced_accuracy": 0.8981133749641839
+    },
+    {
+      "model": "cnn_aug_seed44",
+      "map_id": "Map_PVC_PU_POM",
+      "pixels": 720,
+      "accuracy": 0.7444444444444445,
+      "macro_f1_present": 0.4883240895826427,
+      "balanced_accuracy": 0.48453973203973205
+    },
+    {
+      "model": "cnn_aug_seed44",
+      "map_id": "Map_Silicone",
+      "pixels": 783,
+      "accuracy": 0.9821200510855683,
+      "macro_f1_present": 0.987478001429907,
+      "balanced_accuracy": 0.9794785960641104
+    },
+    {
+      "model": "cnn_noaug_seed42",
+      "map_id": "Map_Env_PP_PTFE",
+      "pixels": 2280,
+      "accuracy": 0.5947368421052631,
+      "macro_f1_present": 0.6426057263393358,
+      "balanced_accuracy": 0.6093298541246699
+    },
+    {
+      "model": "cnn_noaug_seed42",
+      "map_id": "Map_Nylon_PEs_PS",
+      "pixels": 750,
+      "accuracy": 0.9333333333333333,
+      "macro_f1_present": 0.9596670554305822,
+      "balanced_accuracy": 0.9315991460540577
+    },
+    {
+      "model": "cnn_noaug_seed42",
+      "map_id": "Map_PC_2",
+      "pixels": 1190,
+      "accuracy": 0.5033613445378151,
+      "macro_f1_present": 0.49098360655737705,
+      "balanced_accuracy": 0.48937908496732024
+    },
+    {
+      "model": "cnn_noaug_seed42",
+      "map_id": "Map_PMMA_PET_PE_ABS",
+      "pixels": 676,
+      "accuracy": 0.9215976331360947,
+      "macro_f1_present": 0.9075847736370125,
+      "balanced_accuracy": 0.8940730286260814
+    },
+    {
+      "model": "cnn_noaug_seed42",
+      "map_id": "Map_PVC_PU_POM",
+      "pixels": 720,
+      "accuracy": 0.7416666666666667,
+      "macro_f1_present": 0.4856939574122071,
+      "balanced_accuracy": 0.4843497343497344
+    },
+    {
+      "model": "cnn_noaug_seed42",
+      "map_id": "Map_Silicone",
+      "pixels": 783,
+      "accuracy": 0.9833971902937421,
+      "macro_f1_present": 0.9871964513430871,
+      "balanced_accuracy": 0.9805538648813147
+    }
+  ],
+  "training_protocol_unchanged": true,
+  "training_runs": [
+    {
+      "model": "cnn_aug_seed42",
+      "epochs_completed": 16,
+      "best_validation_macro_f1": 0.9509420692525633,
+      "runtime_seconds": 13.351913578808308,
+      "gpu": "NVIDIA GeForce RTX 3090",
+      "torch_version": "2.8.0+cu128",
+      "best_checkpoint_epoch": 4
+    },
+    {
+      "model": "cnn_aug_seed43",
+      "epochs_completed": 23,
+      "best_validation_macro_f1": 0.9516179204899848,
+      "runtime_seconds": 17.634713761508465,
+      "gpu": "NVIDIA GeForce RTX 3090",
+      "torch_version": "2.8.0+cu128",
+      "best_checkpoint_epoch": 11
+    },
+    {
+      "model": "cnn_aug_seed44",
+      "epochs_completed": 22,
+      "best_validation_macro_f1": 0.9545924906935342,
+      "runtime_seconds": 15.808077342808247,
+      "gpu": "NVIDIA GeForce RTX 3090",
+      "torch_version": "2.8.0+cu128",
+      "best_checkpoint_epoch": 10
+    },
+    {
+      "model": "cnn_noaug_seed42",
+      "epochs_completed": 39,
+      "best_validation_macro_f1": 0.9557902104567695,
+      "runtime_seconds": 29.248055279254913,
+      "gpu": "NVIDIA GeForce RTX 3090",
+      "torch_version": "2.8.0+cu128",
+      "best_checkpoint_epoch": 27
+    }
+  ],
+  "checkpoint_and_model_hashes_match": {
+    "cnn_aug_seed42": "ea960b841373c86e96fd95e7a8b848c5ca3a73cef8ff096ab109a0c8b17a719f",
+    "cnn_aug_seed43": "6cafe7dd7832db39805be4b739323d6603e375b292dbe3b8ce2e3cab56c05c6d",
+    "cnn_aug_seed44": "851b27df44c6fe31d2002754ab61a36c7e2b4eea40f9a50a3c39bb72a0359be5",
+    "cnn_noaug_seed42": "9dd00b4fe313abbe35cedfd1649327bce579771883ebb806414410c28a81110d",
+    "cosine_centroid": "c5f93ac56c7dd6d447abfae044b6df82ea3ee2ab6f01e539d1d6830beefd3dcb",
+    "pca64_linear_svm": "a2c695aed6f8c8832b74026873709360e358a5e5b80d07bb03a9207225e9a636"
+  },
+  "conclusions": {
+    "svm_minus_cnn_mean_macro_f1": 0.014838009568929444,
+    "noaug_minus_aug_seed42_macro_f1": 0.020318918992103585,
+    "worst_maps_svm": [
+      {
+        "model": "pca64_linear_svm",
+        "map_id": "Map_PC_2",
+        "pixels": 1190,
+        "accuracy": 0.5050420168067227,
+        "macro_f1_present": 0.49393384254201966,
+        "balanced_accuracy": 0.49106113033448673
+      },
+      {
+        "model": "pca64_linear_svm",
+        "map_id": "Map_Env_PP_PTFE",
+        "pixels": 2280,
+        "accuracy": 0.6074561403508771,
+        "macro_f1_present": 0.6583353548282408,
+        "balanced_accuracy": 0.6214834938329173
+      },
+      {
+        "model": "pca64_linear_svm",
+        "map_id": "Map_PVC_PU_POM",
+        "pixels": 720,
+        "accuracy": 0.7416666666666667,
+        "macro_f1_present": 0.48432894449143277,
+        "balanced_accuracy": 0.47406040656040654
+      },
+      {
+        "model": "pca64_linear_svm",
+        "map_id": "Map_PMMA_PET_PE_ABS",
+        "pixels": 676,
+        "accuracy": 0.9275147928994083,
+        "macro_f1_present": 0.9218004751522251,
+        "balanced_accuracy": 0.8994321325136282
+      },
+      {
+        "model": "pca64_linear_svm",
+        "map_id": "Map_Nylon_PEs_PS",
+        "pixels": 750,
+        "accuracy": 0.9613333333333334,
+        "macro_f1_present": 0.9734605244733263,
+        "balanced_accuracy": 0.9616673416220702
+      },
+      {
+        "model": "pca64_linear_svm",
+        "map_id": "Map_Silicone",
+        "pixels": 783,
+        "accuracy": 0.9872286079182631,
+        "macro_f1_present": 0.9888076513475874,
+        "balanced_accuracy": 0.9842767295597484
+      }
+    ],
+    "worst_maps_cnn_seed42": [
+      {
+        "model": "cnn_aug_seed42",
+        "map_id": "Map_PC_2",
+        "pixels": 1190,
+        "accuracy": 0.5042016806722689,
+        "macro_f1_present": 0.4930156121610518,
+        "balanced_accuracy": 0.49019607843137253
+      },
+      {
+        "model": "cnn_aug_seed42",
+        "map_id": "Map_Env_PP_PTFE",
+        "pixels": 2280,
+        "accuracy": 0.5407894736842105,
+        "macro_f1_present": 0.5979785505719116,
+        "balanced_accuracy": 0.5413124497356278
+      },
+      {
+        "model": "cnn_aug_seed42",
+        "map_id": "Map_PVC_PU_POM",
+        "pixels": 720,
+        "accuracy": 0.7347222222222223,
+        "macro_f1_present": 0.47361059348061646,
+        "balanced_accuracy": 0.45804689304689306
+      },
+      {
+        "model": "cnn_aug_seed42",
+        "map_id": "Map_PMMA_PET_PE_ABS",
+        "pixels": 676,
+        "accuracy": 0.9201183431952663,
+        "macro_f1_present": 0.9181236875664152,
+        "balanced_accuracy": 0.8933266542538962
+      },
+      {
+        "model": "cnn_aug_seed42",
+        "map_id": "Map_Nylon_PEs_PS",
+        "pixels": 750,
+        "accuracy": 0.952,
+        "macro_f1_present": 0.9686563544134981,
+        "balanced_accuracy": 0.9516612978467167
+      },
+      {
+        "model": "cnn_aug_seed42",
+        "map_id": "Map_Silicone",
+        "pixels": 783,
+        "accuracy": 0.9833971902937421,
+        "macro_f1_present": 0.9877050869816143,
+        "balanced_accuracy": 0.9800568066544938
+      }
+    ],
+    "worst_classes_svm": [
+      {
+        "label": "polyurethane",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 78.0,
+        "predicted": 102.0
+      },
+      {
+        "label": "polycarbonate",
+        "precision": 0.3333333333333333,
+        "recall": 0.0017301038062283738,
+        "f1": 0.0034423407917383822,
+        "support": 578.0,
+        "predicted": 3.0
+      },
+      {
+        "label": "polyvinyl chloride",
+        "precision": 0.018018018018018018,
+        "recall": 0.02,
+        "f1": 0.018957345971563982,
+        "support": 100.0,
+        "predicted": 111.0
+      },
+      {
+        "label": "polypropylene",
+        "precision": 0.625,
+        "recall": 0.04920049200492005,
+        "f1": 0.09122006841505131,
+        "support": 813.0,
+        "predicted": 64.0
+      },
+      {
+        "label": "polyethylene",
+        "precision": 0.05791505791505792,
+        "recall": 0.7758620689655172,
+        "f1": 0.10778443113772455,
+        "support": 58.0,
+        "predicted": 777.0
+      },
+      {
+        "label": "silicone",
+        "precision": 0.3556581986143187,
+        "recall": 0.9685534591194969,
+        "f1": 0.5202702702702703,
+        "support": 318.0,
+        "predicted": 866.0
+      }
+    ],
+    "worst_classes_cnn_seed42": [
+      {
+        "label": "polycarbonate",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 578.0,
+        "predicted": 0.0
+      },
+      {
+        "label": "polyurethane",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 78.0,
+        "predicted": 112.0
+      },
+      {
+        "label": "polyvinyl chloride",
+        "precision": 0.004366812227074236,
+        "recall": 0.01,
+        "f1": 0.0060790273556231,
+        "support": 100.0,
+        "predicted": 229.0
+      },
+      {
+        "label": "polypropylene",
+        "precision": 0.42857142857142855,
+        "recall": 0.02214022140221402,
+        "f1": 0.042105263157894736,
+        "support": 813.0,
+        "predicted": 42.0
+      },
+      {
+        "label": "polyethylene",
+        "precision": 0.06401137980085349,
+        "recall": 0.7758620689655172,
+        "f1": 0.11826544021024968,
+        "support": 58.0,
+        "predicted": 703.0
+      },
+      {
+        "label": "silicone",
+        "precision": 0.3554006968641115,
+        "recall": 0.9622641509433962,
+        "f1": 0.5190839694656488,
+        "support": 318.0,
+        "predicted": 861.0
+      }
+    ],
+    "interpretation": "本次固定跨map测试中SVM总体优于增强CNN三种子均值；无证据证明CNN或增强更好。测试单位仅6个采集map，像素非独立标本，不做显著性宣称。",
+    "dominant_confusions": {
+      "pca64_linear_svm": [
+        {
+          "true_label": "polypropylene",
+          "predicted_label": "polyethylene",
+          "pixels": 706
+        },
+        {
+          "true_label": "polycarbonate",
+          "predicted_label": "silicone",
+          "pixels": 555
+        },
+        {
+          "true_label": "polyvinyl chloride",
+          "predicted_label": "polyurethane",
+          "pixels": 88
+        },
+        {
+          "true_label": "polyurethane",
+          "predicted_label": "polyvinyl chloride",
+          "pixels": 75
+        },
+        {
+          "true_label": "polypropylene",
+          "predicted_label": "polyethylene terephthalate",
+          "pixels": 14
+        },
+        {
+          "true_label": "blank",
+          "predicted_label": "polyethylene",
+          "pixels": 14
+        },
+        {
+          "true_label": "polypropylene",
+          "predicted_label": "polyvinyl chloride",
+          "pixels": 14
+        },
+        {
+          "true_label": "polytetrafluoroethylene",
+          "predicted_label": "poly (methyl methacrylate)",
+          "pixels": 14
+        },
+        {
+          "true_label": "polytetrafluoroethylene",
+          "predicted_label": "polyethylene terephthalate",
+          "pixels": 14
+        },
+        {
+          "true_label": "polytetrafluoroethylene",
+          "predicted_label": "nylon",
+          "pixels": 13
+        },
+        {
+          "true_label": "blank",
+          "predicted_label": "polyethylene terephthalate",
+          "pixels": 13
+        },
+        {
+          "true_label": "polypropylene",
+          "predicted_label": "nylon",
+          "pixels": 12
+        }
+      ],
+      "cnn_aug_seed42": [
+        {
+          "true_label": "polypropylene",
+          "predicted_label": "polyethylene",
+          "pixels": 631
+        },
+        {
+          "true_label": "polycarbonate",
+          "predicted_label": "silicone",
+          "pixels": 550
+        },
+        {
+          "true_label": "polyvinyl chloride",
+          "predicted_label": "polyurethane",
+          "pixels": 85
+        },
+        {
+          "true_label": "polyurethane",
+          "predicted_label": "polyvinyl chloride",
+          "pixels": 75
+        },
+        {
+          "true_label": "polypropylene",
+          "predicted_label": "polyester",
+          "pixels": 59
+        },
+        {
+          "true_label": "polypropylene",
+          "predicted_label": "polyvinyl chloride",
+          "pixels": 58
+        },
+        {
+          "true_label": "polytetrafluoroethylene",
+          "predicted_label": "polyester",
+          "pixels": 58
+        },
+        {
+          "true_label": "polytetrafluoroethylene",
+          "predicted_label": "polyvinyl chloride",
+          "pixels": 56
+        },
+        {
+          "true_label": "polytetrafluoroethylene",
+          "predicted_label": "poly (methyl methacrylate)",
+          "pixels": 49
+        },
+        {
+          "true_label": "polypropylene",
+          "predicted_label": "nylon",
+          "pixels": 30
+        },
+        {
+          "true_label": "polytetrafluoroethylene",
+          "predicted_label": "polyurethane",
+          "pixels": 24
+        },
+        {
+          "true_label": "blank",
+          "predicted_label": "polyvinyl chloride",
+          "pixels": 15
+        }
+      ]
+    },
+    "exploratory_test_macro_f1_on_validation_supported_class_labels": {
+      "pca64_linear_svm": 0.6376423847600603,
+      "cnn_aug_seed42": 0.598160933226679
+    },
+    "validation_test_class_set_warning": "验证macro-F1平均13个有支持标签；正式测试macro-F1平均15类，不能不加限定地把二者差值解释为纯域迁移损失。共同标签宏平均仅为事后描述，不用于重新选模型或调参。"
+  },
+  "classes": {
+    "cosine_centroid": [
+      {
+        "label": "polycarbonate",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 578.0,
+        "predicted": 21.0
+      },
+      {
+        "label": "polyurethane",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 78.0,
+        "predicted": 90.0
+      },
+      {
+        "label": "polyvinyl chloride",
+        "precision": 0.012944983818770227,
+        "recall": 0.04,
+        "f1": 0.019559902200488997,
+        "support": 100.0,
+        "predicted": 309.0
+      },
+      {
+        "label": "polyethylene",
+        "precision": 0.07586206896551724,
+        "recall": 0.5689655172413793,
+        "f1": 0.13387423935091278,
+        "support": 58.0,
+        "predicted": 435.0
+      },
+      {
+        "label": "polytetrafluoroethylene",
+        "precision": 1.0,
+        "recall": 0.0766721044045677,
+        "f1": 0.14242424242424243,
+        "support": 613.0,
+        "predicted": 47.0
+      },
+      {
+        "label": "polyoxymethylene",
+        "precision": 0.20833333333333334,
+        "recall": 0.20270270270270271,
+        "f1": 0.2054794520547945,
+        "support": 74.0,
+        "predicted": 72.0
+      },
+      {
+        "label": "polypropylene",
+        "precision": 0.37477148080438755,
+        "recall": 0.2521525215252153,
+        "f1": 0.3014705882352941,
+        "support": 813.0,
+        "predicted": 547.0
+      },
+      {
+        "label": "acrylonitrile butadiene styrene",
+        "precision": 0.2936802973977695,
+        "recall": 0.797979797979798,
+        "f1": 0.42934782608695654,
+        "support": 99.0,
+        "predicted": 269.0
+      },
+      {
+        "label": "silicone",
+        "precision": 0.3555018137847642,
+        "recall": 0.9245283018867925,
+        "f1": 0.5135371179039301,
+        "support": 318.0,
+        "predicted": 827.0
+      },
+      {
+        "label": "polyethylene terephthalate",
+        "precision": 0.5688622754491018,
+        "recall": 0.9405940594059405,
+        "f1": 0.7089552238805971,
+        "support": 101.0,
+        "predicted": 167.0
+      },
+      {
+        "label": "poly (methyl methacrylate)",
+        "precision": 0.75,
+        "recall": 0.7211538461538461,
+        "f1": 0.7352941176470589,
+        "support": 104.0,
+        "predicted": 100.0
+      },
+      {
+        "label": "nylon",
+        "precision": 0.7188940092165899,
+        "recall": 0.8297872340425532,
+        "f1": 0.7703703703703704,
+        "support": 188.0,
+        "predicted": 217.0
+      },
+      {
+        "label": "polyester",
+        "precision": 1.0,
+        "recall": 0.7817258883248731,
+        "f1": 0.8774928774928775,
+        "support": 197.0,
+        "predicted": 154.0
+      },
+      {
+        "label": "polystyrene",
+        "precision": 0.9809523809523809,
+        "recall": 0.8373983739837398,
+        "f1": 0.9035087719298246,
+        "support": 123.0,
+        "predicted": 105.0
+      },
+      {
+        "label": "blank",
+        "precision": 0.9512997696610728,
+        "recall": 0.97834179357022,
+        "f1": 0.9646312979646313,
+        "support": 2955.0,
+        "predicted": 3039.0
+      }
+    ],
+    "pca64_linear_svm": [
+      {
+        "label": "polyurethane",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 78.0,
+        "predicted": 102.0
+      },
+      {
+        "label": "polycarbonate",
+        "precision": 0.3333333333333333,
+        "recall": 0.0017301038062283738,
+        "f1": 0.0034423407917383822,
+        "support": 578.0,
+        "predicted": 3.0
+      },
+      {
+        "label": "polyvinyl chloride",
+        "precision": 0.018018018018018018,
+        "recall": 0.02,
+        "f1": 0.018957345971563982,
+        "support": 100.0,
+        "predicted": 111.0
+      },
+      {
+        "label": "polypropylene",
+        "precision": 0.625,
+        "recall": 0.04920049200492005,
+        "f1": 0.09122006841505131,
+        "support": 813.0,
+        "predicted": 64.0
+      },
+      {
+        "label": "polyethylene",
+        "precision": 0.05791505791505792,
+        "recall": 0.7758620689655172,
+        "f1": 0.10778443113772455,
+        "support": 58.0,
+        "predicted": 777.0
+      },
+      {
+        "label": "silicone",
+        "precision": 0.3556581986143187,
+        "recall": 0.9685534591194969,
+        "f1": 0.5202702702702703,
+        "support": 318.0,
+        "predicted": 866.0
+      },
+      {
+        "label": "polyethylene terephthalate",
+        "precision": 0.6577181208053692,
+        "recall": 0.9702970297029703,
+        "f1": 0.784,
+        "support": 101.0,
+        "predicted": 149.0
+      },
+      {
+        "label": "poly (methyl methacrylate)",
+        "precision": 0.8055555555555556,
+        "recall": 0.8365384615384616,
+        "f1": 0.8207547169811321,
+        "support": 104.0,
+        "predicted": 108.0
+      },
+      {
+        "label": "polyoxymethylene",
+        "precision": 0.8552631578947368,
+        "recall": 0.8783783783783784,
+        "f1": 0.8666666666666667,
+        "support": 74.0,
+        "predicted": 76.0
+      },
+      {
+        "label": "acrylonitrile butadiene styrene",
+        "precision": 0.831858407079646,
+        "recall": 0.9494949494949495,
+        "f1": 0.8867924528301887,
+        "support": 99.0,
+        "predicted": 113.0
+      },
+      {
+        "label": "nylon",
+        "precision": 0.8387096774193549,
+        "recall": 0.9680851063829787,
+        "f1": 0.8987654320987655,
+        "support": 188.0,
+        "predicted": 217.0
+      },
+      {
+        "label": "polytetrafluoroethylene",
+        "precision": 0.9702602230483272,
+        "recall": 0.8515497553017944,
+        "f1": 0.9070373588184187,
+        "support": 613.0,
+        "predicted": 538.0
+      },
+      {
+        "label": "polyester",
+        "precision": 0.9738219895287958,
+        "recall": 0.9441624365482234,
+        "f1": 0.9587628865979382,
+        "support": 197.0,
+        "predicted": 191.0
+      },
+      {
+        "label": "polystyrene",
+        "precision": 0.967479674796748,
+        "recall": 0.967479674796748,
+        "f1": 0.967479674796748,
+        "support": 123.0,
+        "predicted": 123.0
+      },
+      {
+        "label": "blank",
+        "precision": 0.9766970618034447,
+        "recall": 0.9786802030456853,
+        "f1": 0.9776876267748479,
+        "support": 2955.0,
+        "predicted": 2961.0
+      }
+    ],
+    "cnn_aug_seed42": [
+      {
+        "label": "polycarbonate",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 578.0,
+        "predicted": 0.0
+      },
+      {
+        "label": "polyurethane",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 78.0,
+        "predicted": 112.0
+      },
+      {
+        "label": "polyvinyl chloride",
+        "precision": 0.004366812227074236,
+        "recall": 0.01,
+        "f1": 0.0060790273556231,
+        "support": 100.0,
+        "predicted": 229.0
+      },
+      {
+        "label": "polypropylene",
+        "precision": 0.42857142857142855,
+        "recall": 0.02214022140221402,
+        "f1": 0.042105263157894736,
+        "support": 813.0,
+        "predicted": 42.0
+      },
+      {
+        "label": "polyethylene",
+        "precision": 0.06401137980085349,
+        "recall": 0.7758620689655172,
+        "f1": 0.11826544021024968,
+        "support": 58.0,
+        "predicted": 703.0
+      },
+      {
+        "label": "silicone",
+        "precision": 0.3554006968641115,
+        "recall": 0.9622641509433962,
+        "f1": 0.5190839694656488,
+        "support": 318.0,
+        "predicted": 861.0
+      },
+      {
+        "label": "poly (methyl methacrylate)",
+        "precision": 0.6013513513513513,
+        "recall": 0.8557692307692307,
+        "f1": 0.7063492063492064,
+        "support": 104.0,
+        "predicted": 148.0
+      },
+      {
+        "label": "polyester",
+        "precision": 0.590625,
+        "recall": 0.9593908629441624,
+        "f1": 0.7311411992263056,
+        "support": 197.0,
+        "predicted": 320.0
+      },
+      {
+        "label": "polytetrafluoroethylene",
+        "precision": 0.974937343358396,
+        "recall": 0.634584013050571,
+        "f1": 0.7687747035573123,
+        "support": 613.0,
+        "predicted": 399.0
+      },
+      {
+        "label": "polyoxymethylene",
+        "precision": 0.7439024390243902,
+        "recall": 0.8243243243243243,
+        "f1": 0.782051282051282,
+        "support": 74.0,
+        "predicted": 82.0
+      },
+      {
+        "label": "nylon",
+        "precision": 0.8119266055045872,
+        "recall": 0.9414893617021277,
+        "f1": 0.8719211822660099,
+        "support": 188.0,
+        "predicted": 218.0
+      },
+      {
+        "label": "acrylonitrile butadiene styrene",
+        "precision": 0.875,
+        "recall": 0.9191919191919192,
+        "f1": 0.896551724137931,
+        "support": 99.0,
+        "predicted": 104.0
+      },
+      {
+        "label": "polyethylene terephthalate",
+        "precision": 0.8818181818181818,
+        "recall": 0.9603960396039604,
+        "f1": 0.919431279620853,
+        "support": 101.0,
+        "predicted": 110.0
+      },
+      {
+        "label": "polystyrene",
+        "precision": 0.9590163934426229,
+        "recall": 0.9512195121951219,
+        "f1": 0.9551020408163265,
+        "support": 123.0,
+        "predicted": 122.0
+      },
+      {
+        "label": "blank",
+        "precision": 0.97931502204137,
+        "recall": 0.977326565143824,
+        "f1": 0.978319783197832,
+        "support": 2955.0,
+        "predicted": 2949.0
+      }
+    ],
+    "cnn_aug_seed43": [
+      {
+        "label": "polyurethane",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 78.0,
+        "predicted": 112.0
+      },
+      {
+        "label": "polycarbonate",
+        "precision": 0.125,
+        "recall": 0.0017301038062283738,
+        "f1": 0.0034129692832764505,
+        "support": 578.0,
+        "predicted": 8.0
+      },
+      {
+        "label": "polyvinyl chloride",
+        "precision": 0.007751937984496124,
+        "recall": 0.01,
+        "f1": 0.008733624454148471,
+        "support": 100.0,
+        "predicted": 129.0
+      },
+      {
+        "label": "polypropylene",
+        "precision": 0.5862068965517241,
+        "recall": 0.041820418204182044,
+        "f1": 0.07807118254879448,
+        "support": 813.0,
+        "predicted": 58.0
+      },
+      {
+        "label": "polyethylene",
+        "precision": 0.05275498241500586,
+        "recall": 0.7758620689655172,
+        "f1": 0.09879253567508232,
+        "support": 58.0,
+        "predicted": 853.0
+      },
+      {
+        "label": "silicone",
+        "precision": 0.3515358361774744,
+        "recall": 0.9716981132075472,
+        "f1": 0.5162907268170426,
+        "support": 318.0,
+        "predicted": 879.0
+      },
+      {
+        "label": "poly (methyl methacrylate)",
+        "precision": 0.6496350364963503,
+        "recall": 0.8557692307692307,
+        "f1": 0.7385892116182573,
+        "support": 104.0,
+        "predicted": 137.0
+      },
+      {
+        "label": "polyethylene terephthalate",
+        "precision": 0.6530612244897959,
+        "recall": 0.9504950495049505,
+        "f1": 0.7741935483870968,
+        "support": 101.0,
+        "predicted": 147.0
+      },
+      {
+        "label": "polytetrafluoroethylene",
+        "precision": 0.9852941176470589,
+        "recall": 0.765089722675367,
+        "f1": 0.8613406795224977,
+        "support": 613.0,
+        "predicted": 476.0
+      },
+      {
+        "label": "polyoxymethylene",
+        "precision": 0.8414634146341463,
+        "recall": 0.9324324324324325,
+        "f1": 0.8846153846153846,
+        "support": 74.0,
+        "predicted": 82.0
+      },
+      {
+        "label": "acrylonitrile butadiene styrene",
+        "precision": 0.8392857142857143,
+        "recall": 0.9494949494949495,
+        "f1": 0.8909952606635071,
+        "support": 99.0,
+        "predicted": 112.0
+      },
+      {
+        "label": "nylon",
+        "precision": 0.9293478260869565,
+        "recall": 0.9095744680851063,
+        "f1": 0.9193548387096774,
+        "support": 188.0,
+        "predicted": 184.0
+      },
+      {
+        "label": "polyester",
+        "precision": 0.9613259668508287,
+        "recall": 0.883248730964467,
+        "f1": 0.9206349206349206,
+        "support": 197.0,
+        "predicted": 181.0
+      },
+      {
+        "label": "polystyrene",
+        "precision": 0.9384615384615385,
+        "recall": 0.991869918699187,
+        "f1": 0.9644268774703557,
+        "support": 123.0,
+        "predicted": 130.0
+      },
+      {
+        "label": "blank",
+        "precision": 0.983167296461697,
+        "recall": 0.9685279187817258,
+        "f1": 0.9757927037163314,
+        "support": 2955.0,
+        "predicted": 2911.0
+      }
+    ],
+    "cnn_aug_seed44": [
+      {
+        "label": "polycarbonate",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 578.0,
+        "predicted": 7.0
+      },
+      {
+        "label": "polyurethane",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 78.0,
+        "predicted": 310.0
+      },
+      {
+        "label": "polyvinyl chloride",
+        "precision": 0.009615384615384616,
+        "recall": 0.01,
+        "f1": 0.00980392156862745,
+        "support": 100.0,
+        "predicted": 104.0
+      },
+      {
+        "label": "polypropylene",
+        "precision": 0.5,
+        "recall": 0.008610086100861008,
+        "f1": 0.016928657799274487,
+        "support": 813.0,
+        "predicted": 14.0
+      },
+      {
+        "label": "polyethylene",
+        "precision": 0.05905511811023622,
+        "recall": 0.7758620689655172,
+        "f1": 0.10975609756097561,
+        "support": 58.0,
+        "predicted": 762.0
+      },
+      {
+        "label": "silicone",
+        "precision": 0.35246842709529275,
+        "recall": 0.9654088050314465,
+        "f1": 0.5164003364171573,
+        "support": 318.0,
+        "predicted": 871.0
+      },
+      {
+        "label": "polyester",
+        "precision": 0.8341232227488151,
+        "recall": 0.8934010152284264,
+        "f1": 0.8627450980392157,
+        "support": 197.0,
+        "predicted": 211.0
+      },
+      {
+        "label": "acrylonitrile butadiene styrene",
+        "precision": 0.7966101694915254,
+        "recall": 0.9494949494949495,
+        "f1": 0.8663594470046083,
+        "support": 99.0,
+        "predicted": 118.0
+      },
+      {
+        "label": "poly (methyl methacrylate)",
+        "precision": 0.8811881188118812,
+        "recall": 0.8557692307692307,
+        "f1": 0.8682926829268293,
+        "support": 104.0,
+        "predicted": 101.0
+      },
+      {
+        "label": "polyethylene terephthalate",
+        "precision": 0.8016528925619835,
+        "recall": 0.9603960396039604,
+        "f1": 0.8738738738738738,
+        "support": 101.0,
+        "predicted": 121.0
+      },
+      {
+        "label": "polytetrafluoroethylene",
+        "precision": 0.9803149606299213,
+        "recall": 0.8123980424143556,
+        "f1": 0.8884924174843889,
+        "support": 613.0,
+        "predicted": 508.0
+      },
+      {
+        "label": "polyoxymethylene",
+        "precision": 0.92,
+        "recall": 0.9324324324324325,
+        "f1": 0.9261744966442953,
+        "support": 74.0,
+        "predicted": 75.0
+      },
+      {
+        "label": "nylon",
+        "precision": 0.9518716577540107,
+        "recall": 0.9468085106382979,
+        "f1": 0.9493333333333334,
+        "support": 188.0,
+        "predicted": 187.0
+      },
+      {
+        "label": "polystyrene",
+        "precision": 0.9752066115702479,
+        "recall": 0.959349593495935,
+        "f1": 0.9672131147540983,
+        "support": 123.0,
+        "predicted": 121.0
+      },
+      {
+        "label": "blank",
+        "precision": 0.9865005192107996,
+        "recall": 0.9644670050761421,
+        "f1": 0.9753593429158111,
+        "support": 2955.0,
+        "predicted": 2889.0
+      }
+    ],
+    "cnn_noaug_seed42": [
+      {
+        "label": "polycarbonate",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 578.0,
+        "predicted": 1.0
+      },
+      {
+        "label": "polyurethane",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 78.0,
+        "predicted": 108.0
+      },
+      {
+        "label": "polyvinyl chloride",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 100.0,
+        "predicted": 106.0
+      },
+      {
+        "label": "polypropylene",
+        "precision": 0.65625,
+        "recall": 0.025830258302583026,
+        "f1": 0.04970414201183432,
+        "support": 813.0,
+        "predicted": 32.0
+      },
+      {
+        "label": "polyethylene",
+        "precision": 0.05372405372405373,
+        "recall": 0.7586206896551724,
+        "f1": 0.10034207525655645,
+        "support": 58.0,
+        "predicted": 819.0
+      },
+      {
+        "label": "silicone",
+        "precision": 0.3528735632183908,
+        "recall": 0.9654088050314465,
+        "f1": 0.5168350168350169,
+        "support": 318.0,
+        "predicted": 870.0
+      },
+      {
+        "label": "polyethylene terephthalate",
+        "precision": 0.6125,
+        "recall": 0.9702970297029703,
+        "f1": 0.7509578544061303,
+        "support": 101.0,
+        "predicted": 160.0
+      },
+      {
+        "label": "poly (methyl methacrylate)",
+        "precision": 0.7699115044247787,
+        "recall": 0.8365384615384616,
+        "f1": 0.8018433179723502,
+        "support": 104.0,
+        "predicted": 113.0
+      },
+      {
+        "label": "acrylonitrile butadiene styrene",
+        "precision": 0.7768595041322314,
+        "recall": 0.9494949494949495,
+        "f1": 0.8545454545454545,
+        "support": 99.0,
+        "predicted": 121.0
+      },
+      {
+        "label": "polyester",
+        "precision": 0.8928571428571429,
+        "recall": 0.8883248730964467,
+        "f1": 0.8905852417302799,
+        "support": 197.0,
+        "predicted": 196.0
+      },
+      {
+        "label": "polyoxymethylene",
+        "precision": 0.8641975308641975,
+        "recall": 0.9459459459459459,
+        "f1": 0.9032258064516129,
+        "support": 74.0,
+        "predicted": 81.0
+      },
+      {
+        "label": "polytetrafluoroethylene",
+        "precision": 0.9848197343453511,
+        "recall": 0.8466557911908646,
+        "f1": 0.9105263157894737,
+        "support": 613.0,
+        "predicted": 527.0
+      },
+      {
+        "label": "nylon",
+        "precision": 0.9025641025641026,
+        "recall": 0.9361702127659575,
+        "f1": 0.9190600522193212,
+        "support": 188.0,
+        "predicted": 195.0
+      },
+      {
+        "label": "polystyrene",
+        "precision": 0.92,
+        "recall": 0.9349593495934959,
+        "f1": 0.9274193548387096,
+        "support": 123.0,
+        "predicted": 125.0
+      },
+      {
+        "label": "blank",
+        "precision": 0.9765704584040747,
+        "recall": 0.9732656514382403,
+        "f1": 0.9749152542372881,
+        "support": 2955.0,
+        "predicted": 2945.0
+      }
+    ]
+  },
+  "no_remote_connection": true,
+  "no_retraining_or_tuning": true,
+  "checkpoint_internal_hashes_and_best_epoch_verified": true
+}

@@ -1,0 +1,129 @@
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting numpy==2.5.4 (from -r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/43/a3/c799c62e19c337e6d3770b08e475887fb30ce8477d3c09efca6b2f0228a6/numpy-2.5.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.7/16.7 MB 23.3 MB/s eta 0:00:00
+Collecting pandas==3.0.1 (from -r requirements.txt (line 2))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/3d/fe/89d77e424365280b79d99b3e1e7d606f5165af2f2ecfaf0c6d24c799d607/pandas-3.0.1-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (10.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.9/10.9 MB 30.8 MB/s eta 0:00:00
+Collecting scipy==1.18.1 (from -r requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/df/64/ff35eb9e54894cf471ff4716abd3c81eb0a0626869217ce3e6ba4ccf17d7/scipy-1.18.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 15.1 MB/s eta 0:00:00
+Collecting scikit-learn==1.9.1 (from -r requirements.txt (line 4))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/8e/57/a50162f3d29feb979ab6347c6debda506dfb525bcff3c50dd17606651c7e/scikit_learn-1.9.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (9.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.2/9.2 MB 15.7 MB/s eta 0:00:00
+Collecting matplotlib==3.11.2 (from -r requirements.txt (line 5))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b8/90/2b3fd67ee273163faeda6d514be70b5596eaa0fd77b60ffc294ad0b34f5f/matplotlib-3.11.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 23.1 MB/s eta 0:00:00
+Collecting joblib==1.6.0 (from -r requirements.txt (line 6))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/18/53/84099323c2ec4be98d935f63c033ac4151ee83836ca1050ede3b3aadf155/joblib-1.6.0-py3-none-any.whl (306 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 306.1/306.1 kB 31.2 MB/s eta 0:00:00
+Collecting nbformat==5.11.1 (from -r requirements.txt (line 7))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/1a/69/ee613f74085ca7103f79cd08d579c4f3177d1d26e5d3d9528d2d6536a707/nbformat-5.11.1-py3-none-any.whl (79 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.8/79.8 kB 194.7 MB/s eta 0:00:00
+Collecting nbclient==0.11.0 (from -r requirements.txt (line 8))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/36/c9/94d73e5a01c5b926c3fa2496e97d7a8dc28ed5a77c0b2ed712f1a62e6694/nbclient-0.11.0-py3-none-any.whl (25 kB)
+Collecting nbconvert==7.17.2 (from -r requirements.txt (line 9))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/81/fd/a8d457af68848a8e5c12dd1d84ff35c415db471af78280e0703db4efbb12/nbconvert-7.17.2-py3-none-any.whl (262 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 262.1/262.1 kB 34.1 MB/s eta 0:00:00
+Collecting ipykernel==7.4.0 (from -r requirements.txt (line 10))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a5/f8/8b5c10c7f36ab5a3b5c4703669e5b14e44e98782b58e535dd30670e8799a/ipykernel-7.4.0-py3-none-any.whl (123 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 123.2/123.2 kB 84.4 MB/s eta 0:00:00
+Requirement already satisfied: python-dateutil>=2.8.2 in /root/miniconda3/lib/python3.12/site-packages (from pandas==3.0.1->-r requirements.txt (line 2)) (2.9.0.post0)
+Collecting narwhals>=2.0.1 (from scikit-learn==1.9.1->-r requirements.txt (line 4))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/cf/82/8ef9c7e0f50493307a49c09cfa7f00c5a778b6d1921f7b2dabe1d3a5809e/narwhals-2.28.0-py3-none-any.whl (490 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 490.6/490.6 kB 30.6 MB/s eta 0:00:00
+Collecting threadpoolctl>=3.5.0 (from scikit-learn==1.9.1->-r requirements.txt (line 4))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/54/1b/831f2de4840a25db1dd7b1afea433ccafe6bb10aca07e13264f2079462d0/threadpoolctl-3.8.0-py3-none-any.whl (32 kB)
+Requirement already satisfied: contourpy>=1.0.1 in /root/miniconda3/lib/python3.12/site-packages (from matplotlib==3.11.2->-r requirements.txt (line 5)) (1.3.3)
+Requirement already satisfied: cycler>=0.10 in /root/miniconda3/lib/python3.12/site-packages (from matplotlib==3.11.2->-r requirements.txt (line 5)) (0.12.1)
+Requirement already satisfied: fonttools>=4.28.2 in /root/miniconda3/lib/python3.12/site-packages (from matplotlib==3.11.2->-r requirements.txt (line 5)) (4.59.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /root/miniconda3/lib/python3.12/site-packages (from matplotlib==3.11.2->-r requirements.txt (line 5)) (1.4.8)
+Requirement already satisfied: packaging>=20.0 in /root/miniconda3/lib/python3.12/site-packages (from matplotlib==3.11.2->-r requirements.txt (line 5)) (23.2)
+Requirement already satisfied: pillow>=9 in /root/miniconda3/lib/python3.12/site-packages (from matplotlib==3.11.2->-r requirements.txt (line 5)) (11.3.0)
+Requirement already satisfied: pyparsing>=3 in /root/miniconda3/lib/python3.12/site-packages (from matplotlib==3.11.2->-r requirements.txt (line 5)) (3.2.3)
+Collecting cloudpickle>=3.0 (from joblib==1.6.0->-r requirements.txt (line 6))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/88/39/799be3f2f0f38cc727ee3b4f1445fe6d5e4133064ec2e4115069418a5bb6/cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+Requirement already satisfied: fastjsonschema>=2.15 in /root/miniconda3/lib/python3.12/site-packages (from nbformat==5.11.1->-r requirements.txt (line 7)) (2.21.1)
+Requirement already satisfied: jsonschema>=2.6 in /root/miniconda3/lib/python3.12/site-packages (from nbformat==5.11.1->-r requirements.txt (line 7)) (4.25.0)
+Requirement already satisfied: jupyter-core!=5.0.*,>=4.12 in /root/miniconda3/lib/python3.12/site-packages (from nbformat==5.11.1->-r requirements.txt (line 7)) (5.8.1)
+Requirement already satisfied: traitlets>=5.1 in /root/miniconda3/lib/python3.12/site-packages (from nbformat==5.11.1->-r requirements.txt (line 7)) (5.14.3)
+Requirement already satisfied: jupyter-client>=7.0.0 in /root/miniconda3/lib/python3.12/site-packages (from nbclient==0.11.0->-r requirements.txt (line 8)) (8.6.3)
+Requirement already satisfied: beautifulsoup4 in /root/miniconda3/lib/python3.12/site-packages (from nbconvert==7.17.2->-r requirements.txt (line 9)) (4.13.4)
+Requirement already satisfied: bleach!=5.0.0 in /root/miniconda3/lib/python3.12/site-packages (from bleach[css]!=5.0.0->nbconvert==7.17.2->-r requirements.txt (line 9)) (6.2.0)
+Requirement already satisfied: defusedxml in /root/miniconda3/lib/python3.12/site-packages (from nbconvert==7.17.2->-r requirements.txt (line 9)) (0.7.1)
+Requirement already satisfied: jinja2>=3.0 in /root/miniconda3/lib/python3.12/site-packages (from nbconvert==7.17.2->-r requirements.txt (line 9)) (3.1.6)
+Requirement already satisfied: jupyterlab-pygments in /root/miniconda3/lib/python3.12/site-packages (from nbconvert==7.17.2->-r requirements.txt (line 9)) (0.3.0)
+Requirement already satisfied: markupsafe>=2.0 in /root/miniconda3/lib/python3.12/site-packages (from nbconvert==7.17.2->-r requirements.txt (line 9)) (3.0.2)
+Requirement already satisfied: mistune<4,>=2.0.3 in /root/miniconda3/lib/python3.12/site-packages (from nbconvert==7.17.2->-r requirements.txt (line 9)) (3.1.3)
+Requirement already satisfied: pandocfilters>=1.4.1 in /root/miniconda3/lib/python3.12/site-packages (from nbconvert==7.17.2->-r requirements.txt (line 9)) (1.5.1)
+Requirement already satisfied: pygments>=2.4.1 in /root/miniconda3/lib/python3.12/site-packages (from nbconvert==7.17.2->-r requirements.txt (line 9)) (2.19.2)
+Requirement already satisfied: comm>=0.1.1 in /root/miniconda3/lib/python3.12/site-packages (from ipykernel==7.4.0->-r requirements.txt (line 10)) (0.2.3)
+Requirement already satisfied: debugpy>=1.6.5 in /root/miniconda3/lib/python3.12/site-packages (from ipykernel==7.4.0->-r requirements.txt (line 10)) (1.8.16)
+Requirement already satisfied: ipython>=7.23.1 in /root/miniconda3/lib/python3.12/site-packages (from ipykernel==7.4.0->-r requirements.txt (line 10)) (9.4.0)
+Collecting jupyter-client>=7.0.0 (from nbclient==0.11.0->-r requirements.txt (line 8))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/0f/88/7c548de1f6c2ade7c931a3282da73f9274fa6a1531091be682f89c85efb9/jupyter_client-8.10.0-py3-none-any.whl (110 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 110.2/110.2 kB 106.0 MB/s eta 0:00:00
+Requirement already satisfied: matplotlib-inline>=0.1 in /root/miniconda3/lib/python3.12/site-packages (from ipykernel==7.4.0->-r requirements.txt (line 10)) (0.1.7)
+Collecting nest-asyncio2>=1.7.0 (from ipykernel==7.4.0->-r requirements.txt (line 10))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/09/ed/559d2915dce85794bc0c36064043da170da50cd98746dcbddd85d5932017/nest_asyncio2-1.7.4-py3-none-any.whl (8.5 kB)
+Requirement already satisfied: pyzmq>=25 in /root/miniconda3/lib/python3.12/site-packages (from ipykernel==7.4.0->-r requirements.txt (line 10)) (27.0.1)
+Collecting tornado>=6.5.7 (from ipykernel==7.4.0->-r requirements.txt (line 10))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/38/4d/c65ea949a3cdc185f1afac8c337074d4f2d029b48293d2db4d2c3dea4849/tornado-6.6.1-cp311-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (534 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 534.5/534.5 kB 37.7 MB/s eta 0:00:00
+Requirement already satisfied: webencodings in /root/miniconda3/lib/python3.12/site-packages (from bleach!=5.0.0->bleach[css]!=5.0.0->nbconvert==7.17.2->-r requirements.txt (line 9)) (0.5.1)
+Requirement already satisfied: tinycss2<1.5,>=1.1.0 in /root/miniconda3/lib/python3.12/site-packages (from bleach[css]!=5.0.0->nbconvert==7.17.2->-r requirements.txt (line 9)) (1.4.0)
+Requirement already satisfied: decorator in /root/miniconda3/lib/python3.12/site-packages (from ipython>=7.23.1->ipykernel==7.4.0->-r requirements.txt (line 10)) (5.2.1)
+Requirement already satisfied: ipython-pygments-lexers in /root/miniconda3/lib/python3.12/site-packages (from ipython>=7.23.1->ipykernel==7.4.0->-r requirements.txt (line 10)) (1.1.1)
+Requirement already satisfied: jedi>=0.16 in /root/miniconda3/lib/python3.12/site-packages (from ipython>=7.23.1->ipykernel==7.4.0->-r requirements.txt (line 10)) (0.19.2)
+Requirement already satisfied: pexpect>4.3 in /root/miniconda3/lib/python3.12/site-packages (from ipython>=7.23.1->ipykernel==7.4.0->-r requirements.txt (line 10)) (4.9.0)
+Requirement already satisfied: prompt_toolkit<3.1.0,>=3.0.41 in /root/miniconda3/lib/python3.12/site-packages (from ipython>=7.23.1->ipykernel==7.4.0->-r requirements.txt (line 10)) (3.0.51)
+Requirement already satisfied: stack_data in /root/miniconda3/lib/python3.12/site-packages (from ipython>=7.23.1->ipykernel==7.4.0->-r requirements.txt (line 10)) (0.6.3)
+Requirement already satisfied: attrs>=22.2.0 in /root/miniconda3/lib/python3.12/site-packages (from jsonschema>=2.6->nbformat==5.11.1->-r requirements.txt (line 7)) (25.3.0)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /root/miniconda3/lib/python3.12/site-packages (from jsonschema>=2.6->nbformat==5.11.1->-r requirements.txt (line 7)) (2025.4.1)
+Requirement already satisfied: referencing>=0.28.4 in /root/miniconda3/lib/python3.12/site-packages (from jsonschema>=2.6->nbformat==5.11.1->-r requirements.txt (line 7)) (0.36.2)
+Requirement already satisfied: rpds-py>=0.7.1 in /root/miniconda3/lib/python3.12/site-packages (from jsonschema>=2.6->nbformat==5.11.1->-r requirements.txt (line 7)) (0.26.0)
+Requirement already satisfied: typing-extensions>=4.13.0 in /root/miniconda3/lib/python3.12/site-packages (from jupyter-client>=7.0.0->nbclient==0.11.0->-r requirements.txt (line 8)) (4.14.1)
+Requirement already satisfied: platformdirs>=2.5 in /root/miniconda3/lib/python3.12/site-packages (from jupyter-core!=5.0.*,>=4.12->nbformat==5.11.1->-r requirements.txt (line 7)) (3.10.0)
+Requirement already satisfied: six>=1.5 in /root/miniconda3/lib/python3.12/site-packages (from python-dateutil>=2.8.2->pandas==3.0.1->-r requirements.txt (line 2)) (1.17.0)
+Requirement already satisfied: soupsieve>1.2 in /root/miniconda3/lib/python3.12/site-packages (from beautifulsoup4->nbconvert==7.17.2->-r requirements.txt (line 9)) (2.7)
+Requirement already satisfied: parso<0.9.0,>=0.8.4 in /root/miniconda3/lib/python3.12/site-packages (from jedi>=0.16->ipython>=7.23.1->ipykernel==7.4.0->-r requirements.txt (line 10)) (0.8.4)
+Requirement already satisfied: ptyprocess>=0.5 in /root/miniconda3/lib/python3.12/site-packages (from pexpect>4.3->ipython>=7.23.1->ipykernel==7.4.0->-r requirements.txt (line 10)) (0.7.0)
+Requirement already satisfied: wcwidth in /root/miniconda3/lib/python3.12/site-packages (from prompt_toolkit<3.1.0,>=3.0.41->ipython>=7.23.1->ipykernel==7.4.0->-r requirements.txt (line 10)) (0.2.13)
+Requirement already satisfied: executing>=1.2.0 in /root/miniconda3/lib/python3.12/site-packages (from stack_data->ipython>=7.23.1->ipykernel==7.4.0->-r requirements.txt (line 10)) (2.2.0)
+Requirement already satisfied: asttokens>=2.1.0 in /root/miniconda3/lib/python3.12/site-packages (from stack_data->ipython>=7.23.1->ipykernel==7.4.0->-r requirements.txt (line 10)) (3.0.0)
+Requirement already satisfied: pure-eval in /root/miniconda3/lib/python3.12/site-packages (from stack_data->ipython>=7.23.1->ipykernel==7.4.0->-r requirements.txt (line 10)) (0.2.3)
+Installing collected packages: tornado, threadpoolctl, numpy, nest-asyncio2, narwhals, cloudpickle, scipy, pandas, jupyter-client, joblib, scikit-learn, matplotlib, ipykernel, nbformat, nbclient, nbconvert
+  Attempting uninstall: tornado
+    Found existing installation: tornado 6.5.1
+    Uninstalling tornado-6.5.1:
+      Successfully uninstalled tornado-6.5.1
+  Attempting uninstall: numpy
+    Found existing installation: numpy 2.3.2
+    Uninstalling numpy-2.3.2:
+      Successfully uninstalled numpy-2.3.2
+  Attempting uninstall: jupyter-client
+    Found existing installation: jupyter_client 8.6.3
+    Uninstalling jupyter_client-8.6.3:
+      Successfully uninstalled jupyter_client-8.6.3
+  Attempting uninstall: matplotlib
+    Found existing installation: matplotlib 3.10.5
+    Uninstalling matplotlib-3.10.5:
+      Successfully uninstalled matplotlib-3.10.5
+  Attempting uninstall: ipykernel
+    Found existing installation: ipykernel 6.30.1
+    Uninstalling ipykernel-6.30.1:
+      Successfully uninstalled ipykernel-6.30.1
+  Attempting uninstall: nbformat
+    Found existing installation: nbformat 5.10.4
+    Uninstalling nbformat-5.10.4:
+      Successfully uninstalled nbformat-5.10.4
+  Attempting uninstall: nbclient
+    Found existing installation: nbclient 0.10.2
+    Uninstalling nbclient-0.10.2:
+      Successfully uninstalled nbclient-0.10.2
+  Attempting uninstall: nbconvert
+    Found existing installation: nbconvert 7.16.6
+    Uninstalling nbconvert-7.16.6:
+      Successfully uninstalled nbconvert-7.16.6
+Successfully installed cloudpickle-3.1.2 ipykernel-7.4.0 joblib-1.6.0 jupyter-client-8.10.0 matplotlib-3.11.2 narwhals-2.28.0 nbclient-0.11.0 nbconvert-7.17.2 nbformat-5.11.1 nest-asyncio2-1.7.4 numpy-2.5.4 pandas-3.0.1 scikit-learn-1.9.1 scipy-1.18.1 threadpoolctl-3.8.0 tornado-6.6.1
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv

@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "expected_runs": 84,
+  "validated_runs": 84,
+  "missing_runs": [],
+  "original_test_reused": false,
+  "hashes": {
+    "protocol_sha256": "f5f818e287bc0033afcc47f2729c27ba8194474be2430d3b9612d94b420259a6",
+    "plan_sha256": "864cf5c8efe54d8ee885b9cc848f9f9ac7cd1eb2c30b9bdb27970e5bc1a18004",
+    "data_sha256": "f760aea38fc98a71629c18fd4157dd023b4f0782f7f5cc9602d31f642a109851"
+  },
+  "metric_recalculation": "clean predictions and probabilities checked against saved metrics",
+  "aggregation": "mean of planned seeds within each fold, then mean and sample SD across all three folds"
+}

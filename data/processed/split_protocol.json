@@ -1,0 +1,23 @@
+{
+  "strategy": "预先固定22个训练map、6个验证map、6个测试map；不按模型分数选择划分。",
+  "missing_classes": {
+    "train": [],
+    "validation": [
+      "polyurethane",
+      "silicone"
+    ],
+    "test": []
+  },
+  "map_counts": {
+    "train": 22,
+    "test": 6,
+    "validation": 6
+  },
+  "pixel_counts": {
+    "train": 20968,
+    "validation": 5752,
+    "test": 6399
+  },
+  "independent_unit": "采集map；未知物理样品ID，不能声称不同map具有独立物理标本。",
+  "metric": "像素macro-F1（该集合有真值的类别）及map等权平均准确率；同时报告类别覆盖。"
+}

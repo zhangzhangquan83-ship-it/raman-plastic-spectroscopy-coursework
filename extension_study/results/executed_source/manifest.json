@@ -1,0 +1,85 @@
+{
+  "files": [
+    {
+      "scope": "first_stage",
+      "file": "build_report.py",
+      "sha256": "cab6faf6342e8c0fc4c11cba006e0377153d1049cd0db2c78f6d5dc0ad3abef8"
+    },
+    {
+      "scope": "first_stage",
+      "file": "common.py",
+      "sha256": "0db072dc64f93b3ad76a782bea2032248aaf7e5d948e055be8da8710220ac81c"
+    },
+    {
+      "scope": "first_stage",
+      "file": "evaluate.py",
+      "sha256": "04ca8fb51bff667d1bf8c22bd9ba7b0e8969d2ddc1425cd0a953312738fd8921"
+    },
+    {
+      "scope": "first_stage",
+      "file": "make_split.py",
+      "sha256": "87b18ab20bcf6c1125fc422fc1baaa7e45d0fd65804b8d667b65d7cbcbeb77b2"
+    },
+    {
+      "scope": "first_stage",
+      "file": "models.py",
+      "sha256": "85975c0aace7c87aaf25b7a5bd926f8c1fea1180a93b95bc77921d7eed9b2402"
+    },
+    {
+      "scope": "first_stage",
+      "file": "prepare_data.py",
+      "sha256": "4059fba89a20a22cef37250d011a9679b5b979cd97d5f926387e7ab1d93d1c22"
+    },
+    {
+      "scope": "first_stage",
+      "file": "sanity_check.py",
+      "sha256": "b338604a591cac4f5d644817cb01a00f36b55df4fd141eaacd48122ca28bf8a7"
+    },
+    {
+      "scope": "first_stage",
+      "file": "train_baselines.py",
+      "sha256": "a2b2eecbf2b6487a80c933c1dfeda1bf3d2ed366a90c3ddcc1975ec60df40c34"
+    },
+    {
+      "scope": "first_stage",
+      "file": "train_cnn.py",
+      "sha256": "90d27888f506e6fbf61fc9023acd551ee50d906fb745833fa90fd314f91281ae"
+    },
+    {
+      "scope": "first_stage",
+      "file": "run_frozen_experiment.py",
+      "sha256": "79e20b2f6b16f10d3a7c8fe471041af653449fbbe29c7b7c059b4c058bad2170"
+    },
+    {
+      "scope": "extension",
+      "file": "build_plan.py",
+      "sha256": "b69f548f95cb32e95a6a5278f1886a97070fd8aed2578de1c1bd5d84acd711ca"
+    },
+    {
+      "scope": "extension",
+      "file": "prepare_study_data.py",
+      "sha256": "619e1f4d1d44dbe14775ddabe5c3cb0c021c1f7b68373191317eedfbe7c86894"
+    },
+    {
+      "scope": "extension",
+      "file": "run_study.py",
+      "sha256": "dbbf3f8f8867018417d9985cd65bfe14ace5dc72bbd6f5b52c8c16e6f2091099"
+    },
+    {
+      "scope": "extension",
+      "file": "split_study.py",
+      "sha256": "d9a437150aec132fa4fc46ee0444ed5ccfec62e9917808c4721e1477ae742390"
+    },
+    {
+      "scope": "extension",
+      "file": "study_models.py",
+      "sha256": "57a7f1fd6d475a08dfa375be7097eefdf32c9f2c666728e3d16b34fa9fa36923"
+    },
+    {
+      "scope": "extension",
+      "file": "run_cloud_study.py",
+      "sha256": "ff22e278b5d7db48ae6c9aec04245126317b883d851030ab7e4a498770799319"
+    }
+  ],
+  "note": "执行源快照；交付中的wrapper可以包含后续复现入口修订，核心训练源码逐项核对。"
+}

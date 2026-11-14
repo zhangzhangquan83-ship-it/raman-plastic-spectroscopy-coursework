@@ -1,0 +1,52 @@
+{
+  "status": "finished",
+  "config": {
+    "run_id": "baseline_random_forest_300_f3",
+    "model": "random_forest_300",
+    "fold_id": 3,
+    "family": "baseline",
+    "seed": 101
+  },
+  "labels": [
+    "acrylonitrile butadiene styrene",
+    "blank",
+    "nylon",
+    "poly (methyl methacrylate)",
+    "polyester",
+    "polyethylene",
+    "polyethylene terephthalate",
+    "polyoxymethylene",
+    "polypropylene",
+    "polystyrene",
+    "polytetrafluoroethylene",
+    "polyvinyl chloride"
+  ],
+  "plan_sha256": "864cf5c8efe54d8ee885b9cc848f9f9ac7cd1eb2c30b9bdb27970e5bc1a18004",
+  "protocol_sha256": "f5f818e287bc0033afcc47f2729c27ba8194474be2430d3b9612d94b420259a6",
+  "data_sha256": "f760aea38fc98a71629c18fd4157dd023b4f0782f7f5cc9602d31f642a109851",
+  "inner_val_metrics": {
+    "accuracy": 0.9663200723327305,
+    "balanced_accuracy": 0.9509947271767739,
+    "macro_f1_present": 0.9465924240163249,
+    "map_mean_accuracy": 0.9724024163249932,
+    "map_equal_weight_macro_f1": 0.9493438318374182,
+    "evaluated_classes": 12,
+    "pixels": 4424,
+    "maps": 5
+  },
+  "outer_metrics": {
+    "accuracy": 0.9087348217783,
+    "balanced_accuracy": 0.8300140117841591,
+    "macro_f1_present": 0.8364955256024594,
+    "map_mean_accuracy": 0.8895383594246068,
+    "map_equal_weight_macro_f1": 0.8077571557216322,
+    "evaluated_classes": 12,
+    "pixels": 7659,
+    "maps": 9
+  },
+  "parameter_search": [],
+  "original_test_used": false,
+  "runtime_seconds": 21.80242543667555,
+  "train_maps": 14,
+  "train_pixels": 13458
+}

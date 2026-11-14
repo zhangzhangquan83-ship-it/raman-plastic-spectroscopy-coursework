@@ -1,0 +1,131 @@
+{
+  "status": "自动审计通过，仍需目视检查警告",
+  "reviewed_source_warnings": {
+    "PNG_without_TIFF": "本课程交付为高分辨率PNG预览及PDF/SVG矢量图，不要求期刊TIFF上传格式。",
+    "dynamic_DPI": "PNG的dpi来自CLI，默认400；入口强制至少300。",
+    "dropna": "仅剔除没有完整三折指标的绘图条件或无概率基线；缺失run及完整性标志保存在CSV和run_validation.json，未删除原始像素。",
+    "log_guard": "NLL仅对np.clip(p_true, 1e-8, 1)取对数，已有显式正数下界。",
+    "single_axes": "每幅图只有一个科学坐标轴，保存前显式断言，故多面板对齐不适用。"
+  },
+  "checks": [
+    {
+      "tool": "validate_figure.py",
+      "target": "summarize_study.py",
+      "returncode": 0,
+      "stdout": "{\n  \"source\": \"D:\\\\CodexWorkspace\\\\github-2-raspi\\\\scale_assignment\\\\extension_study\\\\src\\\\summarize_study.py\",\n  \"backend\": \"python\",\n  \"summary\": {\n    \"ready\": true,\n    \"strict\": false,\n    \"counts\": {\n      \"PASS\": 17,\n      \"WARN\": 4,\n      \"FAIL\": 0\n    }\n  },\n  \"findings\": [\n    {\n      \"check_id\": \"SOURCE-SYNTAX\",\n      \"level\": \"PASS\",\n      \"message\": \"Python source parses successfully\",\n      \"evidence\": []\n    },\n    {\n      \"check_id\": \"FONT-FAMILY\",\n      \"level\": \"PASS\",\n      \"message\": \"A publication-safe sans-serif family is configured\",\n      \"evidence\": [\n        \"sans-serif\"\n      ]\n    },\n    {\n      \"check_id\": \"FONT-SIZE\",\n      \"level\": \"PASS\",\n      \"message\": \"All detected text sizes are at least 5 pt (minimum 9 pt)\",\n      \"evidence\": []\n    },\n    {\n      \"check_id\": \"FONT-GLYPH-FLOOR\",\n      \"level\": \"PASS\",\n      \"message\": \"No mathtext superscript/subscript expression detected\",\n      \"evidence\": []\n    },\n    {\n      \"check_id\": \"LEGEND-LABEL-CASE\",\n      \"level\": \"PASS\",\n      \"message\": \"Detected literal legend labels start with display-style capitalization\",\n      \"evidence\": []\n    },\n    {\n      \"check_id\": \"COLOR-MAP\",\n      \"level\": \"PASS\",\n      \"message\": \"No rainbow/jet/hsv color mapping detected\",\n      \"evidence\": []\n    },\n    {\n      \"check_id\": \"EDITABLE-TEXT\",\n      \"level\": \"PASS\",\n      \"message\": \"SVG and PDF editable-text settings are configured\",\n      \"evidence\": []\n    },\n    {\n      \"check_id\": \"EXPORT-VECTOR\",\n      \"level\": \"PASS\",\n      \"message\": \"Both SVG and PDF exports are present\",\n      \"evidence\": []\n    },\n    {\n      \"check_id\": \"EXPORT-RASTER\",\n      \"level\": \"WARN\",\n      \"message\": \"PNG preview is present but no TIFF submission raster was found\",\n      \"evidence\": []\n    },\n    {\n      \"check_id\": \"RASTER-DPI\",\n      \"level\": \"WARN\",\n      \"message\": \"No explicit raster DPI/resolution found\",\n      \"evidence\": []\n    },\n    {\n      \"check_id\": \"FINAL-WIDTH\",\n      \"level\": \"PASS\",\n      \"message\": \"Detected width 182.9 mm matches a common journal column width\",\n      \"evidence\": []\n    },\n    {\n      \"check_id\": \"DATA-SAMPLING\",\n      \"level\": \"PASS\",\n      \"message\": \"No high-confidence row-sampling operation detected\",\n      \"evidence\": []\n    },\n    {\n      \"check_id\": \"DATA-EXCLUSION\",\n      \"level\": \"WARN\",\n      \"message\": \"Missing-data exclusion found without explicit before/after count tracking\",\n      \"evidence\": [\n        \".dropna(\"\n      ]\n    },\n    {\n      \"check_id\": \"DEMO-DATA\",\n      \"level\": \"PASS\",\n      \"message\": \"No obvious simulated-data generator detected\",\n      \"evidence\": []\n    },\n    {\n      \"check_id\": \"LOG-GUARD\",\n      \"level\": \"WARN\",\n      \"message\": \"Logarithmic operation found without an obvious positivity/pseudocount guard\",\n      \"evidence\": [\n        \"np.log(\",\n        \"log(\"\n      ]\n    },\n    {\n      \"check_id\": \"INTERP-MONOTONIC\",\n      \"level\": \"PASS\",\n      \"message\": \"No NumPy interpolation requiring an increasing x-grid detected\",\n      \"evidence\": []\n    },\n    {\n      \"check_id\": \"UNCERTAINTY-ENCODING\",\n      \"level\": \"PASS\",\n      \"message\": \"A stochastic aggregate and uncertainty encoding are both present; still verify every comparable panel\",\n      \"evidence\": [\n        \"xerr=\",\n        \".errorbar(\"\n      ]\n    },\n    {\n      \"check_id\": \"ROTATION-ANCHOR\",\n      \"level\": \"PASS\",\n      \"message\": \"No rotated Matplotlib text detected\",\n      \"evidence\": []\n    },\n    {\n      \"check_id\": \"ANNOTATION-WORKAROUND\",\n      \"level\": \"PASS\",\n      \"message\": \"No high-risk hard-coded label height or opaque white text mask detected\",\n      \"evidence\": []\n    },\n    {\n      \"check_id\": \"PANEL-ALIGNMENT-GATE\",\n      \"level\": \"PASS\",\n      \"message\": \"No statically auditable multi-panel construct detected\",\n      \"evidence\": []\n    },\n    {\n      \"check_id\": \"BACKEND-EXCLUSIVE\",\n      \"level\": \"PASS\",\n      \"message\": \"No obvious cross-backend plotting reference found for python\",\n      \"evidence\": []\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "tool": "audit_pdf_text.py",
+      "target": "architecture_comparison.pdf",
+      "returncode": 0,
+      "stdout": "{\n  \"pdf\": \"D:\\\\CodexWorkspace\\\\github-2-raspi\\\\scale_assignment\\\\extension_study\\\\results\\\\summary\\\\figures\\\\architecture_comparison.pdf\",\n  \"auditable\": true,\n  \"minimum_required_pt\": 5.0,\n  \"minimum_found_pt\": 9.0,\n  \"text_run_count\": 4,\n  \"below_minimum_count\": 0,\n  \"below_minimum\": [],\n  \"warnings\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "tool": "audit_figure_collisions.py",
+      "target": "architecture_comparison.pdf",
+      "returncode": 0,
+      "stdout": "Nature Figure Rendered Collision Audit\npdf: D:\\CodexWorkspace\\github-2-raspi\\scale_assignment\\extension_study\\results\\summary\\figures\\architecture_comparison.pdf\npages: 1\nvisible text boxes: 14\nstroke paths: 62\n\n\nsummary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays\nverdict: PASS\nnote: contained overlays can be intentional; WARN findings need final-size visual review\n",
+      "stderr": ""
+    },
+    {
+      "tool": "audit_pdf_text.py",
+      "target": "augmentation_loss_paired.pdf",
+      "returncode": 0,
+      "stdout": "{\n  \"pdf\": \"D:\\\\CodexWorkspace\\\\github-2-raspi\\\\scale_assignment\\\\extension_study\\\\results\\\\summary\\\\figures\\\\augmentation_loss_paired.pdf\",\n  \"auditable\": true,\n  \"minimum_required_pt\": 5.0,\n  \"minimum_found_pt\": 9.0,\n  \"text_run_count\": 9,\n  \"below_minimum_count\": 0,\n  \"below_minimum\": [],\n  \"warnings\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "tool": "audit_figure_collisions.py",
+      "target": "augmentation_loss_paired.pdf",
+      "returncode": 0,
+      "stdout": "Nature Figure Rendered Collision Audit\npdf: D:\\CodexWorkspace\\github-2-raspi\\scale_assignment\\extension_study\\results\\summary\\figures\\augmentation_loss_paired.pdf\npages: 1\nvisible text boxes: 10\nstroke paths: 27\n\n\nsummary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays\nverdict: PASS\nnote: contained overlays can be intentional; WARN findings need final-size visual review\n",
+      "stderr": ""
+    },
+    {
+      "tool": "audit_pdf_text.py",
+      "target": "calibration_ece.pdf",
+      "returncode": 0,
+      "stdout": "{\n  \"pdf\": \"D:\\\\CodexWorkspace\\\\github-2-raspi\\\\scale_assignment\\\\extension_study\\\\results\\\\summary\\\\figures\\\\calibration_ece.pdf\",\n  \"auditable\": true,\n  \"minimum_required_pt\": 5.0,\n  \"minimum_found_pt\": 9.0,\n  \"text_run_count\": 5,\n  \"below_minimum_count\": 0,\n  \"below_minimum\": [],\n  \"warnings\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "tool": "audit_figure_collisions.py",
+      "target": "calibration_ece.pdf",
+      "returncode": 0,
+      "stdout": "Nature Figure Rendered Collision Audit\npdf: D:\\CodexWorkspace\\github-2-raspi\\scale_assignment\\extension_study\\results\\summary\\figures\\calibration_ece.pdf\npages: 1\nvisible text boxes: 11\nstroke paths: 29\n\n\nsummary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays\nverdict: PASS\nnote: contained overlays can be intentional; WARN findings need final-size visual review\n",
+      "stderr": ""
+    },
+    {
+      "tool": "audit_pdf_text.py",
+      "target": "calibration_reliability.pdf",
+      "returncode": 0,
+      "stdout": "{\n  \"pdf\": \"D:\\\\CodexWorkspace\\\\github-2-raspi\\\\scale_assignment\\\\extension_study\\\\results\\\\summary\\\\figures\\\\calibration_reliability.pdf\",\n  \"auditable\": true,\n  \"minimum_required_pt\": 5.0,\n  \"minimum_found_pt\": 9.0,\n  \"text_run_count\": 8,\n  \"below_minimum_count\": 0,\n  \"below_minimum\": [],\n  \"warnings\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "tool": "audit_figure_collisions.py",
+      "target": "calibration_reliability.pdf",
+      "returncode": 0,
+      "stdout": "Nature Figure Rendered Collision Audit\npdf: D:\\CodexWorkspace\\github-2-raspi\\scale_assignment\\extension_study\\results\\summary\\figures\\calibration_reliability.pdf\npages: 1\nvisible text boxes: 19\nstroke paths: 57\n\n\nsummary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays\nverdict: PASS\nnote: contained overlays can be intentional; WARN findings need final-size visual review\n",
+      "stderr": ""
+    },
+    {
+      "tool": "audit_pdf_text.py",
+      "target": "learning_curve_maps.pdf",
+      "returncode": 0,
+      "stdout": "{\n  \"pdf\": \"D:\\\\CodexWorkspace\\\\github-2-raspi\\\\scale_assignment\\\\extension_study\\\\results\\\\summary\\\\figures\\\\learning_curve_maps.pdf\",\n  \"auditable\": true,\n  \"minimum_required_pt\": 5.0,\n  \"minimum_found_pt\": 9.0,\n  \"text_run_count\": 6,\n  \"below_minimum_count\": 0,\n  \"below_minimum\": [],\n  \"warnings\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "tool": "audit_figure_collisions.py",
+      "target": "learning_curve_maps.pdf",
+      "returncode": 0,
+      "stdout": "Nature Figure Rendered Collision Audit\npdf: D:\\CodexWorkspace\\github-2-raspi\\scale_assignment\\extension_study\\results\\summary\\figures\\learning_curve_maps.pdf\npages: 1\nvisible text boxes: 21\nstroke paths: 41\n\n\nsummary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays\nverdict: PASS\nnote: contained overlays can be intentional; WARN findings need final-size visual review\n",
+      "stderr": ""
+    },
+    {
+      "tool": "audit_pdf_text.py",
+      "target": "learning_curve_pixels.pdf",
+      "returncode": 0,
+      "stdout": "{\n  \"pdf\": \"D:\\\\CodexWorkspace\\\\github-2-raspi\\\\scale_assignment\\\\extension_study\\\\results\\\\summary\\\\figures\\\\learning_curve_pixels.pdf\",\n  \"auditable\": true,\n  \"minimum_required_pt\": 5.0,\n  \"minimum_found_pt\": 9.0,\n  \"text_run_count\": 6,\n  \"below_minimum_count\": 0,\n  \"below_minimum\": [],\n  \"warnings\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "tool": "audit_figure_collisions.py",
+      "target": "learning_curve_pixels.pdf",
+      "returncode": 0,
+      "stdout": "Nature Figure Rendered Collision Audit\npdf: D:\\CodexWorkspace\\github-2-raspi\\scale_assignment\\extension_study\\results\\summary\\figures\\learning_curve_pixels.pdf\npages: 1\nvisible text boxes: 19\nstroke paths: 39\n\n\nsummary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays\nverdict: PASS\nnote: contained overlays can be intentional; WARN findings need final-size visual review\n",
+      "stderr": ""
+    },
+    {
+      "tool": "audit_pdf_text.py",
+      "target": "noise_robustness.pdf",
+      "returncode": 0,
+      "stdout": "{\n  \"pdf\": \"D:\\\\CodexWorkspace\\\\github-2-raspi\\\\scale_assignment\\\\extension_study\\\\results\\\\summary\\\\figures\\\\noise_robustness.pdf\",\n  \"auditable\": true,\n  \"minimum_required_pt\": 5.0,\n  \"minimum_found_pt\": 9.0,\n  \"text_run_count\": 6,\n  \"below_minimum_count\": 0,\n  \"below_minimum\": [],\n  \"warnings\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "tool": "audit_figure_collisions.py",
+      "target": "noise_robustness.pdf",
+      "returncode": 0,
+      "stdout": "Nature Figure Rendered Collision Audit\npdf: D:\\CodexWorkspace\\github-2-raspi\\scale_assignment\\extension_study\\results\\summary\\figures\\noise_robustness.pdf\npages: 1\nvisible text boxes: 21\nstroke paths: 101\n\n\nsummary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays\nverdict: PASS\nnote: contained overlays can be intentional; WARN findings need final-size visual review\n",
+      "stderr": ""
+    },
+    {
+      "tool": "audit_pdf_text.py",
+      "target": "preprocessing_paired.pdf",
+      "returncode": 0,
+      "stdout": "{\n  \"pdf\": \"D:\\\\CodexWorkspace\\\\github-2-raspi\\\\scale_assignment\\\\extension_study\\\\results\\\\summary\\\\figures\\\\preprocessing_paired.pdf\",\n  \"auditable\": true,\n  \"minimum_required_pt\": 5.0,\n  \"minimum_found_pt\": 9.0,\n  \"text_run_count\": 9,\n  \"below_minimum_count\": 0,\n  \"below_minimum\": [],\n  \"warnings\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "tool": "audit_figure_collisions.py",
+      "target": "preprocessing_paired.pdf",
+      "returncode": 0,
+      "stdout": "Nature Figure Rendered Collision Audit\npdf: D:\\CodexWorkspace\\github-2-raspi\\scale_assignment\\extension_study\\results\\summary\\figures\\preprocessing_paired.pdf\npages: 1\nvisible text boxes: 13\nstroke paths: 46\n\n\nsummary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays\nverdict: PASS\nnote: contained overlays can be intentional; WARN findings need final-size visual review\n",
+      "stderr": ""
+    }
+  ]
+}

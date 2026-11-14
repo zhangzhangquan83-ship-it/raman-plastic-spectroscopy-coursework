@@ -1,0 +1,36 @@
+{
+  "status": "completed",
+  "started_at": "2026-11-13T20:54:02.627259+08:00",
+  "command": [
+    "bash",
+    "run_cloud.sh"
+  ],
+  "archive_sha256": "8c4ac64e9dd60b5df2ceb1fd17263409e1adb0c9f9e94425d59c42a47585fe39",
+  "hardware_preflight": {
+    "status": "passed",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "cuda_available": true,
+    "torch_cuda_build": "12.8",
+    "versions": {
+      "torch": "2.8.0+cu128",
+      "numpy": "2.5.4",
+      "pandas": "3.0.1",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1"
+    },
+    "samples": 33119,
+    "maps": 34,
+    "classes": 15,
+    "parameters": 320463,
+    "forward_backward_finite": true,
+    "weights_only_roundtrip": true,
+    "test_evaluated": false,
+    "runtime_seconds": 2.0865226462483406
+  },
+  "gpu_training_executed": true,
+  "formal_test_evaluated": true,
+  "finished_at": "2026-11-13T20:56:22.544784+08:00",
+  "elapsed_seconds": 139.91705936938524,
+  "exit_code": 0
+}

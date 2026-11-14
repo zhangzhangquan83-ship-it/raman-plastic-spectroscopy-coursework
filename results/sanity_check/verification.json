@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "cuda_available": true,
+  "torch_cuda_build": "12.8",
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1"
+  },
+  "samples": 33119,
+  "maps": 34,
+  "classes": 15,
+  "parameters": 320463,
+  "forward_backward_finite": true,
+  "weights_only_roundtrip": true,
+  "test_evaluated": false,
+  "runtime_seconds": 2.2654101327061653
+}

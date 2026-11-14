@@ -1,0 +1,13 @@
+{
+  "accuracy": 0.9511720983419096,
+  "balanced_accuracy": 0.9370126879306605,
+  "macro_f1_present": 0.922414393828079,
+  "map_mean_accuracy": 0.9536562636445242,
+  "map_equal_weight_macro_f1": 0.9191679370025683,
+  "evaluated_classes": 12,
+  "pixels": 8745,
+  "maps": 9,
+  "ece_10_bins": 0.00773008787816014,
+  "negative_log_likelihood": 0.19917899370193481,
+  "multiclass_brier": 0.07544588297605515
+}

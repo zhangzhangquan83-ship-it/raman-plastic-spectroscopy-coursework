@@ -1,0 +1,1459 @@
+{
+  "source_doi": "10.5683/SP3/8UQQQN",
+  "paper_doi": "10.1038/s41597-026-07103-8",
+  "license": "CC BY 4.0",
+  "map_count": 34,
+  "raw_spectra_count": 33119,
+  "retained_spectra_count": 33119,
+  "features": 1024,
+  "dtype": "float32",
+  "class_count": 15,
+  "class_labels": [
+    "acrylonitrile butadiene styrene",
+    "blank",
+    "nylon",
+    "poly (methyl methacrylate)",
+    "polycarbonate",
+    "polyester",
+    "polyethylene",
+    "polyethylene terephthalate",
+    "polyoxymethylene",
+    "polypropylene",
+    "polystyrene",
+    "polytetrafluoroethylene",
+    "polyurethane",
+    "polyvinyl chloride",
+    "silicone"
+  ],
+  "label_counts": {
+    "blank": 16521,
+    "polypropylene": 2156,
+    "polyoxymethylene": 1752,
+    "polyethylene": 1662,
+    "polytetrafluoroethylene": 1669,
+    "polyester": 602,
+    "polystyrene": 1152,
+    "nylon": 1129,
+    "acrylonitrile butadiene styrene": 1350,
+    "poly (methyl methacrylate)": 996,
+    "polycarbonate": 938,
+    "polyethylene terephthalate": 698,
+    "polyurethane": 347,
+    "polyvinyl chloride": 1279,
+    "silicone": 868
+  },
+  "common_axis_cm_inverse": [
+    710.1758,
+    1827.0
+  ],
+  "axis_policy": "所有34幅图原始频轴交集，升序等间距1024点，不外推",
+  "preprocessing": {
+    "interpolation": "linear",
+    "savgol_window": 11,
+    "savgol_polyorder": 3,
+    "baseline": "两端各5点均值之间的线性基线",
+    "normalization": "逐谱SNV ddof=0",
+    "zero_std_threshold": 1e-08,
+    "fitted_across_spectra_statistics": false
+  },
+  "excluded_rows": 0,
+  "excluded_reason_counts": {},
+  "nonfinite_final_values": 0,
+  "native_exact_duplicates": {
+    "duplicate_sets": 0,
+    "duplicate_rows": 0,
+    "conflicting_label_sets": 0,
+    "conflicting_label_rows": 0,
+    "cross_map_duplicate_sets": 0,
+    "same_label_cross_map_edges": []
+  },
+  "processed_exact_duplicates": {
+    "duplicate_sets": 0,
+    "duplicate_rows": 0,
+    "conflicting_label_sets": 0,
+    "conflicting_label_rows": 0,
+    "cross_map_duplicate_sets": 0,
+    "same_label_cross_map_edges": []
+  },
+  "per_map": [
+    {
+      "map_id": "Map_Env_POM_PP_PE",
+      "raw_rows": 2052,
+      "retained_before_duplicate_audit": 2052,
+      "raw_features": 1017,
+      "native_axis_min": 710.0664,
+      "native_axis_max": 1827.1064,
+      "raw_label_counts": {
+        "blank": 967,
+        "polypropylene": 363,
+        "polyoxymethylene": 431,
+        "polyethylene": 291
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_Env_PP_PE_1",
+      "raw_rows": 1484,
+      "retained_before_duplicate_audit": 1484,
+      "raw_features": 1017,
+      "native_axis_min": 710.0664,
+      "native_axis_max": 1827.1064,
+      "raw_label_counts": {
+        "blank": 745,
+        "polypropylene": 416,
+        "polyethylene": 323
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_Env_PP_PE_2",
+      "raw_rows": 960,
+      "retained_before_duplicate_audit": 960,
+      "raw_features": 1017,
+      "native_axis_min": 710.10645,
+      "native_axis_max": 1827.1406,
+      "raw_label_counts": {
+        "blank": 520,
+        "polyethylene": 204,
+        "polypropylene": 236
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_Env_PP_PTFE",
+      "raw_rows": 2280,
+      "retained_before_duplicate_audit": 2280,
+      "raw_features": 1017,
+      "native_axis_min": 710.1201,
+      "native_axis_max": 1827.1523,
+      "raw_label_counts": {
+        "blank": 854,
+        "polypropylene": 813,
+        "polytetrafluoroethylene": 613
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_PS_PE_PEs_1",
+      "raw_rows": 896,
+      "retained_before_duplicate_audit": 896,
+      "raw_features": 1017,
+      "native_axis_min": 709.9385,
+      "native_axis_max": 1827.0,
+      "raw_label_counts": {
+        "blank": 578,
+        "polyester": 123,
+        "polyethylene": 87,
+        "polystyrene": 108
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_Nylon",
+      "raw_rows": 484,
+      "retained_before_duplicate_audit": 484,
+      "raw_features": 1017,
+      "native_axis_min": 710.1758,
+      "native_axis_max": 1827.1982,
+      "raw_label_counts": {
+        "blank": 205,
+        "nylon": 279
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_Nylon_ABS_PMMA",
+      "raw_rows": 840,
+      "retained_before_duplicate_audit": 840,
+      "raw_features": 1017,
+      "native_axis_min": 710.0127,
+      "native_axis_max": 1827.0625,
+      "raw_label_counts": {
+        "blank": 546,
+        "acrylonitrile butadiene styrene": 84,
+        "poly (methyl methacrylate)": 68,
+        "nylon": 142
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_Nylon_PEs_PS",
+      "raw_rows": 750,
+      "retained_before_duplicate_audit": 750,
+      "raw_features": 1017,
+      "native_axis_min": 709.9385,
+      "native_axis_max": 1827.0,
+      "raw_label_counts": {
+        "blank": 242,
+        "polystyrene": 123,
+        "polyester": 197,
+        "nylon": 188
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_Nylon_POM",
+      "raw_rows": 644,
+      "retained_before_duplicate_audit": 644,
+      "raw_features": 1017,
+      "native_axis_min": 709.9385,
+      "native_axis_max": 1827.0,
+      "raw_label_counts": {
+        "blank": 369,
+        "nylon": 137,
+        "polyoxymethylene": 138
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_Nylon_PTFE_POM",
+      "raw_rows": 2090,
+      "retained_before_duplicate_audit": 2090,
+      "raw_features": 1017,
+      "native_axis_min": 709.9531,
+      "native_axis_max": 1827.0127,
+      "raw_label_counts": {
+        "blank": 739,
+        "nylon": 383,
+        "polyoxymethylene": 552,
+        "polytetrafluoroethylene": 416
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_PC_1",
+      "raw_rows": 460,
+      "retained_before_duplicate_audit": 460,
+      "raw_features": 1017,
+      "native_axis_min": 710.1758,
+      "native_axis_max": 1827.1982,
+      "raw_label_counts": {
+        "blank": 276,
+        "polycarbonate": 184
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_PC_2",
+      "raw_rows": 1190,
+      "retained_before_duplicate_audit": 1190,
+      "raw_features": 1017,
+      "native_axis_min": 709.9531,
+      "native_axis_max": 1827.0127,
+      "raw_label_counts": {
+        "blank": 612,
+        "polycarbonate": 578
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_PE",
+      "raw_rows": 899,
+      "retained_before_duplicate_audit": 899,
+      "raw_features": 1017,
+      "native_axis_min": 710.1572,
+      "native_axis_max": 1827.1826,
+      "raw_label_counts": {
+        "blank": 581,
+        "polyethylene": 318
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_PET",
+      "raw_rows": 532,
+      "retained_before_duplicate_audit": 532,
+      "raw_features": 1017,
+      "native_axis_min": 709.9385,
+      "native_axis_max": 1827.0,
+      "raw_label_counts": {
+        "blank": 348,
+        "polyethylene terephthalate": 184
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_PMMA_PC",
+      "raw_rows": 984,
+      "retained_before_duplicate_audit": 984,
+      "raw_features": 1017,
+      "native_axis_min": 709.9385,
+      "native_axis_max": 1827.0,
+      "raw_label_counts": {
+        "blank": 601,
+        "poly (methyl methacrylate)": 207,
+        "polycarbonate": 176
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_PMMA_PET",
+      "raw_rows": 672,
+      "retained_before_duplicate_audit": 672,
+      "raw_features": 1017,
+      "native_axis_min": 710.16504,
+      "native_axis_max": 1827.1895,
+      "raw_label_counts": {
+        "blank": 355,
+        "poly (methyl methacrylate)": 120,
+        "polyethylene terephthalate": 197
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_PMMA_PET_PE_ABS",
+      "raw_rows": 676,
+      "retained_before_duplicate_audit": 676,
+      "raw_features": 1017,
+      "native_axis_min": 710.16504,
+      "native_axis_max": 1827.1895,
+      "raw_label_counts": {
+        "blank": 314,
+        "polyethylene terephthalate": 101,
+        "acrylonitrile butadiene styrene": 99,
+        "poly (methyl methacrylate)": 104,
+        "polyethylene": 58
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_PMMA_PTFE_PE",
+      "raw_rows": 1560,
+      "retained_before_duplicate_audit": 1560,
+      "raw_features": 1017,
+      "native_axis_min": 709.9531,
+      "native_axis_max": 1827.0127,
+      "raw_label_counts": {
+        "blank": 961,
+        "poly (methyl methacrylate)": 264,
+        "polytetrafluoroethylene": 158,
+        "polyethylene": 177
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_POM",
+      "raw_rows": 648,
+      "retained_before_duplicate_audit": 648,
+      "raw_features": 1017,
+      "native_axis_min": 710.1758,
+      "native_axis_max": 1827.1982,
+      "raw_label_counts": {
+        "blank": 385,
+        "polyoxymethylene": 263
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_POM_ABS",
+      "raw_rows": 483,
+      "retained_before_duplicate_audit": 483,
+      "raw_features": 1017,
+      "native_axis_min": 709.9385,
+      "native_axis_max": 1827.0,
+      "raw_label_counts": {
+        "blank": 280,
+        "polyoxymethylene": 100,
+        "acrylonitrile butadiene styrene": 103
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_PP",
+      "raw_rows": 620,
+      "retained_before_duplicate_audit": 620,
+      "raw_features": 1017,
+      "native_axis_min": 710.1758,
+      "native_axis_max": 1827.1982,
+      "raw_label_counts": {
+        "blank": 292,
+        "polypropylene": 328
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_PS",
+      "raw_rows": 672,
+      "retained_before_duplicate_audit": 672,
+      "raw_features": 1017,
+      "native_axis_min": 710.1758,
+      "native_axis_max": 1827.1982,
+      "raw_label_counts": {
+        "blank": 374,
+        "polystyrene": 298
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_PS_ABS",
+      "raw_rows": 672,
+      "retained_before_duplicate_audit": 672,
+      "raw_features": 1017,
+      "native_axis_min": 710.08594,
+      "native_axis_max": 1827.123,
+      "raw_label_counts": {
+        "blank": 277,
+        "polystyrene": 170,
+        "acrylonitrile butadiene styrene": 225
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_PS_PE_PEs_2",
+      "raw_rows": 918,
+      "retained_before_duplicate_audit": 918,
+      "raw_features": 1017,
+      "native_axis_min": 710.08594,
+      "native_axis_max": 1827.123,
+      "raw_label_counts": {
+        "blank": 365,
+        "polyester": 155,
+        "polyethylene": 204,
+        "polystyrene": 194
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_PS_PTFE_POM_PMMA",
+      "raw_rows": 1456,
+      "retained_before_duplicate_audit": 1456,
+      "raw_features": 1017,
+      "native_axis_min": 710.0664,
+      "native_axis_max": 1827.1064,
+      "raw_label_counts": {
+        "blank": 507,
+        "polyoxymethylene": 194,
+        "polystyrene": 259,
+        "poly (methyl methacrylate)": 233,
+        "polytetrafluoroethylene": 263
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_PTFE",
+      "raw_rows": 462,
+      "retained_before_duplicate_audit": 462,
+      "raw_features": 1017,
+      "native_axis_min": 710.1758,
+      "native_axis_max": 1827.1982,
+      "raw_label_counts": {
+        "blank": 243,
+        "polytetrafluoroethylene": 219
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_PU",
+      "raw_rows": 624,
+      "retained_before_duplicate_audit": 624,
+      "raw_features": 1017,
+      "native_axis_min": 709.9385,
+      "native_axis_max": 1827.0,
+      "raw_label_counts": {
+        "blank": 355,
+        "polyurethane": 269
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_PVC_1",
+      "raw_rows": 621,
+      "retained_before_duplicate_audit": 621,
+      "raw_features": 1017,
+      "native_axis_min": 709.9385,
+      "native_axis_max": 1827.0,
+      "raw_label_counts": {
+        "blank": 306,
+        "polyvinyl chloride": 315
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_PVC_2",
+      "raw_rows": 572,
+      "retained_before_duplicate_audit": 572,
+      "raw_features": 1017,
+      "native_axis_min": 710.03125,
+      "native_axis_max": 1827.0791,
+      "raw_label_counts": {
+        "blank": 250,
+        "polyvinyl chloride": 322
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_PVC_ABS_PEs",
+      "raw_rows": 992,
+      "retained_before_duplicate_audit": 992,
+      "raw_features": 1017,
+      "native_axis_min": 710.08496,
+      "native_axis_max": 1827.123,
+      "raw_label_counts": {
+        "blank": 552,
+        "polyester": 127,
+        "polyvinyl chloride": 206,
+        "acrylonitrile butadiene styrene": 107
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_PVC_PET",
+      "raw_rows": 1295,
+      "retained_before_duplicate_audit": 1295,
+      "raw_features": 1017,
+      "native_axis_min": 710.1572,
+      "native_axis_max": 1827.1826,
+      "raw_label_counts": {
+        "blank": 743,
+        "polyethylene terephthalate": 216,
+        "polyvinyl chloride": 336
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_PVC_PU_POM",
+      "raw_rows": 720,
+      "retained_before_duplicate_audit": 720,
+      "raw_features": 1017,
+      "native_axis_min": 710.16504,
+      "native_axis_max": 1827.1895,
+      "raw_label_counts": {
+        "blank": 468,
+        "polyvinyl chloride": 100,
+        "polyurethane": 78,
+        "polyoxymethylene": 74
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_Silicone",
+      "raw_rows": 783,
+      "retained_before_duplicate_audit": 783,
+      "raw_features": 1017,
+      "native_axis_min": 710.1758,
+      "native_axis_max": 1827.1982,
+      "raw_label_counts": {
+        "blank": 465,
+        "silicone": 318
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    },
+    {
+      "map_id": "Map_Silicone_ABS",
+      "raw_rows": 2128,
+      "retained_before_duplicate_audit": 2128,
+      "raw_features": 1017,
+      "native_axis_min": 709.9531,
+      "native_axis_max": 1827.0127,
+      "raw_label_counts": {
+        "blank": 846,
+        "silicone": 550,
+        "acrylonitrile butadiene styrene": 732
+      },
+      "nonfinite_raw_rows": 0,
+      "missing_label_rows": 0,
+      "near_zero_std_rows": 0
+    }
+  ],
+  "per_map_label_counts": {
+    "Map_Env_POM_PP_PE": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 967,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 291,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 431,
+      "polypropylene": 363,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_Env_PP_PE_1": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 745,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 323,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 416,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_Env_PP_PE_2": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 520,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 204,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 236,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_Env_PP_PTFE": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 854,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 813,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 613,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_Nylon": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 205,
+      "nylon": 279,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_Nylon_ABS_PMMA": {
+      "acrylonitrile butadiene styrene": 84,
+      "blank": 546,
+      "nylon": 142,
+      "poly (methyl methacrylate)": 68,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_Nylon_PEs_PS": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 242,
+      "nylon": 188,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 197,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 123,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_Nylon_POM": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 369,
+      "nylon": 137,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 138,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_Nylon_PTFE_POM": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 739,
+      "nylon": 383,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 552,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 416,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_PC_1": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 276,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 184,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_PC_2": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 612,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 578,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_PE": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 581,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 318,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_PET": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 348,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 184,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_PMMA_PC": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 601,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 207,
+      "polycarbonate": 176,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_PMMA_PET": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 355,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 120,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 197,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_PMMA_PET_PE_ABS": {
+      "acrylonitrile butadiene styrene": 99,
+      "blank": 314,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 104,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 58,
+      "polyethylene terephthalate": 101,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_PMMA_PTFE_PE": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 961,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 264,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 177,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 158,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_POM": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 385,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 263,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_POM_ABS": {
+      "acrylonitrile butadiene styrene": 103,
+      "blank": 280,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 100,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_PP": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 292,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 328,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_PS": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 374,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 298,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_PS_ABS": {
+      "acrylonitrile butadiene styrene": 225,
+      "blank": 277,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 170,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_PS_PE_PEs_1": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 578,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 123,
+      "polyethylene": 87,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 108,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_PS_PE_PEs_2": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 365,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 155,
+      "polyethylene": 204,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 194,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_PS_PTFE_POM_PMMA": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 507,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 233,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 194,
+      "polypropylene": 0,
+      "polystyrene": 259,
+      "polytetrafluoroethylene": 263,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_PTFE": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 243,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 219,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_PU": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 355,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 269,
+      "polyvinyl chloride": 0,
+      "silicone": 0
+    },
+    "Map_PVC_1": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 306,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 315,
+      "silicone": 0
+    },
+    "Map_PVC_2": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 250,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 322,
+      "silicone": 0
+    },
+    "Map_PVC_ABS_PEs": {
+      "acrylonitrile butadiene styrene": 107,
+      "blank": 552,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 127,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 206,
+      "silicone": 0
+    },
+    "Map_PVC_PET": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 743,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 216,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 336,
+      "silicone": 0
+    },
+    "Map_PVC_PU_POM": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 468,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 74,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 78,
+      "polyvinyl chloride": 100,
+      "silicone": 0
+    },
+    "Map_Silicone": {
+      "acrylonitrile butadiene styrene": 0,
+      "blank": 465,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 318
+    },
+    "Map_Silicone_ABS": {
+      "acrylonitrile butadiene styrene": 732,
+      "blank": 846,
+      "nylon": 0,
+      "poly (methyl methacrylate)": 0,
+      "polycarbonate": 0,
+      "polyester": 0,
+      "polyethylene": 0,
+      "polyethylene terephthalate": 0,
+      "polyoxymethylene": 0,
+      "polypropylene": 0,
+      "polystyrene": 0,
+      "polytetrafluoroethylene": 0,
+      "polyurethane": 0,
+      "polyvinyl chloride": 0,
+      "silicone": 550
+    }
+  },
+  "downloads": [
+    {
+      "file_id": 969510,
+      "path": "Map_Env_PP_PTFE.csv",
+      "status": "downloaded",
+      "md5": "4c0b428ee99d0ad261c4c1195de3f929"
+    },
+    {
+      "file_id": 969518,
+      "path": "Map_PS_PE_PEs_1.csv",
+      "status": "downloaded",
+      "md5": "f372bd6ec804eec9696ef120626ddfb7"
+    },
+    {
+      "file_id": 969481,
+      "path": "Map_Env_PP_PE_2.csv",
+      "status": "downloaded",
+      "md5": "c60d955986804cd8f3a92c5e29f77c1a"
+    },
+    {
+      "file_id": 969523,
+      "path": "Map_Nylon.csv",
+      "status": "downloaded",
+      "md5": "afb6dd78507aff8103a02b227762887c"
+    },
+    {
+      "file_id": 969483,
+      "path": "Map_Nylon_ABS_PMMA.csv",
+      "status": "downloaded",
+      "md5": "09f29eaa80f8b22cc274bd529d548239"
+    },
+    {
+      "file_id": 969513,
+      "path": "Map_Nylon_PEs_PS.csv",
+      "status": "downloaded",
+      "md5": "ebccc8479edf0a1f3ef8c40a3f2e11ff"
+    },
+    {
+      "file_id": 969503,
+      "path": "Map_Env_PP_PE_1.csv",
+      "status": "downloaded",
+      "md5": "0100b4f0905837e14e66a1e8c8634aed"
+    },
+    {
+      "file_id": 969473,
+      "path": "Map_PC_1.csv",
+      "status": "cached",
+      "md5": "e88aa4240a6349f321b8f524f41c5208"
+    },
+    {
+      "file_id": 969525,
+      "path": "Map_Nylon_POM.csv",
+      "status": "downloaded",
+      "md5": "b9a4782a500957393d976820fa6f4381"
+    },
+    {
+      "file_id": 969527,
+      "path": "Map_PC_2.csv",
+      "status": "downloaded",
+      "md5": "7d05ecdc542b30f02589b563939f349a"
+    },
+    {
+      "file_id": 969519,
+      "path": "Map_PE.csv",
+      "status": "downloaded",
+      "md5": "bc2edd0bde62e9aedcdcefe426f15d7b"
+    },
+    {
+      "file_id": 969500,
+      "path": "Map_Env_POM_PP_PE.csv",
+      "status": "downloaded",
+      "md5": "457ad86d3ea380bf2b20786957364f73"
+    },
+    {
+      "file_id": 969485,
+      "path": "Map_PET.csv",
+      "status": "downloaded",
+      "md5": "3d2bdd0ba3b295c6bb76866416af60d0"
+    },
+    {
+      "file_id": 969489,
+      "path": "Map_PMMA_PC.csv",
+      "status": "downloaded",
+      "md5": "64d9ac1e4655b1e91cb75988cb1952b1"
+    },
+    {
+      "file_id": 969535,
+      "path": "Map_PMMA_PET_PE_ABS.csv",
+      "status": "downloaded",
+      "md5": "3b81f317fa81876bc751a3f23c892044"
+    },
+    {
+      "file_id": 969472,
+      "path": "Map_PMMA_PET.csv",
+      "status": "downloaded",
+      "md5": "583a632eb62308fa9667c9d83cfd9bb3"
+    },
+    {
+      "file_id": 969491,
+      "path": "Map_Nylon_PTFE_POM.csv",
+      "status": "downloaded",
+      "md5": "8655f68a7c3e92824c4108f309a55156"
+    },
+    {
+      "file_id": 969516,
+      "path": "Map_POM_ABS.csv",
+      "status": "downloaded",
+      "md5": "3906438af7333fef378dd225626a9003"
+    },
+    {
+      "file_id": 969495,
+      "path": "Map_PMMA_PTFE_PE.csv",
+      "status": "downloaded",
+      "md5": "d25be8efb26dfb4a75ab28a99ab84da3"
+    },
+    {
+      "file_id": 969496,
+      "path": "Map_PP.csv",
+      "status": "downloaded",
+      "md5": "71f0b77723cdd83dfe5b771afa1e0ef9"
+    },
+    {
+      "file_id": 969492,
+      "path": "Map_PS.csv",
+      "status": "downloaded",
+      "md5": "15333ea9102c1c34fa3fd50d371ccb18"
+    },
+    {
+      "file_id": 969502,
+      "path": "Map_PS_ABS.csv",
+      "status": "downloaded",
+      "md5": "ae5869c967b6f5737a0d6fad462a97e8"
+    },
+    {
+      "file_id": 969520,
+      "path": "Map_POM.csv",
+      "status": "downloaded",
+      "md5": "760a3270fcffad16e2212101fab10090"
+    },
+    {
+      "file_id": 969522,
+      "path": "Map_PS_PE_PEs_2.csv",
+      "status": "downloaded",
+      "md5": "752cac0ad8efc7e2d31e2eec8e8660e6"
+    },
+    {
+      "file_id": 969504,
+      "path": "Map_PTFE.csv",
+      "status": "downloaded",
+      "md5": "407d58d2f2482ae8377a33c6fc63b6d9"
+    },
+    {
+      "file_id": 969480,
+      "path": "Map_PS_PTFE_POM_PMMA.csv",
+      "status": "downloaded",
+      "md5": "e56ea675c255d7ccd60a91fa3062cf24"
+    },
+    {
+      "file_id": 969534,
+      "path": "Map_PU.csv",
+      "status": "downloaded",
+      "md5": "e1ee57bd86a15656b3bb5762bb429249"
+    },
+    {
+      "file_id": 969479,
+      "path": "Map_PVC_1.csv",
+      "status": "downloaded",
+      "md5": "7ff6d4c7f862f694351ef43efa6ea295"
+    },
+    {
+      "file_id": 969494,
+      "path": "Map_PVC_ABS_PEs.csv",
+      "status": "downloaded",
+      "md5": "e40442070d4dbee658add07db3a5d75c"
+    },
+    {
+      "file_id": 969488,
+      "path": "Map_PVC_PU_POM.csv",
+      "status": "downloaded",
+      "md5": "1e50552adb6fc1451106881e9ba0b713"
+    },
+    {
+      "file_id": 969498,
+      "path": "Map_Silicone.csv",
+      "status": "downloaded",
+      "md5": "703413ed9753b7db45d836271cd7084f"
+    },
+    {
+      "file_id": 969538,
+      "path": "Map_PVC_2.csv",
+      "status": "downloaded",
+      "md5": "3b46c819d7b955b911e240434d17942f"
+    },
+    {
+      "file_id": 969493,
+      "path": "Map_PVC_PET.csv",
+      "status": "downloaded",
+      "md5": "abe6e310c5d28c8de95d9051e96b9e6b"
+    },
+    {
+      "file_id": 969477,
+      "path": "Map_Silicone_ABS.csv",
+      "status": "downloaded",
+      "md5": "1c1bc726be57b465eebcf92c482b1f51"
+    },
+    {
+      "file_id": 1049720,
+      "path": "RaMPI_metadata.csv",
+      "status": "cached",
+      "md5": "af0071eb9897cb40bc823840ad48ec08"
+    }
+  ],
+  "runtime_seconds": 89.40817890000471,
+  "limitations": [
+    "33119条是像素光谱，不是33119个独立物理样品。",
+    "图与图之间可能共享RaSPI中的物理样品，元数据没有物理样品ID。",
+    "CSV没有空间坐标或可靠二维图尺寸，不从像素数猜测二维形状或连通粒子ID。",
+    "同标签完全重复谱若跨图出现，训练层必须将有关图合并为隔离组或剔除重复，不能跨训练和测试。"
+  ],
+  "metadata_file": {
+    "file_id": 1049720,
+    "md5": "af0071eb9897cb40bc823840ad48ec08",
+    "url": "https://borealisdata.ca/api/access/datafile/1049720?format=original"
+  },
+  "manifest_sha256": "9fa92d8e7e75daaebfd4d53db462a359490f63e32887f24c171ee59f3ec5ddb8",
+  "metadata_reconciliation": {
+    "metadata_total_spectra": 33119,
+    "metadata_plastic_spectra": 16519,
+    "actual_retained_plastic_spectra": 16598,
+    "actual_retained_blank_spectra": 16521,
+    "mismatch_maps": [
+      {
+        "map_id": "Map_Nylon_PEs_PS",
+        "reported_spectra": 750,
+        "kept_spectra": 750,
+        "reported_plastic_spectra": 294,
+        "kept_plastic_spectra": 508
+      },
+      {
+        "map_id": "Map_PET",
+        "reported_spectra": 532,
+        "kept_spectra": 532,
+        "reported_plastic_spectra": 318,
+        "kept_plastic_spectra": 184
+      },
+      {
+        "map_id": "Map_Silicone_ABS",
+        "reported_spectra": 2128,
+        "kept_spectra": 2128,
+        "reported_plastic_spectra": 1283,
+        "kept_plastic_spectra": 1282
+      }
+    ],
+    "policy": "以下载CSV的逐行标签计数为本作业实际统计，不为匹配论文或元数据总数而改标签。"
+  }
+}

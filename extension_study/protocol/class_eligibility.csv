@@ -1,0 +1,16 @@
+﻿label,development_maps,development_pixels,eligible,exclusion_reason
+acrylonitrile butadiene styrene,5,1251,True,
+blank,28,13566,True,
+nylon,4,941,True,
+poly (methyl methacrylate),5,892,True,
+polycarbonate,2,360,False,development_map_coverage_below_3
+polyester,3,405,True,
+polyethylene,7,1604,True,
+polyethylene terephthalate,3,597,True,
+polyoxymethylene,6,1678,True,
+polypropylene,4,1343,True,
+polystyrene,5,1029,True,
+polytetrafluoroethylene,4,1056,True,
+polyurethane,1,269,False,development_map_coverage_below_3
+polyvinyl chloride,4,1179,True,
+silicone,1,550,False,development_map_coverage_below_3
