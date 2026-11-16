@@ -1,0 +1,305 @@
+{
+  "status": "passed",
+  "created_at": "2026-11-16T03:49:57.720340+00:00",
+  "stages": {
+    "stage1": {
+      "status": "passed",
+      "original": {
+        "status": "passed",
+        "verified_models": 6,
+        "maximum_metric_error": 9.992007221626409e-16
+      },
+      "verified_additional_models": 7,
+      "maximum_metric_error": 8.881784197001252e-16,
+      "statistical_unit": "同一已查看测试集；三seed的SD仅为训练随机性，不是三个独立测试集",
+      "source_plan_sha256": "69057a5ab28cc15be5b737a085000b3856fcb3b00190e1e0d43820bd3f6da8d3",
+      "recalculated_metrics": {
+        "random_forest_300_seed101": {
+          "accuracy": 0.6891701828410689,
+          "balanced_accuracy": 0.6229086885506835,
+          "macro_f1_present": 0.5631511339314045,
+          "map_mean_accuracy": 0.7604568422096891,
+          "map_equal_weight_macro_f1": 0.5893863527139029,
+          "evaluated_classes": 15,
+          "pixels": 6399,
+          "maps": 6
+        },
+        "mlp_aug_seed42": {
+          "accuracy": 0.7243319268635724,
+          "balanced_accuracy": 0.6768859419667026,
+          "macro_f1_present": 0.5944813431749052,
+          "map_mean_accuracy": 0.7859352509889487,
+          "map_equal_weight_macro_f1": 0.6258758206490359,
+          "evaluated_classes": 15,
+          "pixels": 6399,
+          "maps": 6
+        },
+        "mlp_aug_seed43": {
+          "accuracy": 0.7144866385372715,
+          "balanced_accuracy": 0.6748956512384159,
+          "macro_f1_present": 0.586906523459907,
+          "map_mean_accuracy": 0.782142736289039,
+          "map_equal_weight_macro_f1": 0.6162267736706204,
+          "evaluated_classes": 15,
+          "pixels": 6399,
+          "maps": 6
+        },
+        "mlp_aug_seed44": {
+          "accuracy": 0.7001093920925144,
+          "balanced_accuracy": 0.6614201976501346,
+          "macro_f1_present": 0.5784703211844546,
+          "map_mean_accuracy": 0.7733633134018523,
+          "map_equal_weight_macro_f1": 0.6085022164853402,
+          "evaluated_classes": 15,
+          "pixels": 6399,
+          "maps": 6
+        },
+        "resnet_aug_seed42": {
+          "accuracy": 0.7204250664166276,
+          "balanced_accuracy": 0.673539345546129,
+          "macro_f1_present": 0.5986929058515222,
+          "map_mean_accuracy": 0.7836408651734837,
+          "map_equal_weight_macro_f1": 0.6229515177916549,
+          "evaluated_classes": 15,
+          "pixels": 6399,
+          "maps": 6
+        },
+        "resnet_aug_seed43": {
+          "accuracy": 0.7163619315518049,
+          "balanced_accuracy": 0.6752452567206982,
+          "macro_f1_present": 0.5922679309742597,
+          "map_mean_accuracy": 0.7816585774710479,
+          "map_equal_weight_macro_f1": 0.6200618278210118,
+          "evaluated_classes": 15,
+          "pixels": 6399,
+          "maps": 6
+        },
+        "resnet_aug_seed44": {
+          "accuracy": 0.7037037037037037,
+          "balanced_accuracy": 0.6661407258839767,
+          "macro_f1_present": 0.5830021465969928,
+          "map_mean_accuracy": 0.7738469044257376,
+          "map_equal_weight_macro_f1": 0.6125998590513151,
+          "evaluated_classes": 15,
+          "pixels": 6399,
+          "maps": 6
+        }
+      }
+    },
+    "stage2": {
+      "status": "passed",
+      "verified_models": 36,
+      "neural_models": 27,
+      "baseline_models": 9,
+      "probabilities_verified": 30,
+      "maximum_metric_error": 4.440892098500626e-16,
+      "eligible_pixels": 5425,
+      "excluded_pixels": 974,
+      "excluded_label_counts": {
+        "polycarbonate": 578,
+        "polyurethane": 78,
+        "silicone": 318
+      },
+      "classes": 12,
+      "blank_only_maps": [
+        "Map_PC_2",
+        "Map_Silicone"
+      ],
+      "map_support": [
+        {
+          "map_id": "Map_Env_PP_PTFE",
+          "original_pixels": 2280,
+          "eligible_pixels": 2280,
+          "excluded_pixels": 0,
+          "blank_pixels": 854,
+          "plastic_pixels": 1426,
+          "has_plastic_support": true,
+          "classes_present": 3,
+          "labels_present": [
+            "blank",
+            "polypropylene",
+            "polytetrafluoroethylene"
+          ],
+          "label_counts": {
+            "acrylonitrile butadiene styrene": 0,
+            "blank": 854,
+            "nylon": 0,
+            "poly (methyl methacrylate)": 0,
+            "polyester": 0,
+            "polyethylene": 0,
+            "polyethylene terephthalate": 0,
+            "polyoxymethylene": 0,
+            "polypropylene": 813,
+            "polystyrene": 0,
+            "polytetrafluoroethylene": 613,
+            "polyvinyl chloride": 0
+          }
+        },
+        {
+          "map_id": "Map_Nylon_PEs_PS",
+          "original_pixels": 750,
+          "eligible_pixels": 750,
+          "excluded_pixels": 0,
+          "blank_pixels": 242,
+          "plastic_pixels": 508,
+          "has_plastic_support": true,
+          "classes_present": 4,
+          "labels_present": [
+            "blank",
+            "nylon",
+            "polyester",
+            "polystyrene"
+          ],
+          "label_counts": {
+            "acrylonitrile butadiene styrene": 0,
+            "blank": 242,
+            "nylon": 188,
+            "poly (methyl methacrylate)": 0,
+            "polyester": 197,
+            "polyethylene": 0,
+            "polyethylene terephthalate": 0,
+            "polyoxymethylene": 0,
+            "polypropylene": 0,
+            "polystyrene": 123,
+            "polytetrafluoroethylene": 0,
+            "polyvinyl chloride": 0
+          }
+        },
+        {
+          "map_id": "Map_PC_2",
+          "original_pixels": 1190,
+          "eligible_pixels": 612,
+          "excluded_pixels": 578,
+          "blank_pixels": 612,
+          "plastic_pixels": 0,
+          "has_plastic_support": false,
+          "classes_present": 1,
+          "labels_present": [
+            "blank"
+          ],
+          "label_counts": {
+            "acrylonitrile butadiene styrene": 0,
+            "blank": 612,
+            "nylon": 0,
+            "poly (methyl methacrylate)": 0,
+            "polyester": 0,
+            "polyethylene": 0,
+            "polyethylene terephthalate": 0,
+            "polyoxymethylene": 0,
+            "polypropylene": 0,
+            "polystyrene": 0,
+            "polytetrafluoroethylene": 0,
+            "polyvinyl chloride": 0
+          }
+        },
+        {
+          "map_id": "Map_PMMA_PET_PE_ABS",
+          "original_pixels": 676,
+          "eligible_pixels": 676,
+          "excluded_pixels": 0,
+          "blank_pixels": 314,
+          "plastic_pixels": 362,
+          "has_plastic_support": true,
+          "classes_present": 5,
+          "labels_present": [
+            "acrylonitrile butadiene styrene",
+            "blank",
+            "poly (methyl methacrylate)",
+            "polyethylene",
+            "polyethylene terephthalate"
+          ],
+          "label_counts": {
+            "acrylonitrile butadiene styrene": 99,
+            "blank": 314,
+            "nylon": 0,
+            "poly (methyl methacrylate)": 104,
+            "polyester": 0,
+            "polyethylene": 58,
+            "polyethylene terephthalate": 101,
+            "polyoxymethylene": 0,
+            "polypropylene": 0,
+            "polystyrene": 0,
+            "polytetrafluoroethylene": 0,
+            "polyvinyl chloride": 0
+          }
+        },
+        {
+          "map_id": "Map_PVC_PU_POM",
+          "original_pixels": 720,
+          "eligible_pixels": 642,
+          "excluded_pixels": 78,
+          "blank_pixels": 468,
+          "plastic_pixels": 174,
+          "has_plastic_support": true,
+          "classes_present": 3,
+          "labels_present": [
+            "blank",
+            "polyoxymethylene",
+            "polyvinyl chloride"
+          ],
+          "label_counts": {
+            "acrylonitrile butadiene styrene": 0,
+            "blank": 468,
+            "nylon": 0,
+            "poly (methyl methacrylate)": 0,
+            "polyester": 0,
+            "polyethylene": 0,
+            "polyethylene terephthalate": 0,
+            "polyoxymethylene": 74,
+            "polypropylene": 0,
+            "polystyrene": 0,
+            "polytetrafluoroethylene": 0,
+            "polyvinyl chloride": 100
+          }
+        },
+        {
+          "map_id": "Map_Silicone",
+          "original_pixels": 783,
+          "eligible_pixels": 465,
+          "excluded_pixels": 318,
+          "blank_pixels": 465,
+          "plastic_pixels": 0,
+          "has_plastic_support": false,
+          "classes_present": 1,
+          "labels_present": [
+            "blank"
+          ],
+          "label_counts": {
+            "acrylonitrile butadiene styrene": 0,
+            "blank": 465,
+            "nylon": 0,
+            "poly (methyl methacrylate)": 0,
+            "polyester": 0,
+            "polyethylene": 0,
+            "polyethylene terephthalate": 0,
+            "polyoxymethylene": 0,
+            "polypropylene": 0,
+            "polystyrene": 0,
+            "polytetrafluoroethylene": 0,
+            "polyvinyl chloride": 0
+          }
+        }
+      ],
+      "scopes": {
+        "all_eligible_pixels_6_maps": 5425,
+        "plastic_supported_maps_4_maps": 4348,
+        "plastic_pixels_only_4_maps": 2470,
+        "blank_only_maps_2_maps": 1077
+      },
+      "aggregation": "每模型每原外折先平均3个神经seed（基线每折1个），再对3组拟合求均值和ddof=1 SD。",
+      "interpretation": "36个已拟合模型反复评价相同holdout；不是36个独立测试样本，不是OOF或新的外部盲测。",
+      "source_plan_sha256": "0a09afaf443975a16c0650ea51fef2686537edf650a17cfcd4540b619f864fad"
+    }
+  },
+  "method": "NumPy手工构造普通及图等权混淆矩阵；不调用项目metrics或sklearn.metrics。",
+  "restrictions": [
+    "只读源数据、权重、配置、日志与既有预测；不训练、不执行模型前向、不覆盖实验结果。",
+    "不能证明未记录的人工行为；检查源代码冻结身份、训练日志及所有可用记录的一致性。"
+  ],
+  "inputs": {
+    "dataset_sha256": "d0a4382e015099558f5e392869eeda626e8f085dfe269db36141842f4a09dbaf",
+    "split_sha256": "fe88a96ca11a03c72bbc3d47bbc80ecacd335bac0f78018e31d1f4990ba28557",
+    "dataset_rows": 33119
+  },
+  "files_hashed": 1070
+}

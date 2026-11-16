@@ -1,0 +1,36 @@
+{
+  "status": "finished",
+  "phase": "evaluate",
+  "started_at": "2026-11-16T03:47:37.452580+00:00",
+  "arguments": {
+    "root": "D:\\CodexWorkspace\\github-2-raspi\\scale_assignment",
+    "plan": "D:\\CodexWorkspace\\github-2-raspi\\scale_assignment\\supplemental_study\\protocol\\stage1_plan.json",
+    "phase": "evaluate",
+    "device": "cuda",
+    "models": null,
+    "seeds": null,
+    "cpu_threads": 8,
+    "prediction_batch_size": 128,
+    "skip_completed": false
+  },
+  "plan_sha256": "69057a5ab28cc15be5b737a085000b3856fcb3b00190e1e0d43820bd3f6da8d3",
+  "dataset_sha256": "d0a4382e015099558f5e392869eeda626e8f085dfe269db36141842f4a09dbaf",
+  "split_sha256": "fe88a96ca11a03c72bbc3d47bbc80ecacd335bac0f78018e31d1f4990ba28557",
+  "source_sha256": {
+    "src/common.py": "0db072dc64f93b3ad76a782bea2032248aaf7e5d948e055be8da8710220ac81c",
+    "src/models.py": "85975c0aace7c87aaf25b7a5bd926f8c1fea1180a93b95bc77921d7eed9b2402",
+    "src/train_cnn.py": "90d27888f506e6fbf61fc9023acd551ee50d906fb745833fa90fd314f91281ae",
+    "extension_study/src/study_models.py": "57a7f1fd6d475a08dfa375be7097eefdf32c9f2c666728e3d16b34fa9fa36923",
+    "supplemental_study/src/run_stage1_supplement.py": "26e4d31e74800c63de1c82f190a23284f9bc727de151c8c1fb27d9969274997c"
+  },
+  "selected_runs": [
+    "random_forest_300_seed101",
+    "mlp_aug_seed42",
+    "mlp_aug_seed43",
+    "mlp_aug_seed44",
+    "resnet_aug_seed42",
+    "resnet_aug_seed43",
+    "resnet_aug_seed44"
+  ],
+  "finished_at": "2026-11-16T03:47:43.497009+00:00"
+}

@@ -1,80 +1,52 @@
 {
-  "status": "真实实验、独立审计与Notebook交付完成；成员信息待真实填写",
-  "generated_at": "2026-11-13T22:28:27.655319+08:00",
-  "gpu_training_executed": true,
-  "formal_test_evaluated": true,
-  "first_stage": {
-    "gpu_training_completed": true,
-    "formal_test_evaluated": true,
-    "task_classes": 15,
-    "test_maps": 6,
-    "test_pixels": 6399,
-    "test_results_frozen": true
-  },
-  "extension_stage": {
-    "gpu_training_completed": true,
-    "task_classes": 12,
-    "development_maps": 28,
-    "development_pixels": 25541,
-    "outer_folds": 3,
-    "original_test_reused": false,
-    "neural_runs": 75,
-    "baseline_runs": 9,
-    "epochs": 3769,
-    "neural_seconds": 1735.2812968418002
-  },
-  "audit": {
+  "version": "v2.0.0",
+  "status": "passed",
+  "notebook_code_cells": 14,
+  "notebook_embedded_figures": 10,
+  "notebook_executed_in_lightweight_copy": true,
+  "html_visual_review": {
     "status": "passed",
-    "verified_runs": 84,
-    "original_frozen_inputs_unchanged": true,
-    "plan_sha256": "864cf5c8efe54d8ee885b9cc848f9f9ac7cd1eb2c30b9bdb27970e5bc1a18004",
-    "protocol_sha256": "f5f818e287bc0033afcc47f2729c27ba8194474be2430d3b9612d94b420259a6"
-  },
-  "notebook": {
-    "code_cells_executed": 25,
-    "embedded_images": 15,
-    "errors": 0,
-    "kernel_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
-    "training_executed_in_notebook": false,
-    "first_test_metrics_recomputed_from_saved_predictions": true,
-    "extension_checkpoint_cpu_probe_spectra": 16
-  },
-  "html_export_completed": true,
-  "figure_review": "Notebook实际嵌入的15幅图已逐张目视检查，文字、坐标、图例及数据范围可读；未发现裁切或重叠。",
-  "full_html_browser_review": "未由本脚本执行",
-  "remaining_user_work": [
-    "填写真实姓名、学号及成员贡献",
-    "成员复核并练习10分钟展示与5分钟答问",
-    "按教师要求提交"
-  ],
-  "cost": {
-    "recharged_yuan": 50,
-    "actual_billed_yuan": null,
-    "note": "实际费用以平台账单为准；不把run耗时合计当成开机计费时长"
-  },
-  "visual_qa": {
-    "all_15_main_figures_inspected": true,
-    "root_inspected_figure_numbers": [
-      5,
-      6,
-      7,
-      8
+    "surface": "Edge headless, file://, 1440×1050",
+    "sections_reviewed": [
+      "首页",
+      "三组结果",
+      "旧六图补测",
+      "结论",
+      "附录B"
     ],
-    "independent_reviewer_inspected_figure_numbers": [
-      1,
-      2,
-      3,
-      4,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15
-    ],
-    "summary_8_pdf_automated_checks": "通过字形和碰撞审计，保留已解释WARN",
-    "full_html_browser_review": "未验证；没有绕过本地文件浏览器访问限制",
-    "markdown_only_correction": "更正protocol相对路径；所有计算单元、数值与嵌入图输出保持不变"
-  }
+    "all_10_figure_outputs_reviewed": true,
+    "missing_superscript_glyph_fixed": true,
+    "external_requests": 0,
+    "all_images_embedded": true,
+    "horizontal_overflow": false,
+    "overflowing_tables": 0
+  },
+  "word_pages": 21,
+  "word_figures": 10,
+  "word_tables": 17,
+  "word_native_equations": 4,
+  "word_sha256": "bf74236ee24ebe0b6e460fdbd0d235b5aa424f3e1231446b1a99e81485808e7b",
+  "first_stage_families": 6,
+  "first_stage_run_records": 13,
+  "first_stage_main_table_runs": 12,
+  "first_stage_added_fits": 7,
+  "development_cv_neural_fits": 75,
+  "development_cv_traditional_fits": 9,
+  "old_holdout_frozen_model_evaluations": 36,
+  "old_holdout_eligible_pixels": 5425,
+  "old_holdout_excluded_pixels": 974,
+  "old_holdout_plastic_supported_maps": 4,
+  "old_holdout_blank_only_maps": 2,
+  "independent_metrics_audit": "passed",
+  "frozen_source_hashes_verified": 729,
+  "complete_binary_counts": {
+    ".npz": 121,
+    ".pt": 88,
+    ".joblib": 12
+  },
+  "original_test_reused_for_posthoc_supplement": true,
+  "no_new_external_blind_test": true,
+  "members": "待填写真实2–3名成员姓名、学号及实际贡献；用户已选择暂时保留待填表",
+  "cloud_instance": "原RTX3090已释放；新增7次拟合及36模型补测使用本机RTX3050Ti",
+  "git_publication": "本文件记录打包时的本地核验；v2.0.0发布状态以GitHub Release与独立上传记录为准"
 }

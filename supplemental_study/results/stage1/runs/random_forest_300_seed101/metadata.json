@@ -1,0 +1,107 @@
+{
+  "status": "finished",
+  "config": {
+    "run_id": "random_forest_300_seed101",
+    "model": "random_forest",
+    "seed": 101,
+    "parameters": {
+      "n_estimators": 300,
+      "min_samples_leaf": 2,
+      "class_weight": "balanced_subsample",
+      "random_state": 101,
+      "criterion": "gini",
+      "max_features": "sqrt",
+      "bootstrap": true
+    }
+  },
+  "identity": {
+    "config": {
+      "run_id": "random_forest_300_seed101",
+      "model": "random_forest",
+      "seed": 101,
+      "parameters": {
+        "n_estimators": 300,
+        "min_samples_leaf": 2,
+        "class_weight": "balanced_subsample",
+        "random_state": 101,
+        "criterion": "gini",
+        "max_features": "sqrt",
+        "bootstrap": true
+      }
+    },
+    "dataset_sha256": "d0a4382e015099558f5e392869eeda626e8f085dfe269db36141842f4a09dbaf",
+    "split_sha256": "fe88a96ca11a03c72bbc3d47bbc80ecacd335bac0f78018e31d1f4990ba28557",
+    "plan_sha256": "69057a5ab28cc15be5b737a085000b3856fcb3b00190e1e0d43820bd3f6da8d3",
+    "source_sha256": {
+      "src/common.py": "0db072dc64f93b3ad76a782bea2032248aaf7e5d948e055be8da8710220ac81c",
+      "src/models.py": "85975c0aace7c87aaf25b7a5bd926f8c1fea1180a93b95bc77921d7eed9b2402",
+      "src/train_cnn.py": "90d27888f506e6fbf61fc9023acd551ee50d906fb745833fa90fd314f91281ae",
+      "extension_study/src/study_models.py": "57a7f1fd6d475a08dfa375be7097eefdf32c9f2c666728e3d16b34fa9fa36923",
+      "supplemental_study/src/run_stage1_supplement.py": "26e4d31e74800c63de1c82f190a23284f9bc727de151c8c1fb27d9969274997c"
+    },
+    "labels": [
+      "acrylonitrile butadiene styrene",
+      "blank",
+      "nylon",
+      "poly (methyl methacrylate)",
+      "polycarbonate",
+      "polyester",
+      "polyethylene",
+      "polyethylene terephthalate",
+      "polyoxymethylene",
+      "polypropylene",
+      "polystyrene",
+      "polytetrafluoroethylene",
+      "polyurethane",
+      "polyvinyl chloride",
+      "silicone"
+    ]
+  },
+  "identity_sha256": "7b7a9343f7902759fa60a0c6751f441007d6599223250b67cdd80ed9298a1868",
+  "test_evaluated": false,
+  "posthoc_after_stage1_test_seen": true,
+  "started_at": "2026-11-16T03:30:09.770992+00:00",
+  "device": "cpu",
+  "gpu": null,
+  "torch_version": "2.8.0+cu128",
+  "sklearn_version": "1.9.1",
+  "cpu_threads": 8,
+  "prediction_batch_size": 128,
+  "train_pixels": 20968,
+  "validation_pixels": 5752,
+  "train_maps": 22,
+  "validation_maps": 6,
+  "validation_supported_classes": 13,
+  "output_classes": 15,
+  "sklearn_get_params": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "class_weight": "balanced_subsample",
+    "criterion": "gini",
+    "max_depth": null,
+    "max_features": "sqrt",
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 2,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 300,
+    "n_jobs": 8,
+    "oob_score": false,
+    "random_state": 101,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "best_validation_macro_f1": 0.9307426519289291,
+  "hyperparameter_search": false,
+  "artifact_sha256": {
+    "model.joblib": "2f129daa2668566859524a9080ae25e473596ee85620443c16ed161bdd49a082",
+    "validation_metrics.json": "e5645ed6d966c47eb218d84a35cfc3a20b9e81d3bf0c4f9ef29921622138aa1c",
+    "validation_predictions.csv": "df65aab595e70b3dd9ac3f6828e97e1de4c926ad22ee5af801cb37e4c154c535",
+    "validation_probabilities.npz": "89256d50a958419e17722feda84b8ce6fd676feb689787929032fd5de6877079"
+  },
+  "finished_at": "2026-11-16T03:31:02.271343+00:00",
+  "runtime_seconds": 52.500148699999954
+}

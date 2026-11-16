@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "synthetic_aggregation_only": true,
+  "no_real_prediction_or_training": true,
+  "checks": [
+    "13运行及6方法顺序",
+    "三种子样本标准差",
+    "无增强CNN未混入主表",
+    "传统SD写空白",
+    "缺种子阻断",
+    "未齐结果pending且退出2，不生成最终报告"
+  ]
+}

@@ -1,0 +1,7 @@
+﻿map_id,accuracy,balanced_accuracy,macro_f1_present,map_mean_accuracy,map_equal_weight_macro_f1,evaluated_classes,pixels,maps,has_plastic_support,plastic_pixels,blank_pixels,labels_present
+Map_Env_PP_PTFE,0.47368421052631576,0.45312219466926873,0.5190309464648747,0.47368421052631576,0.5190309464648747,3,2280,1,True,1426,854,blank|polypropylene|polytetrafluoroethylene
+Map_Nylon_PEs_PS,0.92,0.9124919539270986,0.9467930836230479,0.92,0.9467930836230479,4,750,1,True,508,242,blank|nylon|polyester|polystyrene
+Map_PC_2,0.9820261437908496,0.9820261437908496,0.9909315746084089,0.9820261437908496,0.9909315746084089,1,612,1,False,0,612,blank
+Map_PMMA_PET_PE_ABS,0.915680473372781,0.8793101780147097,0.9070824100796532,0.915680473372781,0.9070824100796531,5,676,1,True,362,314,acrylonitrile butadiene styrene|blank|poly (methyl methacrylate)|polyethylene|polyethylene terephthalate
+Map_PVC_PU_POM,0.8115264797507789,0.5700084700084701,0.6185249523681114,0.8115264797507789,0.6185249523681112,3,642,1,True,174,468,blank|polyoxymethylene|polyvinyl chloride
+Map_Silicone,1.0,1.0,1.0,1.0,1.0,1,465,1,False,0,465,blank

@@ -1,0 +1,26 @@
+[
+  {
+    "model": "mlp",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "accuracy_mean": 0.7129759858311194,
+    "accuracy_seed_sd": 0.012181722020417774,
+    "macro_f1_mean": 0.5866193959397557,
+    "macro_f1_seed_sd": 0.00800937188263188
+  },
+  {
+    "model": "resnet",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "accuracy_mean": 0.7134969005573787,
+    "accuracy_seed_sd": 0.008721083344032292,
+    "macro_f1_mean": 0.5913209944742582,
+    "macro_f1_seed_sd": 0.007888123861044314
+  }
+]

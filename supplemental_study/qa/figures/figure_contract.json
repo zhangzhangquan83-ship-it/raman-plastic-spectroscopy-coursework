@@ -1,0 +1,20 @@
+{
+  "backend": "Python/matplotlib，沿用项目后端",
+  "archetype": "two separate single-panel comparisons",
+  "claim": "分别呈现15类六方法补充比较与12类冻结模型旧六图评价，不将不同任务范围视为同一基准",
+  "statistics": {
+    "stage1": "神经3训练种子mean±sampleSD，传统单次不伪造SD",
+    "stage2": "同fold平均seed，再3拟合fold mean±sampleSD；同一holdout，不是OOF或CI"
+  },
+  "width_inches": 7.3,
+  "font_floor_pt": 9,
+  "raster_dpi": 300,
+  "source_data": [
+    "stage1/summary/six_method_summary.csv",
+    "stage1/summary/combined_test_runs.csv",
+    "stage2_frozen_holdout/condition_summary.csv",
+    "stage2_frozen_holdout/condition_fold_means.csv"
+  ],
+  "preflight_warning_review": "课程解释图，无期刊投稿目标；300dpi PNG与SVG/PDF足够，无需600dpi TIFF",
+  "displaced_material": "完整逐运行和逐图数据保留CSV，图只比较macroF1，准确率保留主表"
+}

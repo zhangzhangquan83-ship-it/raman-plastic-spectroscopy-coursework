@@ -1,0 +1,33 @@
+{
+  "status": "finished",
+  "created_at_utc": "2026-11-16T03:48:20.825925+00:00",
+  "real_training_started": false,
+  "new_predictions_computed": false,
+  "passed": true,
+  "identity": {
+    "historical_comparison_sha256": "bc82f5690686e6d417f61cf53260f10543a99cfc1ccd36c9272de95f6c690ae3",
+    "supplement_comparison_sha256": "af1115d253241e54304fd58f6251e278afd08d56d0b4245d5c938b851894455e",
+    "plan_sha256": "69057a5ab28cc15be5b737a085000b3856fcb3b00190e1e0d43820bd3f6da8d3",
+    "protected_input_sha256": {
+      "results\\final_test\\model_comparison.csv": "bc82f5690686e6d417f61cf53260f10543a99cfc1ccd36c9272de95f6c690ae3",
+      "supplemental_study\\results\\stage1\\final_test\\model_comparison.csv": "af1115d253241e54304fd58f6251e278afd08d56d0b4245d5c938b851894455e",
+      "results\\final_test\\evaluation_record.json": "de33d186623f78e64cf51ee566f31dd8e1be04ae663d44a654624d3c4d5f0dce",
+      "supplemental_study\\results\\stage1\\final_test\\evaluation_record.json": "d5f3121b8612186763a71cd2d7603cb94fbfef6dc011bc25113f5e02cc2f8aaa",
+      "supplemental_study\\protocol\\stage1_plan.json": "69057a5ab28cc15be5b737a085000b3856fcb3b00190e1e0d43820bd3f6da8d3"
+    }
+  },
+  "combined_run_count": 13,
+  "main_method_count": 6,
+  "cnn_main_runs": [
+    "cnn_aug_seed42",
+    "cnn_aug_seed43",
+    "cnn_aug_seed44"
+  ],
+  "noaug_cnn_in_main_mean": false,
+  "traditional_seed_sd": null,
+  "outputs_sha256": {
+    "combined_test_runs.csv": "1a3d3424b936f693f9bdd7f728b2150404da0c2ed59369c7808d4012d20befec",
+    "six_method_summary.csv": "b1ddabe7fa03e56f72e5778751acfd4e4c33a5394eb2161ad185b4bfee621983",
+    "stage1_supplement_report.md": "f5993fc924fdae1291ccd9c8f668f640c36bb820537463f381e2ceb599060e5e"
+  }
+}

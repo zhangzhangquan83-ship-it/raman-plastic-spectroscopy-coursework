@@ -1,0 +1,43 @@
+{"completed": "baseline_cosine_centroid_f1", "macro_f1_present": 0.48368831253894345}
+{"completed": "baseline_cosine_centroid_f2", "macro_f1_present": 0.5422267242397277}
+{"completed": "baseline_cosine_centroid_f3", "macro_f1_present": 0.5029125453716334}
+{"completed": "baseline_pca64_linear_svm_f1", "macro_f1_present": 0.6525214308986539}
+{"completed": "baseline_pca64_linear_svm_f2", "macro_f1_present": 0.6561830450945282}
+{"completed": "baseline_pca64_linear_svm_f3", "macro_f1_present": 0.6773709961046609}
+{"completed": "baseline_random_forest_300_f1", "macro_f1_present": 0.6202486501128962}
+{"completed": "baseline_random_forest_300_f2", "macro_f1_present": 0.6449910682755858}
+{"completed": "baseline_random_forest_300_f3", "macro_f1_present": 0.6454979429028095}
+{"completed": "core_cnn_f1_s101", "macro_f1_present": 0.6613282043281187}
+{"completed": "core_cnn_f1_s202", "macro_f1_present": 0.6753466005805059}
+{"completed": "core_cnn_f1_s303", "macro_f1_present": 0.6487888566671752}
+{"completed": "core_cnn_f2_s101", "macro_f1_present": 0.674944935181613}
+{"completed": "core_cnn_f2_s202", "macro_f1_present": 0.686827198728993}
+{"completed": "core_cnn_f2_s303", "macro_f1_present": 0.6804884581669505}
+{"completed": "core_cnn_f3_s101", "macro_f1_present": 0.6497714071595844}
+{"completed": "core_cnn_f3_s202", "macro_f1_present": 0.67696270780379}
+{"completed": "core_cnn_f3_s303", "macro_f1_present": 0.6673507541919109}
+{"completed": "core_mlp_f1_s101", "macro_f1_present": 0.7133123896224696}
+{"completed": "core_mlp_f1_s202", "macro_f1_present": 0.6594787203067659}
+{"completed": "core_mlp_f1_s303", "macro_f1_present": 0.6983097603447654}
+{"completed": "core_mlp_f2_s101", "macro_f1_present": 0.6642119493876147}
+{"completed": "core_mlp_f2_s202", "macro_f1_present": 0.670900872843733}
+{"completed": "core_mlp_f2_s303", "macro_f1_present": 0.6479469068157873}
+{"completed": "core_mlp_f3_s101", "macro_f1_present": 0.711211334041058}
+{"completed": "core_mlp_f3_s202", "macro_f1_present": 0.6883088989328288}
+{"completed": "core_mlp_f3_s303", "macro_f1_present": 0.6991909358315421}
+{"completed": "core_resnet_f1_s101", "macro_f1_present": 0.6585623162390427}
+{"completed": "core_resnet_f1_s202", "macro_f1_present": 0.6724618893475486}
+{"completed": "core_resnet_f1_s303", "macro_f1_present": 0.6649223745367822}
+{"completed": "core_resnet_f2_s101", "macro_f1_present": 0.6182149970190526}
+{"completed": "core_resnet_f2_s202", "macro_f1_present": 0.6409201393311739}
+{"completed": "core_resnet_f2_s303", "macro_f1_present": 0.6241079713080367}
+{"completed": "core_resnet_f3_s101", "macro_f1_present": 0.6686453536056192}
+{"completed": "core_resnet_f3_s202", "macro_f1_present": 0.629939259150845}
+{"completed": "core_resnet_f3_s303", "macro_f1_present": 0.6548251684571215}
+{
+  "status": "completed",
+  "output": "D:\\CodexWorkspace\\github-2-raspi\\scale_assignment\\supplemental_study\\results\\stage2_frozen_holdout",
+  "model_fits": 36,
+  "pixels": 5425,
+  "warning": "原六张测试图的首轮结果已被查看。本次只对冻结的第二阶段模型补充评价，不是新的外部测试、不是外折OOF，不使用本次分数选择模型/外折/种子/预处理或集成。每折先平均训练种子，再报告三种外折训练所得模型的均值与样本标准差；此离散度来自同一holdout上的模型拟合差异，不是独立测试样本的置信区间。"
+}

@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "code_cells": 14,
+  "embedded_figures": 10,
+  "errors": 0,
+  "lightweight_execution_verified": true,
+  "forbidden_binary_files_in_execution_copy": 0,
+  "training_executed": false,
+  "html_scripts": 0,
+  "html_remote_stylesheets": 0,
+  "ipynb_bytes": 698077,
+  "html_bytes": 944937,
+  "execution_seconds": 5.46,
+  "html_visual_review": {
+    "status": "passed",
+    "surface": "Edge headless, file://, 1440×1050",
+    "sections_reviewed": [
+      "首页",
+      "三组结果",
+      "旧六图补测",
+      "结论",
+      "附录B"
+    ],
+    "all_10_figure_outputs_reviewed": true,
+    "missing_superscript_glyph_fixed": true,
+    "external_requests": 0,
+    "all_images_embedded": true,
+    "horizontal_overflow": false,
+    "overflowing_tables": 0
+  },
+  "kernelspec": "python3",
+  "saved_output_warnings": 0,
+  "files": [
+    {
+      "path": "work\\execution\\final_submission_project_20261116\\课程展示_最终版.ipynb",
+      "bytes": 698077,
+      "sha256": "dc3f7f24307e1a58e4fc6497be131680b9380e868859d4934cae6dd510ea3d13"
+    },
+    {
+      "path": "work\\execution\\final_submission_project_20261116\\课程展示_最终版.html",
+      "bytes": 944937,
+      "sha256": "f5cd0b52be750a8228da047222211eec232552a93b97479f4bfd6e716d5b0e74"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "version": "v2.0.0",
+  "repository": "https://github.com/zhangzhangquan83-ship-it/raman-plastic-spectroscopy-coursework",
+  "member_information_status": "pending_user_fill_before_course_submission",
+  "generated_at": "2026-11-16T11:20:20.964520+00:00",
+  "zip_crc_verified": true,
+  "all_file_sha256_verified": true,
+  "files_in_complete_source": 1179,
+  "credential_pattern_hits": [],
+  "assets": [
+    {
+      "name": "raman-coursework-submission-v2.zip",
+      "kind": "submission",
+      "bytes": 17783372,
+      "sha256": "ba9fac0c231f6e29180057153727f8ef5e506a39c31ab3899ae83d8b28735313",
+      "files": 959,
+      "download_url": "https://github.com/zhangzhangquan83-ship-it/raman-plastic-spectroscopy-coursework/releases/download/v2.0.0/raman-coursework-submission-v2.zip"
+    },
+    {
+      "name": "raman-coursework-full-v2.zip",
+      "kind": "complete",
+      "bytes": 863098065,
+      "sha256": "9eafa41c702e73ebfc5441869c051d1250c0e2a5bd60795b03366c58f27b0438",
+      "files": 1180,
+      "download_url": "https://github.com/zhangzhangquan83-ship-it/raman-plastic-spectroscopy-coursework/releases/download/v2.0.0/raman-coursework-full-v2.zip"
+    }
+  ]
+}

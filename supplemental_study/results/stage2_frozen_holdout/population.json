@@ -1,0 +1,213 @@
+{
+  "original_test_pixels": 6399,
+  "eligible_pixels": 5425,
+  "excluded_pixels": 974,
+  "excluded_label_counts": {
+    "polycarbonate": 578,
+    "polyurethane": 78,
+    "silicone": 318
+  },
+  "labels": [
+    "acrylonitrile butadiene styrene",
+    "blank",
+    "nylon",
+    "poly (methyl methacrylate)",
+    "polyester",
+    "polyethylene",
+    "polyethylene terephthalate",
+    "polyoxymethylene",
+    "polypropylene",
+    "polystyrene",
+    "polytetrafluoroethylene",
+    "polyvinyl chloride"
+  ],
+  "input_length": 1024,
+  "test_maps": [
+    "Map_Env_PP_PTFE",
+    "Map_Nylon_PEs_PS",
+    "Map_PC_2",
+    "Map_PMMA_PET_PE_ABS",
+    "Map_PVC_PU_POM",
+    "Map_Silicone"
+  ],
+  "plastic_supported_maps": 4,
+  "blank_only_maps": 2,
+  "map_support": [
+    {
+      "map_id": "Map_Env_PP_PTFE",
+      "original_pixels": 2280,
+      "eligible_pixels": 2280,
+      "excluded_pixels": 0,
+      "blank_pixels": 854,
+      "plastic_pixels": 1426,
+      "has_plastic_support": true,
+      "classes_present": 3,
+      "labels_present": [
+        "blank",
+        "polypropylene",
+        "polytetrafluoroethylene"
+      ],
+      "label_counts": {
+        "acrylonitrile butadiene styrene": 0,
+        "blank": 854,
+        "nylon": 0,
+        "poly (methyl methacrylate)": 0,
+        "polyester": 0,
+        "polyethylene": 0,
+        "polyethylene terephthalate": 0,
+        "polyoxymethylene": 0,
+        "polypropylene": 813,
+        "polystyrene": 0,
+        "polytetrafluoroethylene": 613,
+        "polyvinyl chloride": 0
+      }
+    },
+    {
+      "map_id": "Map_Nylon_PEs_PS",
+      "original_pixels": 750,
+      "eligible_pixels": 750,
+      "excluded_pixels": 0,
+      "blank_pixels": 242,
+      "plastic_pixels": 508,
+      "has_plastic_support": true,
+      "classes_present": 4,
+      "labels_present": [
+        "blank",
+        "nylon",
+        "polyester",
+        "polystyrene"
+      ],
+      "label_counts": {
+        "acrylonitrile butadiene styrene": 0,
+        "blank": 242,
+        "nylon": 188,
+        "poly (methyl methacrylate)": 0,
+        "polyester": 197,
+        "polyethylene": 0,
+        "polyethylene terephthalate": 0,
+        "polyoxymethylene": 0,
+        "polypropylene": 0,
+        "polystyrene": 123,
+        "polytetrafluoroethylene": 0,
+        "polyvinyl chloride": 0
+      }
+    },
+    {
+      "map_id": "Map_PC_2",
+      "original_pixels": 1190,
+      "eligible_pixels": 612,
+      "excluded_pixels": 578,
+      "blank_pixels": 612,
+      "plastic_pixels": 0,
+      "has_plastic_support": false,
+      "classes_present": 1,
+      "labels_present": [
+        "blank"
+      ],
+      "label_counts": {
+        "acrylonitrile butadiene styrene": 0,
+        "blank": 612,
+        "nylon": 0,
+        "poly (methyl methacrylate)": 0,
+        "polyester": 0,
+        "polyethylene": 0,
+        "polyethylene terephthalate": 0,
+        "polyoxymethylene": 0,
+        "polypropylene": 0,
+        "polystyrene": 0,
+        "polytetrafluoroethylene": 0,
+        "polyvinyl chloride": 0
+      }
+    },
+    {
+      "map_id": "Map_PMMA_PET_PE_ABS",
+      "original_pixels": 676,
+      "eligible_pixels": 676,
+      "excluded_pixels": 0,
+      "blank_pixels": 314,
+      "plastic_pixels": 362,
+      "has_plastic_support": true,
+      "classes_present": 5,
+      "labels_present": [
+        "acrylonitrile butadiene styrene",
+        "blank",
+        "poly (methyl methacrylate)",
+        "polyethylene",
+        "polyethylene terephthalate"
+      ],
+      "label_counts": {
+        "acrylonitrile butadiene styrene": 99,
+        "blank": 314,
+        "nylon": 0,
+        "poly (methyl methacrylate)": 104,
+        "polyester": 0,
+        "polyethylene": 58,
+        "polyethylene terephthalate": 101,
+        "polyoxymethylene": 0,
+        "polypropylene": 0,
+        "polystyrene": 0,
+        "polytetrafluoroethylene": 0,
+        "polyvinyl chloride": 0
+      }
+    },
+    {
+      "map_id": "Map_PVC_PU_POM",
+      "original_pixels": 720,
+      "eligible_pixels": 642,
+      "excluded_pixels": 78,
+      "blank_pixels": 468,
+      "plastic_pixels": 174,
+      "has_plastic_support": true,
+      "classes_present": 3,
+      "labels_present": [
+        "blank",
+        "polyoxymethylene",
+        "polyvinyl chloride"
+      ],
+      "label_counts": {
+        "acrylonitrile butadiene styrene": 0,
+        "blank": 468,
+        "nylon": 0,
+        "poly (methyl methacrylate)": 0,
+        "polyester": 0,
+        "polyethylene": 0,
+        "polyethylene terephthalate": 0,
+        "polyoxymethylene": 74,
+        "polypropylene": 0,
+        "polystyrene": 0,
+        "polytetrafluoroethylene": 0,
+        "polyvinyl chloride": 100
+      }
+    },
+    {
+      "map_id": "Map_Silicone",
+      "original_pixels": 783,
+      "eligible_pixels": 465,
+      "excluded_pixels": 318,
+      "blank_pixels": 465,
+      "plastic_pixels": 0,
+      "has_plastic_support": false,
+      "classes_present": 1,
+      "labels_present": [
+        "blank"
+      ],
+      "label_counts": {
+        "acrylonitrile butadiene styrene": 0,
+        "blank": 465,
+        "nylon": 0,
+        "poly (methyl methacrylate)": 0,
+        "polyester": 0,
+        "polyethylene": 0,
+        "polyethylene terephthalate": 0,
+        "polyoxymethylene": 0,
+        "polypropylene": 0,
+        "polystyrene": 0,
+        "polytetrafluoroethylene": 0,
+        "polyvinyl chloride": 0
+      }
+    }
+  ],
+  "original_index_order": "主NPZ全局行号升序，所有36个模型使用相同5425行。",
+  "development_default_exact_equal": true,
+  "development_mapping_checked_pixels": 25541
+}

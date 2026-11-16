@@ -1,57 +1,69 @@
-# 拉曼塑料光谱识别与跨图评价
+# 大规模拉曼成像光谱的塑料分类与跨图评价
 
-《机器学习在物质科学中的应用》课程作业完成版：RaMPI公开拉曼成像谱，**34图、33,119条像素光谱**，已完成RTX3090真实计算、独立指标核查及展示材料。
+《机器学习在物质科学中的应用》课程项目，最终整理版 **v2.0.0（2026-11-16）**。问题是：根据一条拉曼光谱识别塑料类别时，在一张采集图上学到的模式能否迁移到其他采集图？输入为逐谱预处理后的1024维强度向量，输出为原数据标签；所有划分按采集图隔离。
 
-**所有课程提交材料均已提供。** 仓库中可浏览展示、代码、协议、图表、全部预测CSV、日志、指标、数据获取说明及分工引用。处理数据、全部权重与概率矩阵另外保存在[Release完整包](https://github.com/zhangzhangquan83-ship-it/raman-plastic-spectroscopy-coursework/releases/download/v1.0.0/raman-coursework-full.zip)中。
+## 从这里开始
 
-## 下载与阅读
-
-| 用途 | 入口 | 包含内容 |
-| --- | --- | --- |
-| 课堂展示 | [已执行Notebook](%E6%89%A9%E5%A4%A7%E7%89%88_%E6%95%B0%E6%8D%AE%E4%B8%8E%E5%AE%9E%E9%AA%8C%E5%B1%95%E7%A4%BA.ipynb) | 25个已执行代码单元，15幅已检查的嵌入图 |
-| 离线阅读 | [HTML文件](%E6%89%A9%E5%A4%A7%E7%89%88%E5%B1%95%E7%A4%BA%E9%A2%84%E8%A7%88.html)、[10分钟讲稿与5分钟答问](10%E5%88%86%E9%92%9F%E6%B1%87%E6%8A%A5%E8%AE%B2%E7%A8%BF%E4%B8%8E%E7%AD%94%E9%97%AE.md) | HTML请下载后用浏览器打开；整页浏览器预览未验证 |
-| 课程提交 | [提交版ZIP，13.87 MiB](https://github.com/zhangzhangquan83-ship-it/raman-plastic-spectroscopy-coursework/releases/download/v1.0.0/raman-coursework-submission.zip) | 展示、代码、说明、图表、全部CSV预测/日志/指标，不含大二进制 |
-| 完整复现 | [完整ZIP，775.22 MiB](https://github.com/zhangzhangquan83-ship-it/raman-plastic-spectroscopy-coursework/releases/download/v1.0.0/raman-coursework-full.zip) | 再含两套处理NPZ、全部模型权重及概率矩阵 |
-| 校验 | [SHA256SUMS.txt](https://github.com/zhangzhangquan83-ship-it/raman-plastic-spectroscopy-coursework/releases/download/v1.0.0/SHA256SUMS.txt) | 两个ZIP的SHA256；包内另有逐文件清单 |
-
-**仅git clone可直接查看已保存输出。运行Notebook全部单元、checkpoint推理、84组独立审计或重画扩展图，都应先下载并解压完整复现包。** 仅重新下载原CSV不能恢复已经训练的权重；也可在新目录按冻结计划重新训练。
-
-GitHub普通Git文件有100 MiB上限，所以大数据和模型采用Release附件分发，未放入Git历史。[GitHub大文件说明](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)
-
-## 主要结果与评价范围
-
-- 第一阶段：固定22/6/6图、15类。PCA64＋线性SVM测试准确率**72.53%**、宏F1 **0.5873**；增强CNN三训练种子宏F1 **0.5725 ± 0.0181**，±表示训练种子样本标准差。
-- 第二阶段：仅原28开发图的12共同类、25,541条谱，3外折与内验证，75次神经拟合＋9组基线，累计**3769轮**。每折先平均种子，再统计三折均值与折间样本标准差。
-- 新12类CV宏F1：SVM **0.8742 ± 0.0721**，CNN **0.8687 ± 0.0629**，1D-ResNet **0.8560 ± 0.0644**，MLP **0.8490 ± 0.0813**。这里的±为折间标准差，未作显著性声明。
-
-**两阶段类别、评价图和目标范围不同，不能把分数差直接称为性能提升。** 原6图测试未参与追加调参。像素谱数不等于独立物理样品数；公开数据没有可靠粒子ID或二维网格，项目不宣称独立标本/跨仪器验证、浓度定量或二维分割。
-
-## 课程要求对应文件
-
-详见[提交材料核对表](SUBMISSION_CHECKLIST.md)。
-
-| 要求 | 文件 |
+| 目的 | 文件 |
 | --- | --- |
-| 展示文件 | [Notebook](%E6%89%A9%E5%A4%A7%E7%89%88_%E6%95%B0%E6%8D%AE%E4%B8%8E%E5%AE%9E%E9%AA%8C%E5%B1%95%E7%A4%BA.ipynb)、[讲稿与答问](10%E5%88%86%E9%92%9F%E6%B1%87%E6%8A%A5%E8%AE%B2%E7%A8%BF%E4%B8%8E%E7%AD%94%E9%97%AE.md) |
-| 项目代码 | [首轮src](src/)、[扩展src](extension_study/src/) |
-| 数据说明/获取方式 | [数据来源与研究边界](%E6%95%B0%E6%8D%AE%E6%9D%A5%E6%BA%90%E4%B8%8E%E7%A0%94%E7%A9%B6%E8%BE%B9%E7%95%8C.md)、[源清单](data/manifest.json)、[完整包](https://github.com/zhangzhangquan83-ship-it/raman-plastic-spectroscopy-coursework/releases/download/v1.0.0/raman-coursework-full.zip) |
-| 环境与运行 | [完整运行说明](docs/%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A%E5%AE%8C%E6%95%B4%E8%BF%90%E8%A1%8C%E8%AF%B4%E6%98%8E.md)、[requirements](requirements.txt)、[代码导读](%E4%BB%A3%E7%A0%81%E5%AF%BC%E8%AF%BB%E4%B8%8E%E8%AF%84%E4%BB%B7%E9%80%BB%E8%BE%91.md) |
-| 结果与核查 | [首轮结果](%E6%89%A9%E5%A4%A7%E7%89%88%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C.md)、[扩展报告](extension_study/extension_report.md)、[独立审计](extension_study/results/independent_audit.json) |
-| 成员贡献与引用 | Notebook和讲稿中的真实填写表、参考文献、数据许可 |
+| 课堂展示，含已执行代码、表和图 | [课程展示_最终版.ipynb](课程展示_最终版.ipynb) |
+| 离线阅读展示结果 | [课程展示_最终版.html](课程展示_最终版.html) |
+| 详细理解方法、术语和两阶段证据 | [最新Word详解](docs/拉曼塑料光谱识别工作详解_六方法与补充测试完整版.docx) |
+| 10分钟展示与5分钟答问 | [讲稿与答问](docs/10分钟汇报讲稿与答问.md) |
+| 安装、查看、审计或重新训练 | [完整运行说明](docs/课程作业完整运行说明.md) |
+| 提交前最后核对 | [提交清单](SUBMISSION_CHECKLIST.md) |
 
-成员姓名、学号与亲自完成的贡献须据实填写，仓库没有编造成员经历。代码与材料有AI辅助。
+**成员姓名、学号和实际贡献仍待填写。** 课程要求每组2–3人、每人参与实质性工作及展示或答问，提交前请完成[成员分工与引用](docs/成员分工与引用.md)，并同步展示文件中的成员表。
 
-## 数据来源与许可
+## 数据与实验设计
 
-数据：Smith等，Borealis，[DOI 10.5683/SP3/8UQQQN](https://doi.org/10.5683/SP3/8UQQQN)，**CC BY 4.0**。
-论文：Hogan等，*Scientific Data* 13, 765 (2026)，[DOI 10.1038/s41597-026-07103-8](https://doi.org/10.1038/s41597-026-07103-8)。
-本项目进行了校验、逐谱插值与归一化、类别过滤和按图建模评价，性能来自本项目实验。完整署名、原始计数冲突和修改声明见[数据说明](%E6%95%B0%E6%8D%AE%E6%9D%A5%E6%BA%90%E4%B8%8E%E7%A0%94%E7%A9%B6%E8%BE%B9%E7%95%8C.md)与[数据许可](DATA_LICENSE.md)。
+RaMPI开放数据含34张采集图、33,119条像素光谱、14种塑料与blank背景。33,119是谱数，不是独立物理样品数。原CSV逐行标签计数为16,598塑料、16,521背景，与源元表的分项统计有冲突；保留原标签并披露差异。
 
-## 文件完整性
+逐谱处理：波数轴升序→共同区间710.1758–1827.0 cm⁻¹内线性插值到1024点→Savitzky–Golay平滑→端点线性基线扣除→SNV。逐谱处理不使用其他谱的均值；PCA和模型仅在训练部分拟合。
 
-原始提交包的逐文件清单保存在[artifacts/original_submission_manifest.json](artifacts/original_submission_manifest.json)，它对应Release原ZIP；仓库首页新增了GitHub导航，原运行说明保存在docs。完整ZIP还含全部省略二进制文件的清单和SHA。
+| 证据部分 | 图与光谱范围 | 用途与统计口径 |
+| --- | --- | --- |
+| 第一阶段15类固定测试 | 22/6/6张训练/验证/测试图；20,968/5,752/6,399谱 | 六方法比较；神经方法3种子均值±种子样本SD，传统方法单次 |
+| 第二阶段12类开发CV | 仅原28张开发图；保留至少覆盖3图的类别，25,541谱 | 3外折，每折内验证；神经先平均种子，再3外折均值±折间样本SD |
+| 第二阶段旧六图补测 | 原6张测试图按冻结12类规则保留5,425谱，排除974谱 | 36个既有模型推理；同一holdout上先种子后拟合折汇总，不是新外部盲测 |
 
-```text
-e9b0cbcfd9546710098d02e593e0cc0f601d73aac01b71566fa585d383085a30  raman-coursework-submission.zip
-f86fe95c92a4a55edb07d7424964126f2ad4cbb8185c7d6ded4cee285159ff71  raman-coursework-full.zip
+28张开发图就是34张中的原22张训练图加6张验证图。第二阶段CV内训练/内验证/外评价图数为13/5/10、14/5/9、14/5/9；每行合计28张，旧6张不进入开发CV的训练、验证或外评价。之后它们被单列用于补充推理，未据补测成绩重新挑选配置。
+
+## 三张主表回答不同问题
+
+下表只并排索引三个任务的宏F1，**不构成跨任务排行榜**。第一阶段15类与第二阶段12类的模型、标签和评价总体均不同。
+
+| 方法 | 15类固定测试 | 12类开发CV | 12类旧六图补测 |
+| --- | ---: | ---: | ---: |
+| 余弦类中心 | 0.4471（单次） | 0.6746 ± 0.0832 | 0.5096 ± 0.0298 |
+| PCA64＋线性SVM | 0.5873（单次） | 0.8742 ± 0.0721 | 0.6620 ± 0.0134 |
+| 随机森林300树 | 0.5632（单次） | 0.8310 ± 0.1041 | 0.6369 ± 0.0144 |
+| 增强1D-CNN | 0.5725 ± 0.0181 | 0.8687 ± 0.0629 | 0.6691 ± 0.0102 |
+| 增强MLP | 0.5866 ± 0.0080 | 0.8490 ± 0.0813 | 0.6837 ± 0.0201 |
+| 增强1D-ResNet | 0.5913 ± 0.0079 | 0.8560 ± 0.0644 | 0.6481 ± 0.0190 |
+
+第一阶段SVM像素准确率72.53%最高；ResNet平均宏F1略高，不能据这个小差距宣称显著优势。新增RF、MLP、ResNet发生在旧测试表现已查看后，属于后验补充比较。第二阶段开发CV中SVM平均宏F1最高，旧六图补测中MLP平均最高，说明该协议下模型排序随评价图变化；现有数据不足以将变化归因于唯一噪声机制。
+
+旧六图保留12类后，`Map_PC_2`与`Map_Silicone`共1,077谱只剩背景；真正有塑料支持的是4张图，且每个保留塑料类仅来自其中1张图。补测MLP全体像素准确率79.21%，仅塑料像素准确率57.34%；总体必须随分数一起解释。所有±均为描述性样本SD，不是独立物理样品置信区间。
+
+原12类开发研究已完成75次神经拟合、9组传统基线，含架构比较、增强和损失配对消融、4种预处理、按图嵌套学习曲线、模拟扰动及校准诊断；本次新增7次首阶段拟合，并做36次冻结模型推理。36次推理不计为36次训练；100%学习曲线复用核心CNN，不重复计数。历史云端使用RTX3090，新增使用本机RTX3050 Ti Laptop GPU，不作跨硬件训练速度排名。
+
+## 下载与复现
+
+公开仓库：[zhangzhangquan83-ship-it/raman-plastic-spectroscopy-coursework](https://github.com/zhangzhangquan83-ship-it/raman-plastic-spectroscopy-coursework)。新版整合包入口为[Releases](https://github.com/zhangzhangquan83-ship-it/raman-plastic-spectroscopy-coursework/releases)。
+
+- `raman-coursework-submission-v2.zip`：轻量课程提交包，含展示、最新Word、代码、协议、CSV预测/指标、日志、数据获取说明；省略NPZ、模型权重、joblib和概率矩阵。可阅读并重新执行轻量展示。
+- `raman-coursework-full-v2.zip`：独立完整复现包，另含两套处理NPZ、原全部模型和新增模型、概率及审计输入；无需拼接v1或增量包。不重复附约512MiB的原raw CSV，按manifest可重新下载。
+
+```bash
+# 在解压项目根目录；仅安装展示与常规科学依赖，不改已有torch构建
+python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
+python -m jupyter nbconvert --execute --to notebook --inplace 课程展示_最终版.ipynb
+python -m jupyter nbconvert --to html --template classic 课程展示_最终版.ipynb
 ```
+
+只看已保存输出无需安装环境或租服务器。模型审计、推理和重新训练的输入条件与命令见[运行说明](docs/课程作业完整运行说明.md)。当前结果均已完成，原云实例已释放；重新查看或提交无需再租。
+
+原`results/`、`extension_study/`和补充实验的冻结协议与科学产物保持原始字节。历史说明中的“不使用旧六图”描述原开发CV范围；2026-11-16新增用途以[补充研究说明](supplemental_study/README.md)和本最终版为准。`docs/历史_第一阶段原始报告.md`保留首轮历史报告，不取代最新六方法主表。
+
+数据：Smith等，RaMPI，Borealis，[DOI 10.5683/SP3/8UQQQN](https://doi.org/10.5683/SP3/8UQQQN)，[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)；相关论文Hogan等，[DOI 10.1038/s41597-026-07103-8](https://doi.org/10.1038/s41597-026-07103-8)。本作业完成数据校验、插值与预处理、按图划分、建模和分析。代码与文字使用AI辅助，原作者数据署名与本组真实贡献须同时保留。

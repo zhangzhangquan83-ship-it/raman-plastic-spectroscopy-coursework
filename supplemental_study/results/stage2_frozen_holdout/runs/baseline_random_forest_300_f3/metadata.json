@@ -1,0 +1,87 @@
+{
+  "status": "completed",
+  "config": {
+    "run_id": "baseline_random_forest_300_f3",
+    "family": "baseline",
+    "model": "random_forest_300",
+    "fold_id": 3,
+    "seed": 101
+  },
+  "supplemental_plan_sha256": "0a09afaf443975a16c0650ea51fef2686537edf650a17cfcd4540b619f864fad",
+  "evaluated_at": "2026-11-16T11:48:38.850140+08:00",
+  "labels": [
+    "acrylonitrile butadiene styrene",
+    "blank",
+    "nylon",
+    "poly (methyl methacrylate)",
+    "polyester",
+    "polyethylene",
+    "polyethylene terephthalate",
+    "polyoxymethylene",
+    "polypropylene",
+    "polystyrene",
+    "polytetrafluoroethylene",
+    "polyvinyl chloride"
+  ],
+  "input_shape": [
+    5425,
+    1,
+    1024
+  ],
+  "training_performed": false,
+  "original_cv_results_modified": false,
+  "already_viewed_test": true,
+  "source": {
+    "config": {
+      "run_id": "baseline_random_forest_300_f3",
+      "family": "baseline",
+      "model": "random_forest_300",
+      "fold_id": 3,
+      "seed": 101
+    },
+    "weight": {
+      "path": "extension_study/results/runs/baseline_random_forest_300_f3/model.joblib",
+      "bytes": 7948763,
+      "sha256": "b1a50924c291b8edacbf692b0ca9a8b4e82a7198c4d72849acf1d98cbd730f16"
+    },
+    "metadata": {
+      "path": "extension_study/results/runs/baseline_random_forest_300_f3/metadata.json",
+      "bytes": 1521,
+      "sha256": "06c7ed96ff425d48e7413bc0fc94f0bdda9debb505536b8fe07de14e9e03be08"
+    },
+    "original_cv_metrics": {
+      "path": "extension_study/results/runs/baseline_random_forest_300_f3/outer_metrics.json",
+      "bytes": 270,
+      "sha256": "3b7ffa6ae1d74961da572c05c6b4a5e21dc39ab8410d937c5991b9c00cdeee17"
+    },
+    "probability_method": "predict_proba"
+  },
+  "device": "cuda",
+  "torch_version": "2.8.0+cu128",
+  "sklearn_version": "1.9.1",
+  "probabilities_available": true,
+  "probability_note": "模型原始softmax/predict_proba，未经本holdout后验校准。",
+  "warning": "原六张测试图的首轮结果已被查看。本次只对冻结的第二阶段模型补充评价，不是新的外部测试、不是外折OOF，不使用本次分数选择模型/外折/种子/预处理或集成。每折先平均训练种子，再报告三种外折训练所得模型的均值与样本标准差；此离散度来自同一holdout上的模型拟合差异，不是独立测试样本的置信区间。",
+  "metrics": {
+    "accuracy": 0.7329032258064516,
+    "balanced_accuracy": 0.681199237210221,
+    "macro_f1_present": 0.6454979429028095,
+    "map_mean_accuracy": 0.8504862179067875,
+    "map_equal_weight_macro_f1": 0.6694041257891116,
+    "evaluated_classes": 12,
+    "pixels": 5425,
+    "maps": 6,
+    "ece_10_bins": 0.10004791937958636,
+    "negative_log_likelihood": 1.5922541908086767,
+    "multiclass_brier": 0.3836354907818751
+  },
+  "output_files": {
+    "class_metrics.csv": "6c86dda1e0631341279be1b0a2544fb56db8bca26ae7fca52308d3be79186b29",
+    "confusion.csv": "62d94afbebe94cde229c65d50477a6d85af1ffcae2fba64915fa2bade3b24ab5",
+    "metrics.json": "c888858ffd820d6b3e2643253dfe29aa4ef52c07278993c51f80b4e6e973c970",
+    "per_map_metrics.csv": "9944b11fb75cb38e3a44591b0a6ee3ff725d4056dfce32cb9f3679a2870beb0e",
+    "predictions.csv": "9a5df420262179da18a434d4499bfc59da887c704e26e74af2119dfaa99c42b7",
+    "probabilities.npz": "91824af8d58ec4ff7e66beded3e2773d96f3bcd81a04408a547771539c505623"
+  },
+  "runtime_seconds": 0.8026105999997526
+}

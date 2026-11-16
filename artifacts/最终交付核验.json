@@ -1,0 +1,52 @@
+{
+  "version": "v2.0.0",
+  "status": "passed",
+  "notebook_code_cells": 14,
+  "notebook_embedded_figures": 10,
+  "notebook_executed_in_lightweight_copy": true,
+  "html_visual_review": {
+    "status": "passed",
+    "surface": "Edge headless, file://, 1440×1050",
+    "sections_reviewed": [
+      "首页",
+      "三组结果",
+      "旧六图补测",
+      "结论",
+      "附录B"
+    ],
+    "all_10_figure_outputs_reviewed": true,
+    "missing_superscript_glyph_fixed": true,
+    "external_requests": 0,
+    "all_images_embedded": true,
+    "horizontal_overflow": false,
+    "overflowing_tables": 0
+  },
+  "word_pages": 21,
+  "word_figures": 10,
+  "word_tables": 17,
+  "word_native_equations": 4,
+  "word_sha256": "bf74236ee24ebe0b6e460fdbd0d235b5aa424f3e1231446b1a99e81485808e7b",
+  "first_stage_families": 6,
+  "first_stage_run_records": 13,
+  "first_stage_main_table_runs": 12,
+  "first_stage_added_fits": 7,
+  "development_cv_neural_fits": 75,
+  "development_cv_traditional_fits": 9,
+  "old_holdout_frozen_model_evaluations": 36,
+  "old_holdout_eligible_pixels": 5425,
+  "old_holdout_excluded_pixels": 974,
+  "old_holdout_plastic_supported_maps": 4,
+  "old_holdout_blank_only_maps": 2,
+  "independent_metrics_audit": "passed",
+  "frozen_source_hashes_verified": 729,
+  "complete_binary_counts": {
+    ".npz": 121,
+    ".pt": 88,
+    ".joblib": 12
+  },
+  "original_test_reused_for_posthoc_supplement": true,
+  "no_new_external_blind_test": true,
+  "members": "待填写真实2–3名成员姓名、学号及实际贡献；用户已选择暂时保留待填表",
+  "cloud_instance": "原RTX3090已释放；新增7次拟合及36模型补测使用本机RTX3050Ti",
+  "git_publication": "本文件记录打包时的本地核验；v2.0.0发布状态以GitHub Release与独立上传记录为准"
+}

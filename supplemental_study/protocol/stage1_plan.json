@@ -1,0 +1,55 @@
+{
+  "stage": "stage1_supplement",
+  "created_at_utc": "2026-11-16T03:30:02.809163+00:00",
+  "user_request_date_local": "2026-11-16",
+  "posthoc_after_stage1_test_seen": true,
+  "scope": "在既有15类和22/6/6按图划分下追加随机森林、MLP、ResNet，补成六类方法比较",
+  "models": [
+    "random_forest",
+    "mlp",
+    "resnet"
+  ],
+  "neural_seeds": [
+    42,
+    43,
+    44
+  ],
+  "random_forest_seed": 101,
+  "training": {
+    "epochs": 80,
+    "patience": 12,
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "gradient_clip": 5.0,
+    "augment": true
+  },
+  "random_forest": {
+    "n_estimators": 300,
+    "min_samples_leaf": 2,
+    "class_weight": "balanced_subsample",
+    "random_state": 101,
+    "criterion": "gini",
+    "max_features": "sqrt",
+    "bootstrap": true
+  },
+  "model_selection": "严格按原6幅验证图中13个有支持类别的macro-F1选择最佳epoch；不合并train+val重拟合",
+  "test_policy": "全部7个追加拟合完成并锁定后，在原6测试图6399谱15类上一次统一评价，不按测试成绩改设置或选择种子",
+  "expected_dataset_sha256": "d0a4382e015099558f5e392869eeda626e8f085dfe269db36141842f4a09dbaf",
+  "expected_split_sha256": "fe88a96ca11a03c72bbc3d47bbc80ecacd335bac0f78018e31d1f4990ba28557",
+  "source_sha256": {
+    "src/common.py": "0db072dc64f93b3ad76a782bea2032248aaf7e5d948e055be8da8710220ac81c",
+    "src/models.py": "85975c0aace7c87aaf25b7a5bd926f8c1fea1180a93b95bc77921d7eed9b2402",
+    "src/train_cnn.py": "90d27888f506e6fbf61fc9023acd551ee50d906fb745833fa90fd314f91281ae",
+    "extension_study/src/study_models.py": "57a7f1fd6d475a08dfa375be7097eefdf32c9f2c666728e3d16b34fa9fa36923",
+    "supplemental_study/src/run_stage1_supplement.py": "26e4d31e74800c63de1c82f190a23284f9bc727de151c8c1fb27d9969274997c"
+  },
+  "prior_results_sha256": "bc82f5690686e6d417f61cf53260f10543a99cfc1ccd36c9272de95f6c690ae3",
+  "execution": {
+    "torch": "2.8.0+cu128",
+    "gpu": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+    "cpu_threads": 8,
+    "prediction_batch_size": 128
+  },
+  "interpretation": "这是已查看过原测试表现后追加的固定测试集比较，不是全新盲测；三神经种子标准差为训练随机性，RF固定单种子"
+}

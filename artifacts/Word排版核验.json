@@ -1,0 +1,17 @@
+{
+  "deliverable": "拉曼塑料光谱识别工作详解_六方法与补充测试完整版.docx",
+  "pages": 21,
+  "tables": 17,
+  "figures": 10,
+  "native_equations": 4,
+  "stage1_families": 6,
+  "new_fits": 7,
+  "stage2_existing_fits_evaluated": 36,
+  "stage2_pixels": 5425,
+  "stage2_excluded": 974,
+  "statistics_audit": "passed，所有分类指标独立复算最大误差小于1e-15，原冻结结果未改变",
+  "figure_audits": "两新图对齐/碰撞/字体检查PASS，无FAIL或WARN，最小字体9pt",
+  "visual_review": "root逐页检查1–7；cloud_protocol_audit逐页检查8–14；supplement_runner逐页检查15–21；全部通过",
+  "renderer": "Microsoft Word COM和bundled Poppler；canonical缺少bundled LibreOffice，已记录失败日志并用实际Word排版完整验收",
+  "status": "passed"
+}

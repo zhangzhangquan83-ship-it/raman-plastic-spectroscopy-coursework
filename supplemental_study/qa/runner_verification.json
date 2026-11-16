@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "synthetic_only": true,
+  "real_training_started": false,
+  "real_test_evaluated": false,
+  "torch_version": "2.5.1+cpu",
+  "checks": [
+    "语法",
+    "冻结配置7运行",
+    "15类模型形状与参数量",
+    "人工数组反向传播有限性",
+    "CPU推理与批量1尾批",
+    "自有权重保存加载往返",
+    "13类验证宏F1口径",
+    "CLI解析"
+  ],
+  "models": [
+    {
+      "model": "mlp",
+      "parameters": 661519,
+      "shape": [
+        4,
+        15
+      ]
+    },
+    {
+      "model": "resnet",
+      "parameters": 1227759,
+      "shape": [
+        4,
+        15
+      ]
+    }
+  ]
+}

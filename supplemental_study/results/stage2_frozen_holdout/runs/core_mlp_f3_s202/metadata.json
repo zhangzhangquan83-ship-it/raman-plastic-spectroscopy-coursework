@@ -1,0 +1,105 @@
+{
+  "status": "completed",
+  "config": {
+    "fold_id": 3,
+    "variant": "default",
+    "map_level": "maps100",
+    "augment": true,
+    "weighted_loss": true,
+    "epochs": 120,
+    "patience": 18,
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "run_id": "core_mlp_f3_s202",
+    "model": "mlp",
+    "seed": 202,
+    "family": "architecture"
+  },
+  "supplemental_plan_sha256": "0a09afaf443975a16c0650ea51fef2686537edf650a17cfcd4540b619f864fad",
+  "evaluated_at": "2026-11-16T11:48:44.480344+08:00",
+  "labels": [
+    "acrylonitrile butadiene styrene",
+    "blank",
+    "nylon",
+    "poly (methyl methacrylate)",
+    "polyester",
+    "polyethylene",
+    "polyethylene terephthalate",
+    "polyoxymethylene",
+    "polypropylene",
+    "polystyrene",
+    "polytetrafluoroethylene",
+    "polyvinyl chloride"
+  ],
+  "input_shape": [
+    5425,
+    1,
+    1024
+  ],
+  "training_performed": false,
+  "original_cv_results_modified": false,
+  "already_viewed_test": true,
+  "source": {
+    "config": {
+      "fold_id": 3,
+      "variant": "default",
+      "map_level": "maps100",
+      "augment": true,
+      "weighted_loss": true,
+      "epochs": 120,
+      "patience": 18,
+      "batch_size": 256,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "run_id": "core_mlp_f3_s202",
+      "model": "mlp",
+      "seed": 202,
+      "family": "architecture"
+    },
+    "weight": {
+      "path": "extension_study/results/runs/core_mlp_f3_s202/best.pt",
+      "bytes": 2654961,
+      "sha256": "fe69a3f9b127748ba768ab06b153a36f19104a3346c25b52aece7b42f13fbe6b"
+    },
+    "metadata": {
+      "path": "extension_study/results/runs/core_mlp_f3_s202/metadata.json",
+      "bytes": 1743,
+      "sha256": "d3ffe2e800968f51d51c946b44e37c6323e247ab7e297d43ae3d0f1e60efde71"
+    },
+    "original_cv_metrics": {
+      "path": "extension_study/results/runs/core_mlp_f3_s202/outer_metrics.json",
+      "bytes": 400,
+      "sha256": "3572889b6d6e385fabb34ee0b9bdf3a235012ced981fd8cdf3462da5f018f1eb"
+    },
+    "probability_method": "softmax"
+  },
+  "device": "cuda",
+  "torch_version": "2.8.0+cu128",
+  "sklearn_version": "1.9.1",
+  "probabilities_available": true,
+  "probability_note": "模型原始softmax/predict_proba，未经本holdout后验校准。",
+  "warning": "原六张测试图的首轮结果已被查看。本次只对冻结的第二阶段模型补充评价，不是新的外部测试、不是外折OOF，不使用本次分数选择模型/外折/种子/预处理或集成。每折先平均训练种子，再报告三种外折训练所得模型的均值与样本标准差；此离散度来自同一holdout上的模型拟合差异，不是独立测试样本的置信区间。",
+  "metrics": {
+    "accuracy": 0.7832258064516129,
+    "balanced_accuracy": 0.7581378042120162,
+    "macro_f1_present": 0.6883088989328288,
+    "map_mean_accuracy": 0.8787430566616777,
+    "map_equal_weight_macro_f1": 0.7211164263474569,
+    "evaluated_classes": 12,
+    "pixels": 5425,
+    "maps": 6,
+    "ece_10_bins": 0.15561316282793125,
+    "negative_log_likelihood": 1.917506961084735,
+    "multiclass_brier": 0.37473429846467665
+  },
+  "output_files": {
+    "class_metrics.csv": "1357a0561a1f79f76ce879f76ca5034a6b87de1038f2423c7b49c872fbae93cd",
+    "confusion.csv": "a7c5d1d4356a78fdf69cac19e8b2b2b8804974bb39531b549aa63bc97d3ab990",
+    "metrics.json": "d97f74fff530a1413e133180e6e730b7b5d4ed97d68b50b30656cea528023e9a",
+    "per_map_metrics.csv": "299d4951fb9026bf2e63e01c46e389f5c92dea2810815df56f8da1c31e2ec855",
+    "predictions.csv": "9971119db2c828121d3131839d5f6c501848a744026eb39bec2c668826286046",
+    "probabilities.npz": "658df0e162026bd92a7f518c7065efe4a1c73e24884bc075653b387f5c0ce71c"
+  },
+  "runtime_seconds": 0.24778280000009545
+}
